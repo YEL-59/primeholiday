@@ -1,6 +1,7 @@
 import React from 'react';
 import reusablecard from './../../../../Components/reusable card/reusablecard';
 import ReusableCard from './../../../../Components/reusable card/reusablecard';
+import MainHeading from '../../../../Components/MainHeading/MainHeading';
 
 const OmanCard_Section = () => {
   const data = [
@@ -24,9 +25,10 @@ const OmanCard_Section = () => {
     <>
       <div>
         <div>
-          <h1 className="text-center text-2xl font-bold">
-            Destinations you'll love
-          </h1>
+
+       <div className='mt-5 mb-5'>
+       <MainHeading head_title={"Destinations you'll love"} />
+       </div>
 
           <div>
             <div className="container mx-auto grid grid-cols-3 gap-5 mb-10 mt-10">

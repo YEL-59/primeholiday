@@ -22,7 +22,7 @@ const App = () => {
         <Route path="/cancel" element={<Cancellation />} />
 
 
-        <Route path="/oman" element={<Oman />} />
+        <Route path="/destination/:id" element={<Oman />} />
       </Routes>
 
 

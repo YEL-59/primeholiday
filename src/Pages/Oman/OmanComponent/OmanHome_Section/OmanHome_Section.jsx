@@ -3,6 +3,7 @@
 
 
 import bgImage from '../../../../../public/Oman.png';
+import Navbar from './../../../../Components/Navbar/Navbar';
 
 const OmanHome_Section = () => {
   return (
@@ -13,6 +14,7 @@ const OmanHome_Section = () => {
           backgroundImage: `url(${bgImage})`,
         }}
       >
+        <Navbar />
         <div
           className="relative z-30 p-5 text-6xl font-semibold text-[#F49D2A] text-center  rounded-xl"
         >
@@ -21,7 +23,7 @@ const OmanHome_Section = () => {
 
 
 
-        <p className=' max-w-xl p-3 bg-gray-600 text-white text-sm opacity-80 mt-20  rounded-md '>Discover the enchanting Beauty of Oman, a destination where ancient heritage meets stunning natural landscapes. Known for its warm hospitality and rich cultural tapestry, Oman offers travelers a unique blend of experiences.
+        <p className=' max-w-4xl leading-10 p-3 bg-gray-600 text-white text-sm opacity-80 mt-20  rounded-md '>Discover the enchanting Beauty of Oman, a destination where ancient heritage meets stunning natural landscapes. Known for its warm hospitality and rich cultural tapestry, Oman offers travelers a unique blend of experiences.
         </p>
         </div>
       </header>

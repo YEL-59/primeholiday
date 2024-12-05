@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <>
       <div
-        className="relative bg-cover bg-center text-white py-8 h-[70vh]"
+        className="relative bg-cover bg-center text-white py-8 h-[75vh] -z-10"
         style={{
           backgroundImage: `url('../../../public/imgpsh_fullsize_anim.png')`,
         }}
@@ -80,9 +80,9 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="flex justify-between mt-5">
+            <div className="flex flex-wrap justify-between mt-5">
               <div>
-                <div className="flex gap-5">
+                <div className="flex flex-wrap gap-5">
                   {' '}
                   <p className="border-0 border-r-2 px-2">About</p>
                   <p className=" border-r-2 px-2">Destinations</p>
@@ -108,11 +108,11 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-green-700">
-        <div className="flex justify-between p-5">
-          <div className="text-white">
+      <div className="bg-green-800">
+        <div className="container mx-auto flex justify-between p-2">
+          <div className="text-white ">
             <p>stay up to date</p>
-            <h1>Subscribe to our newslettere</h1>
+            <h1 className='font-bold'>Subscribe to our newslettere</h1>
           </div>
           <div>
             <input

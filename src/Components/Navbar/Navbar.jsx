@@ -1,15 +1,25 @@
+// Navbar.js
 import React, { useState } from 'react';
 import mylogo from '../../../public/Transparent-logo-3 4.png';
 import { FaBars } from 'react-icons/fa';
 import { IoClose } from 'react-icons/io5'; // Close icon from react-icons
+import Modal from '../Modal/Modal';
+
 
 const Navbar = () => {
   // State to manage sidebar visibility
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  // State to manage modal visibility
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Toggle sidebar visibility
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
+  };
+
+  // Toggle modal visibility
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
   };
 
   return (
@@ -25,20 +35,25 @@ const Navbar = () => {
 
         {/* Center Section - Logo */}
         <div className="text-lg font-bold">
-          <img src={mylogo} alt="Logo" />
+          <img src={mylogo} className="h-24" alt="Logo" />
         </div>
 
         {/* Right Section - Button */}
         <div>
-          <button className="px-4 py-2 bg-transparent border text-white hover:bg-green-600 rounded-lg">
-            Enquire now
+          <button
+            onClick={toggleModal} // Open the modal on click
+            className="px-4 py-2 bg-transparent border text-white hover:bg-green-600 rounded-lg"
+          >
+            Explore Now
           </button>
         </div>
       </nav>
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 right-0 w-64 h-full opacity-80 bg-green-800 text-white transform ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out z-50`}
+        className={`fixed top-0 right-0 w-64 h-full opacity-80 bg-green-800 text-white transform ${
+          isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
+        } transition-transform duration-300 ease-in-out z-50`}
       >
         <div className="flex justify-end p-4">
           <div className="text-3xl cursor-pointer" onClick={toggleSidebar}>
@@ -46,12 +61,23 @@ const Navbar = () => {
           </div>
         </div>
         <div className="flex flex-col items-center mt-10">
-          <a href="/" className="text-white py-2 px-4 hover:bg-green-700 w-full text-center">Home</a>
-          <a href="/aboutus" className="text-white py-2 px-4 hover:bg-green-700 w-full text-center">About</a>
-          <a href="/destination" className="text-white py-2 px-4 hover:bg-green-700 w-full text-center">Destination</a>
-          <a href="/terms" className="text-white py-2 px-4 hover:bg-green-700 w-full text-center">Terms and Policy</a>
+          <a href="/" className="text-white py-2 px-4 hover:bg-green-700 w-full text-center">
+            Home
+          </a>
+          <a href="/aboutus" className="text-white py-2 px-4 hover:bg-green-700 w-full text-center">
+            About
+          </a>
+          <a href="/destination" className="text-white py-2 px-4 hover:bg-green-700 w-full text-center">
+            Destination
+          </a>
+          <a href="/terms" className="text-white py-2 px-4 hover:bg-green-700 w-full text-center">
+            Terms and Policy
+          </a>
         </div>
       </div>
+
+      {/* Modal */}
+      <Modal isOpen={isModalOpen} onClose={toggleModal} />
     </div>
   );
 };

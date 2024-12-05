@@ -1,9 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const GridItem = ({ imgSrc, title, description }) => {
+const GridItem = ({ imgSrc, title, description,title_link }) => {
   return (
       <>
-          <div className="relative rounded shadow overflow-hidden h-64">
+         <div>
+          <Link to={title_link}> <div className="relative rounded shadow overflow-hidden h-64 -z-10">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
@@ -16,8 +18,9 @@ const GridItem = ({ imgSrc, title, description }) => {
         <h2 className="text-xl font-bold">{title}</h2>
         <p className="text-sm">{description}</p>
       </div>
-    </div>
-      
+    </div></Link>
+         </div>
+
       </>
   )
 }

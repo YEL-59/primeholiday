@@ -39,9 +39,9 @@ const Home_Prime_Section = () => {
             <div
               key={image.id}
               onClick={() => handleClick(index)} // Handle click to expand
-              className={`h-[30rem] bg-cover cursor-pointer transition-all duration-500 ${
+              className={`h-[30rem] bg-cover cursor-pointer transition-all duration-500 rounded  ${
                 expandedIndex === index
-                  ? "w-[100rem] h-[50rem] mx-auto -mt-16 shadow-xl"  
+                  ? "w-[60rem] h-[40rem] mx-auto -mt-16 shadow-xl rounded-lg"
                   : "w-28"
               }`}
               style={{ backgroundImage: `url(${image.src})` }}
