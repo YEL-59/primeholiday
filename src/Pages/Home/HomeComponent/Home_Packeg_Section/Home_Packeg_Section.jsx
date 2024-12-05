@@ -42,7 +42,7 @@ const Home_Packeg_Section = () => {
                 }`}
               >
                 <img src={img} className="object-cover w-full h-full" alt="" />
-                
+
               </div>
             </div>
           </div>
@@ -51,5 +51,4 @@ const Home_Packeg_Section = () => {
     </>
   );
 };
-
 export default Home_Packeg_Section;
