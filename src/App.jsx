@@ -6,6 +6,7 @@ import AboutUs from './Pages/AboutUs/AboutUs';
 import TearmsandCondition from './Pages/TearmsandCondition/TearmsandCondition';
 import Privacy from './Pages/Privacy/Privacy';
 import Cancellation from './Pages/Cancelation/Privacy';
+import Oman from './Pages/Oman/Oman';
 
 
 
@@ -19,6 +20,9 @@ const App = () => {
         <Route path="/terms" element={<TearmsandCondition />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/cancel" element={<Cancellation />} />
+
+
+        <Route path="/oman" element={<Oman />} />
       </Routes>
 
 
