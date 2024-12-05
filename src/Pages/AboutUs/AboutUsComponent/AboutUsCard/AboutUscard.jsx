@@ -6,7 +6,7 @@ const AboutUscard = () => {
     <div className="container mx-auto mt-10 mb-16 px-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Card 1 */}
-        <div className="relative max-w-sm rounded-lg overflow-hidden shadow-lg bg-white transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+        <div className="relative max-w-xl rounded-lg overflow-hidden shadow-lg bg-white transform transition duration-300 hover:scale-105 hover:shadow-2xl">
           <img src={img} alt="Qatar Destination" className="w-full h-64 object-cover" />
           <div className="absolute bottom-0 w-full bg-green-800 p-2">
             <div className="flex justify-between items-center  text-white">
@@ -24,7 +24,7 @@ const AboutUscard = () => {
         </div>
 
         {/* Card 2 */}
-        <div className="relative max-w-sm rounded-lg overflow-hidden shadow-lg bg-white transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+        <div className="relative max-w-xl rounded-lg overflow-hidden shadow-lg bg-white transform transition duration-300 hover:scale-105 hover:shadow-2xl">
           <img src={img} alt="Qatar Destination" className="w-full h-64 object-cover" />
           <div className="absolute bottom-0 w-full bg-green-800 p-2">
             <div className="flex justify-between items-center  text-white">
@@ -42,7 +42,7 @@ const AboutUscard = () => {
         </div>
 
         {/* Card 3 */}
-        <div className="relative max-w-sm rounded-lg overflow-hidden shadow-lg bg-white transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+        <div className="relative max-w-xl rounded-lg overflow-hidden shadow-lg bg-white transform transition duration-300 hover:scale-105 hover:shadow-2xl">
           <img src={img} alt="Qatar Destination" className="w-full h-64 object-cover" />
           <div className="absolute bottom-0 w-full bg-green-800 p-2">
             <div className="flex justify-between items-center  text-white">
