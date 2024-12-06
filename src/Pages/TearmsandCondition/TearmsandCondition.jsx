@@ -1,9 +1,10 @@
 import React from 'react'
-import bgImage from '../../../public/image 87.png'; 
+import bgImage from '../../../public/image 87.png';
 import Breadcrumb from '../../Components/Breadcrumb/Breadcrumb';
 import termscondition from '../../Components/termscondition/termscondition'
 import Termscondition from '../../Components/termscondition/termscondition';
 import Footer from '../../Components/Footer/Footer';
+import Navbar from '../../Components/Navbar/Navbar';
 const TearmsandCondition = () => {
     const termsData = [
         {
@@ -20,7 +21,7 @@ const TearmsandCondition = () => {
           title: "Booking and Payment",
           content: `All bookings are subject to availability and are not confirmed until full payment has been received. Payments can be made via credit card, bank transfer, or other methods specified on our website.`,
         },
-       
+
         {
             title: "Pricing",
             content: `All prices listed on our website are in US Dollars and inclusive of taxes unless otherwise specified.
@@ -67,7 +68,7 @@ Our liability for any claims, including personal injury or death, is limited to 
         },
         {
             title: "Privacy",
-            content: `We respect your privacy and handle your personal information in accordance with our Privacy Policy. Your data will only be used for the purposes of fulfilling your booking and improving our services. Your personal information will not be passed to third party. 
+            content: `We respect your privacy and handle your personal information in accordance with our Privacy Policy. Your data will only be used for the purposes of fulfilling your booking and improving our services. Your personal information will not be passed to third party.
 Please check our Privacy Policy for more information.
 `,
         },
@@ -91,12 +92,12 @@ Email: contact@primeholidaydestinations.com
       ];
     const breadcrumbItems = [
         { label: 'Home', href: '/' },
-       
-        { label: 'Terms & Conditions' }, 
+
+        { label: 'Terms & Conditions' },
       ];
   return (
       <>
-          
+
           <div>
           <header
         className="relative flex items-center justify-center h-[60vh]  bg-cover bg-center z-0"
@@ -104,10 +105,11 @@ Email: contact@primeholidaydestinations.com
           backgroundImage: `url(${bgImage})`,
         }}
       >
+          <Navbar/>
         <div
           className="relative z-30 p-5 text-6xl font-semibold text-[#F49D2A]  rounded-xl"
         >
-         Terms & Condition 
+         Terms & Condition
         </div>
       </header>
           </div>
@@ -131,10 +133,10 @@ Email: contact@primeholidaydestinations.com
       </div>
     </div>
           </div>
-      
-      
+
+
       <Footer/>
-      
+
       </>
   )
 }

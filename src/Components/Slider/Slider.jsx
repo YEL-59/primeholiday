@@ -1,38 +1,38 @@
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
 
-const slides = [
-  { id: 1, title: "Slide 1", description: "This is the first slide." },
-  { id: 2, title: "Slide 2", description: "This is the second slide." },
-  { id: 3, title: "Slide 3", description: "This is the third slide." },
-  { id: 4, title: "Slide 4", description: "This is the fourth slide." },
-];
+import './styles.css';
 
-const CardSlider = () => {
+// import required modules
+import { Pagination } from 'swiper/modules';
+
+export default function App() {
   return (
-    <Swiper
-      modules={[Navigation, Pagination]}
-      spaceBetween={30}
-      slidesPerView={1.5}
-      navigation
-      pagination={{ clickable: true }}
-      loop={true}
-      className="w-full max-w-5xl"
-    >
-      {slides.map((slide) => (
-        <SwiperSlide key={slide.id} className="flex justify-center">
-          <div className="bg-white rounded-lg shadow-lg p-6 w-3/4">
-            <h2 className="text-xl font-bold mb-2">{slide.title}</h2>
-            <p className="text-gray-700">{slide.description}</p>
-          </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <>
+      <Swiper
+        slidesPerView={'auto'}
+        spaceBetween={30}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide>Slide 1</SwiperSlide>
+        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide>Slide 5</SwiperSlide>
+        <SwiperSlide>Slide 6</SwiperSlide>
+        <SwiperSlide>Slide 7</SwiperSlide>
+        <SwiperSlide>Slide 8</SwiperSlide>
+        <SwiperSlide>Slide 9</SwiperSlide>
+      </Swiper>
+    </>
   );
-};
-
-export default CardSlider;
+}

@@ -16,7 +16,7 @@ const PrimeDestination_Section = () => {
         <div>
           <div className="container mx-auto ">
             <h1 className="mb-2 mt-5 text-2xl font-bold text-[#F49D2A]">
-              Africa
+              Africa 
             </h1>
             <div className="grid grid1 md:grid-cols-3 gap-5">
               {" "}
@@ -58,6 +58,7 @@ const PrimeDestination_Section = () => {
                 imgSrc={img2}
                 title="Column 1"
                 description="This is the first column."
+                title_link={"oman"}
               />
               <GridItem
                 imgSrc="https://via.placeholder.com/800x600"
