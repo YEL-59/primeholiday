@@ -36,7 +36,7 @@ const Navbar = () => {
         </div>
 
         {/* Center Section - Logo */}
-        <div className="text-lg font-bold">
+        <div className="text-lg font-bold ml-[85px]">
           <img src={mylogo} className="h-24" alt="Logo" />
         </div>
 
@@ -65,13 +65,13 @@ const Navbar = () => {
         </div>
         <div className="flex flex-col items-center mt-4">
           <a
-            href="/"
+            href="/home"
             className="text-white py-2 px-4 hover:bg-green-700 w-full text-center"
           >
             Home
           </a>
           <a
-            href="/aboutus"
+            href="/"
             className="text-white py-2 px-4 hover:bg-green-700 w-full text-center"
           >
             About
@@ -83,10 +83,10 @@ const Navbar = () => {
             Destination
           </a>
           <a
-            href="/terms"
+            href="/blog"
             className="text-white py-2 px-4 hover:bg-green-700 w-full text-center"
           >
-            Terms and Policy
+            Blog
           </a>
         </div>
       </div>

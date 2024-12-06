@@ -1,6 +1,8 @@
 import React from "react";
 import img1 from "../../../../../public/Frame 775.png";
 import img2 from "../../../../../public/Frame 770.png";
+import img3 from "../../../../../public/Frame 750.png";
+import img4 from "../../../../../public/Zanzibar.png";
 import ImageOverlayCard from "../../../../Components/ImageOverlayCard/ImageOverlayCard";
 import GridItem from "../../../../Components/GridItem/GridItem";
 
@@ -15,10 +17,10 @@ const PrimeDestination_Section = () => {
         </div>
         <div>
           <div className="container mx-auto ">
-            <h1 className="mb-2 mt-5 text-2xl font-bold text-[#F49D2A]">
+            <h1 className="mb-2 mt-5 mb-5 text-2xl font-bold text-[#F49D2A]">
               Africa 
             </h1>
-            <div className="grid grid1 md:grid-cols-3 gap-5">
+            <div className=" grid grid1 md:grid-cols-3 ">
               {" "}
               <ImageOverlayCard
                 imgSrc={img1}
@@ -26,7 +28,7 @@ const PrimeDestination_Section = () => {
                 description="Come and see the show!"
               />
               <ImageOverlayCard
-                imgSrc={img1}
+                imgSrc={img4}
                 title="Morocho"
                 description="Come and see the show!"
               />

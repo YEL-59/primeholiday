@@ -82,7 +82,7 @@ const Footer = () => {
 
             <div className="flex flex-wrap justify-between mt-5">
               <div>
-                <div className="flex flex-wrap gap-5">
+                <div className="flex flex-wrap gap-5 text-md">
                   {' '}
                   <p className="border-0 border-r-2 px-1">About</p>
                   <p className=" border-r-2 px-1">Destinations</p>
@@ -97,19 +97,19 @@ const Footer = () => {
               </div>
               <div>
                 <div>
-                  <h1>
+                  <h1 className='text-md'>
                     Prime Holiday Destinations a Brand by Rizmali Travel & Tours
                     Limited
                   </h1>
-                  <p>Company Number 14730696 I Registered in England</p>
+                  <p className='text-md'>Company Number 14730696 I Registered in England</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="bg-green-800">
-        <div className="container mx-auto flex justify-between p-2">
+      <div className="bg-[#135029]">
+        <div className="container mx-auto flex justify-between p-4">
           <div className="text-white ">
             <p>stay up to date</p>
             <h1 className='font-bold'>Subscribe to our newslettere</h1>
@@ -117,7 +117,7 @@ const Footer = () => {
           <div>
             <input
               type="text"
-              className="border rounded p-2"
+              className="border rounded p-2 bg-transparent"
               placeholder="Enter Your Name"
             />
             <button className="border rounded px-5 py-2 text-white font-normal ms-5 ">

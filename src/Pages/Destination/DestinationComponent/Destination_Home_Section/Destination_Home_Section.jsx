@@ -6,7 +6,7 @@ const Destination_Home_Section = () => {
   return (
     <>
       <header
-        className="relative flex items-center justify-center h-[60vh]  bg-cover bg-center z-0"
+        className="relative flex items-center justify-center h-[100vh]  bg-cover bg-center z-0"
         style={{
           backgroundImage: `url(${bgImage})`,
         }}
