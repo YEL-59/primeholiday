@@ -6,14 +6,14 @@ const AboutUs_Home_Section = () => {
       <>
 
       <header
-        className="relative flex items-center justify-center h-[60vh]  bg-cover bg-center z-0"
+        className="relative flex items-center justify-center h-[100vh]  bg-cover bg-center z-0"
         style={{
           backgroundImage: `url(${bgImage})`,
         }}
       >
         <Navbar/>
         <div
-          className="relative z-30 p-5 text-6xl font-semibold text-[#F49D2A]  rounded-xl"
+          className="relative z-30 p-5 text-8xl font-semibold font-salvager   text-[#F49D2A]   text-center"
         >
          About US
         </div>

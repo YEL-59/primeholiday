@@ -12,22 +12,22 @@ const Footer = () => {
   return (
     <>
       <div
-        className="relative bg-cover bg-center text-white py-8 h-[75vh] -z-10"
+        className="relative bg-cover bg-center text-white py-8 h-[60vh] -z-10"
         style={{
-          backgroundImage: `url('../../../public/imgpsh_fullsize_anim.png')`,
+          backgroundImage: `linear-gradient(90deg, rgba(19, 80, 41, 0.60) 12.5%, rgba(19, 80, 41, 0.39) 58%, rgba(19, 80, 41, 0.60) 95.95%), url('../../../public/imgpsh_fullsize_anim.png')`,
         }}
       >
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-green-500 to-green-700 opacity-40"></div>
+        {/* <div className="absolute inset-0 bg-gradient-to-b from-green-500 to-green-700 opacity-10"></div> */}
 
         <div className='container mx-auto'>
-          <h1 className="text-[#F49D2A] text-4xl font-semibold text-center mb-10 z-100 relative">
+          <h1 className="text-[#F49D2A] text-6xl font-semibold text-center mb-10 z-100 relative">
             Connect With Us
           </h1>
 
           <div>
-            <div className="flex flex-wrap justify-between">
-              <div className="flex gap-5 border-b max-w-[10rem] ">
+            <div className="flex flex-wrap  justify-between">
+              <div className="flex items-center gap-5 border-b   max-w-[14rem] ">
                 <div className="">
                   <RiFacebookBoxLine />
                 </div>
@@ -47,8 +47,8 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="">
-              <div className="flex flex-col gap-2 border-b max-w-[10rem] ">
+            <div className=" mt-5">
+              <div className="flex flex-col gap-2 border-b max-w-[14rem] ">
                 <div className="text-2xl ">
                   <CiLocationOn />
                 </div>
@@ -57,15 +57,15 @@ const Footer = () => {
                 </address>
               </div>
             </div>
-            <div className="">
-              <div className="flex flex-col gap-2 border-b max-w-[10rem] ">
+            <div className="mt-5">
+              <div className="flex flex-col gap-2 border-b max-w-[19rem] ">
                 <div className="text-2xl ">
                   <IoMailOutline />
                 </div>
                 <p>contact@primeholidaydestinations.com</p>
               </div>
             </div>
-            <div className="">
+            <div className="mt-5">
               <div className="flex flex-col gap-2 border-b max-w-[10rem] ">
                 <div className="text-2xl ">
                   <VscCallIncoming />
@@ -75,8 +75,8 @@ const Footer = () => {
             </div>
 
             <div>
-              <div className="flex justify-end">
-                <img src={logo} alt="" />
+              <div className="flex justify-end -mt-20">
+                <img src={logo} alt="" className='h-30'/>
               </div>
             </div>
 
@@ -84,11 +84,11 @@ const Footer = () => {
               <div>
                 <div className="flex flex-wrap gap-5">
                   {' '}
-                  <p className="border-0 border-r-2 px-2">About</p>
-                  <p className=" border-r-2 px-2">Destinations</p>
-                  <p className=" border-r-2 px-2"> Blog</p>
-                  <p className=" border-r-2 px-2">Terms & Conditions</p>
-                  <p className=" border-r-2 px-2">Privacy </p>
+                  <p className="border-0 border-r-2 px-1">About</p>
+                  <p className=" border-r-2 px-1">Destinations</p>
+                  <p className=" border-r-2 px-1"> Blog</p>
+                  <p className=" border-r-2 px-1">Terms & Conditions</p>
+                  <p className=" border-r-2 px-1">Privacy </p>
                   <p className=" ">Cancellation & Refund</p>
                 </div>
                 <div>

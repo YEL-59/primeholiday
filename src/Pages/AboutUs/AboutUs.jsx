@@ -9,7 +9,7 @@ const AboutUs = () => {
     const breadcrumbItems = [
         { label: 'Home', href: '/' },
        
-        { label: 'Destination' }, 
+        { label: 'About Us ' }, 
       ];
   return (
       <>
