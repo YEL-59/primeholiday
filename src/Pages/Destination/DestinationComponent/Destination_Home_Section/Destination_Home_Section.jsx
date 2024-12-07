@@ -13,7 +13,7 @@ const Destination_Home_Section = () => {
       >
           <Navbar/>
         <div
-          className="relative z-30 p-5 text-6xl font-semibold text-[#F49D2A]  rounded-xl"
+          className="relative z-30 p-5 text-6xl font-salvager font-semibold text-[#F49D2A]  rounded-xl"
         >
           Your All-Inclusive Journey starts Here
         </div>

@@ -7,7 +7,7 @@ const Home_Packeg_Section = () => {
   return (
     <div>
       <div
-        className="relative bg-cover bg-center py-10"
+        className="relative bg-cover bg-center py-10 h-[80vh]"
         style={{
           backgroundImage: `url(${img})`,
         }}

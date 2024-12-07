@@ -1,7 +1,10 @@
+/* style.css */
 .swiper {
-  width: 100%;
-  height: auto;
-  padding: 20px 0; /* Adds spacing around the slider */
+  width: 80vw; 
+  height: 100%;
+  padding: 20px 0;
+  margin: 0 auto; 
+  margin-left: 20%;
 }
 
 .swiper-slide {
@@ -11,20 +14,31 @@
 }
 
 .card {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  transition: transform 0.3s ease-in-out;
-}
+    transition: transform 0.3s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 350px;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column; /* Ensure content is stacked vertically */
+  }
+  
+  .card-text {
+    background-color: #000; /* Black background */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; /* Push the text to the bottom */
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
 
-.card:hover {
-  transform: scale(1.05); /* Subtle zoom effect on hover */
-}
-
-.card-content {
-  background: rgba(0, 0, 0, 0.4);
-  padding: 1rem;
-  border-radius: 0.5rem;
-  text-align: center;
-}

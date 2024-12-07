@@ -15,13 +15,14 @@ const Home = () => {
 
 
           <Home_Main_Section />
-          <Home_Prime_Section/>
+      <Home_Prime_Section />
+      <Home_Packeg_Section/>
 
           <div className="bg-[#fffff0] bg-cover p-2">
           <Home_Inclusive_Section />
           </div>
 
-<Home_Packeg_Section/>
+
 
           <Home_Video_Section/>
 
