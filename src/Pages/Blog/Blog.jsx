@@ -3,7 +3,7 @@ import Blog_Home_Section from './BlogComponent/Blog_Home_Section/Blog_Home_Secti
 import Breadcrumb from '../../Components/Breadcrumb/Breadcrumb';
 import BlogTravelTio_Section from './BlogComponent/BlogTravelTip_Section/BlogTravelTio_Section';
 import Blogdestinationguid_Section from './BlogComponent/Blogdestinationguid_Section/Blogdestinationguid_Section';
-import Blogholiday_Section from './BlogComponent/Blogholiday_Section/Blogholiday_Section ';
+import Blogholiday_Section from './BlogComponent/Blogholiday_Section/Blogholiday_Section';
 import Footer from '../../Components/Footer/Footer';
 
 
