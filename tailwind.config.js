@@ -5,6 +5,8 @@ export default {
   theme: {
     extend: { fontFamily: {
       salvager: ['Salvager', 'sans-serif'],
+      inter: ['Inter', 'sans-serif'],
+      montserrat: ['Montserrat', 'sans-serif'],
     },},
   },
   plugins: [],

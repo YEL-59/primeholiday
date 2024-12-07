@@ -1,11 +1,13 @@
 import React from "react";
-import img from "../../../../../public/Frame 775.png";
+import img from "../../../../../public/image 57.png";
+import img1 from "../../../../../public/image 57 (1).png";
+import img2 from "../../../../../public//image 57 (2).png";
 
 const AboutUscard = () => {
   return (
     <div className="bg-[#fffff0]">
          <div className="container mx-auto  p-14">
-       <h1 className="text-3xl font-bold text-[#F49D2A] text-center mt-10 mb-14">Destinations you'll love</h1>
+       <h1 className="text-[#F49D2A] font-montserrat text-4xl text-center mb-16 font-semibold leading-[124%] tracking-[-0.64px]">Destinations you'll love</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Card 1 */}
         <div className="relative max-w-xl rounded-lg overflow-hidden shadow-lg  h-[26rem] bg-white transform transition duration-300 hover:scale-105 hover:shadow-2xl">
@@ -28,7 +30,7 @@ const AboutUscard = () => {
 
 
         <div className="relative max-w-xl rounded-lg overflow-hidden shadow-lg  h-[26rem] bg-white transform transition duration-300 hover:scale-105 hover:shadow-2xl">
-          <img src={img} alt="Qatar Destination" className="w-full h-full object-cover" />
+          <img src={img1} alt="Qatar Destination" className="w-full h-full object-cover" />
           <div className="absolute bottom-0 w-full bg-green-800 py-4 px-5">
             <div className="flex justify-between items-center  text-white">
               <div>
@@ -46,7 +48,7 @@ const AboutUscard = () => {
 
 
         <div className="relative max-w-xl rounded-lg overflow-hidden shadow-lg  h-[26rem] bg-white transform transition duration-300 hover:scale-105 hover:shadow-2xl">
-          <img src={img} alt="Qatar Destination" className="w-full h-full object-cover" />
+          <img src={img2} alt="Qatar Destination" className="w-full h-full object-cover" />
           <div className="absolute bottom-0 w-full bg-green-800 py-4 px-5">
             <div className="flex justify-between items-center  text-white">
               <div>

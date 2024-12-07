@@ -16,7 +16,7 @@ const Blogdestinationguid_Section = () => {
       title: "Kerala",
       date: "November 15, 2024",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros...Read more",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros...",
     },
     {
       image: img1,
@@ -35,12 +35,12 @@ const Blogdestinationguid_Section = () => {
       <>
          
 
-     
+     {/* font-montserrat text-[40px] font-semibold leading-[124%] uppercase */}
           
           <div className="bg-[#fffff0]">
          <div className="container mx-auto  p-14">
          
-          <h1 className="text-4xl font-bold text-[#F49D2A] text-center mt-10 mb-14 relative">
+          <h1 className="font-montserrat text-[40px] font-semibold leading-[124%] uppercase text-[#F49D2A] text-center mt-10 mb-14 relative">
           Destination Guid
   <span className="absolute left-1/2 transform -translate-x-1/2 bottom-[-14px] w-[10%] border-b-2 border-[#F49D2A]"></span>
 </h1>
