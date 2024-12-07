@@ -35,10 +35,11 @@ const BlogTravelTio_Section = () => {
     <>
       <div className="bg-[#fffff0]">
         <div className="container mx-auto  p-14">
-          <h1 className="text-4xl font-bold text-[#F49D2A] text-center mt-10 mb-14 relative">
-            Travel Tips
-            <span className="absolute left-1/2 transform -translate-x-1/2 bottom-[-14px] w-[10%] border-b-2 border-[#F49D2A]"></span>
-          </h1>
+        <h1 className="text-[40px] font-semibold text-[#F49D2A] leading-[124%] uppercase text-center mt-10 mb-14 relative font-montserrat">
+  Travel Tips
+  <span className="absolute left-1/2 transform -translate-x-1/2 bottom-[-14px] w-[10%] border-b-2 border-[#F49D2A]"></span>
+</h1>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {blogData.map((blog, index) => (
               <BlogCard

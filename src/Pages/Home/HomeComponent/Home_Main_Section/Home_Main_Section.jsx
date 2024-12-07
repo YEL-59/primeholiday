@@ -27,7 +27,7 @@ const Home_Main_Section = () => {
       {/* Navbar */}
       <Navbar />
 
-      <header className="relative flex items-center justify-center h-[90vh] mb-12 overflow-hidden">
+      <header className="relative flex items-center justify-center h-[90vh]  overflow-hidden">
         {/* Overlay Text */}
         <div className="relative z-30 p-5 text-2xl text-white  bg-opacity-50 rounded-xl">
           <div>
