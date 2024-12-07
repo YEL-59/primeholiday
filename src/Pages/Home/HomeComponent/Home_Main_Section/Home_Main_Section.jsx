@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import Navbar from '../../../../Components/Navbar/Navbar';
-
+import '../../../../../src//App.css'
 const Home_Main_Section = () => {
   const videoRef = useRef(null);
 
@@ -31,10 +31,17 @@ const Home_Main_Section = () => {
         {/* Overlay Text */}
         <div className="relative z-30 p-5 text-2xl text-white  bg-opacity-50 rounded-xl">
           <div>
-            <h1 className="text-5xl font-bold text-[#F49D2A]">Your All-Inclusive Journey Starts Here</h1>
-            <p className="max-w-lg text-center font-bold mx-auto mt-5 mb-5">
-              The Essence of a Holiday is to Enrich our lives and create lasting memories
-            </p>
+          <h1 className="text-[#F49D2A] text-center font-salvager text-[96px] font-normal leading-[1.24] tracking-[-1.92px]">
+  Your All-Inclusive Journey Starts Here
+</h1>
+
+<p className="text-[#FFFFF0] text-center font-montserrat text-[44px] font-bold leading-[1] tracking-[-1.28px] max-w-4xl mx-auto mt-5 mb-5">
+  <span className="text-[64px] font-bold">&ldquo;</span>
+  The Essence of a Holiday is to Enrich our lives and create lasting memories
+  <span className="text-[64px] font-bold">&rdquo;</span>
+</p>
+
+
           </div>
         </div>
 

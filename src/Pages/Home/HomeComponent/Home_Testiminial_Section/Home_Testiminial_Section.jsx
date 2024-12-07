@@ -1,21 +1,20 @@
 import React from "react";
 import img from "../../../../../public/image 46.png";
+import SecoundaryHeading from "../../../../Components/SecoundaryHeading/SecoundaryHeading";
 
 const Home_Testiminial_Section = () => {
   return (
     <>
       <div>
         <div className="container mx-auto">
-                  <div className="lg:w-2/3 mx-auto grid md:grid-cols-9 gap-5 my-10 md:my-20 p-1">
+                  <div className="lg:w-3/3 mx-auto grid md:grid-cols-9 gap-16 my-10 md:my-20 p-1">
                   <div className="md:col-span-5">
-            <img src={img} alt="" className="h-3/3 w-full" />
+            <img src={img} alt="" className="h-[809px] w-[839px] rounded-xl" />
           </div>
             <div className="md:col-span-4 flex justify-center items-center">
               <div>
-                <h1 className="text-[#F49D2A] text-4xl max-w-[22rem] font-semibold">
-                TESTIMONIALS OF SATISFACTION
-                </h1>
-                <p className="max-w-sm mt-5 mb-5 text-xl leading-10">
+               <SecoundaryHeading head_title={"TESTIMONIALS OF SATISFACTION"}/>
+                <p className="text-[#191A19] font-inter text-[32px] font-normal leading-[1.64] tracking-[0.85px] mt-16 max-w-xl">
                 The best measure to our services comes from our customers. Keep an eye out as our travellers share their stories. We'll be sharing feedback from our travellers here shortly, so you can see what makes PHD unique.
                 </p>
               </div>
