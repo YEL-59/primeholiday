@@ -1,7 +1,8 @@
 import React from 'react';
 import reusablecard from './../../../../Components/reusable card/reusablecard';
 import ReusableCard from './../../../../Components/reusable card/reusablecard';
-import MainHeading from '../../../../Components/MainHeading/MainHeading';
+import MainTitle from '../../../../Components/MainTitle/MainTitle';
+
 
 const OmanCard_Section = () => {
   const data = [
@@ -27,7 +28,7 @@ const OmanCard_Section = () => {
         <div>
 
        <div className='mt-5 mb-5'>
-       <MainHeading head_title={"Destinations you'll love"} />
+       <MainTitle head_title={"Destinations you'll love"} />
        </div>
 
           <div>

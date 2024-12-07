@@ -11,7 +11,7 @@ const Blog = () => {
     const breadcrumbItems = [
         { label: 'Home', href: '/' },
        
-        { label: 'Blog ' }, 
+        { label: 'Blog ',href: '/blog' }, 
       ];
   return (
       <>

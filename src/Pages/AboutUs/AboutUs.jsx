@@ -7,10 +7,11 @@ import Footer from '../../Components/Footer/Footer';
 
 const AboutUs = () => {
     const breadcrumbItems = [
-        { label: 'Home', href: '/' },
+        { label: 'Home', href: '/home' },
        
-        { label: 'About Us ' }, 
-      ];
+        { label: 'About Us ',href: '/' }, 
+    ];
+   
   return (
       <>
       

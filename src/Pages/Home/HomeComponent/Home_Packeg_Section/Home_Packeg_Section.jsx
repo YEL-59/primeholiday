@@ -1,7 +1,8 @@
 import React from "react";
 import img from "../../../../../public/Frame 671.png";
-import MainHeading from "../../../../Components/MainHeading/MainHeading";
+
 import CardSlider from "../../../../Components/Slider/Slider";
+import MainTitle from "../../../../Components/MainTitle/MainTitle";
 
 const Home_Packeg_Section = () => {
   return (
@@ -12,7 +13,7 @@ const Home_Packeg_Section = () => {
           backgroundImage: `url(${img})`,
         }}
       >
-        <MainHeading head_title={"ALL-INCLUSIVE Packages"} />
+        <MainTitle head_title={"ALL-INCLUSIVE Packages"} />
         <div className=" mt-10">
           <CardSlider />
         </div>
