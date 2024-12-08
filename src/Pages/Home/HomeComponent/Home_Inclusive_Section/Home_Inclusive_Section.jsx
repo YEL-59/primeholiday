@@ -1,5 +1,5 @@
-import React from "react";
-import img from "../../../../../public/Image for section 4 6.png";
+
+import img from "/homeimg2.webp";
 import SecoundaryTitle from "../../../../Components/SecoundaryTitle/SecoundaryTitle";
 
 const Home_Inclusive_Section = () => {

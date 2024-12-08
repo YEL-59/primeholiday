@@ -1,5 +1,5 @@
-import React from "react";
-import img from "../../../../../public/image 46.png";
+
+import img from "../../../../../public/homeimg1.webp";
 import SecoundaryTitle from "../../../../Components/SecoundaryTitle/SecoundaryTitle";
 
 const Home_Testiminial_Section = () => {

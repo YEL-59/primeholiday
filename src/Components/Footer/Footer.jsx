@@ -1,14 +1,14 @@
 
 
-import logo from "../../../public//Transparent-logo-3 4.png";
+import logo from "/Transparent-logo-3 4.png";
 
-import img1 from "../../../public/instagram.png";
-import img2 from "../../../public/facebook.png";
-import img3 from "../../../public/Frame.png";
-import img4 from "../../../public/Frame 3.png";
-import img5 from "../../../public/whatsapp.png";
-import img6 from "../../../public/location.png";
-import img7 from "../../../public/sms.png";
+import img1 from "/instagram.png";
+import img2 from "/facebook.png";
+import img3 from "/Frame.png";
+import img4 from "/Frame 3.png";
+import img5 from "/whatsapp.png";
+import img6 from "/location.png";
+import img7 from "/sms.png";
 import { VscChevronUp } from "react-icons/vsc";
 
 const Footer = () => {
@@ -17,7 +17,7 @@ const Footer = () => {
       <div
         className="relative bg-cover bg-center text-white py-8  -z-10"
         style={{
-          backgroundImage: `linear-gradient(90deg, rgba(19, 80, 41, 0.60) 12.5%, rgba(19, 80, 41, 0.39) 58%, rgba(19, 80, 41, 0.60) 95.95%), url('../../../public/footerbg.webp')`,
+          backgroundImage: `linear-gradient(90deg, rgba(19, 80, 41, 0.60) 12.5%, rgba(19, 80, 41, 0.39) 58%, rgba(19, 80, 41, 0.60) 95.95%), url('/footerbg.webp')`,
         }}
       >
         <div className="container mx-auto px-4">

@@ -1,5 +1,5 @@
 
-import img from '../../../../../public/image 80.png';
+import img from "../../../../../public/homeimg1.webp";
 const Immersion_Section = () => {
   return (
     <>
