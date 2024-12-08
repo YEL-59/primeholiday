@@ -10,12 +10,13 @@ import img5 from "/whatsapp.png";
 import img6 from "/location.png";
 import img7 from "/sms.png";
 import { VscChevronUp } from "react-icons/vsc";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <>
       <div
-        className="relative bg-cover bg-center text-white py-8  -z-10"
+        className="relative bg-cover bg-center text-white py-8  "
         style={{
           backgroundImage: `linear-gradient(90deg, rgba(19, 80, 41, 0.60) 12.5%, rgba(19, 80, 41, 0.39) 58%, rgba(19, 80, 41, 0.60) 95.95%), url('/footerbg.webp')`,
         }}
@@ -85,7 +86,8 @@ const Footer = () => {
                 <p className="border-0 border-r-2 px-1">About</p>
                 <p className="border-r-2 px-1">Destinations</p>
                 <p className="border-r-2 px-1">Blog</p>
-                <p className="border-r-2 px-1">Terms & Conditions</p>
+                <Link to={'termscondition'}> <p className="border-r-2 px-1">Terms & Conditions</p></Link>
+               
                 <p className="border-r-2 px-1">Privacy</p>
                 <p className="px-1">Cancellation & Refund</p>
               </div>

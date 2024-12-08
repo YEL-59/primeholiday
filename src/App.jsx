@@ -6,6 +6,7 @@ import AboutUs from "./Pages/AboutUs/AboutUs";
 import Blog from "./Pages/Blog/Blog";
 import LayOut from "./LayOut/LayOut";
 import Oman from "./Pages/Oman/Oman";
+import TearmsandCondition from "./Pages/TearmsandCondition/TearmsandCondition";
 
 const App = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const App = createBrowserRouter([
       {
         path: "blog",
         element: <Blog />,
+      },
+      {
+        path: "termscondition",
+        element: <TearmsandCondition/>,
       },
     ],
   },

@@ -46,7 +46,7 @@ const Navbar = () => {
     <div>
       <button
         onClick={toggleModal}
-        className="px-4 py-2 bg-transparent border font-semibold text-white hover:bg-[#F49D2A] rounded-lg"
+        className="px-4 py-2 bg-transparent border font-semibold text-white hover:bg-primary rounded-lg"
       >
         Enquire now
       </button>
