@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from 'react';
-import Navbar from '../../../../Components/Navbar/Navbar';
-import '../../../../../src//App.css'
+import  { useEffect, useRef } from 'react';
+
+import '../../../../../src/App.css'
 const Home_Main_Section = () => {
   const videoRef = useRef(null);
 
@@ -24,8 +24,7 @@ const Home_Main_Section = () => {
 
   return (
     <div className="relative">
-      {/* Navbar */}
-      <Navbar />
+    
 
       <header className="relative flex items-center justify-center h-[90vh]  overflow-hidden">
         {/* Overlay Text */}
@@ -35,7 +34,7 @@ const Home_Main_Section = () => {
   Your All-Inclusive Journey Starts Here
 </h1>
 
-<p className="text-[#FFFFF0] text-center font-montserrat text-[44px] font-bold leading-[1] tracking-[-1.28px] max-w-4xl mx-auto mt-5 mb-5">
+<p className="text-text-primary text-center font-montserrat text-[44px] font-bold leading-[1] tracking-[-1.28px] max-w-4xl mx-auto mt-5 mb-5">
   <span className="text-[64px] font-bold">&ldquo;</span>
   The Essence of a Holiday is to Enrich our lives and create lasting memories
   <span className="text-[64px] font-bold">&rdquo;</span>

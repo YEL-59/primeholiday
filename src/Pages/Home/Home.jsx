@@ -1,4 +1,4 @@
-import Footer from "../../Components/Footer/Footer"
+
 import Home_Inclusive_Section from "./HomeComponent/Home_Inclusive_Section/Home_Inclusive_Section"
 import Home_Main_Section from "./HomeComponent/Home_Main_Section/Home_Main_Section"
 import Home_Packeg_Section from "./HomeComponent/Home_Packeg_Section/Home_Packeg_Section"
@@ -30,7 +30,7 @@ const Home = () => {
           <Home_Testiminial_Section />
           </div>
 
-          <Footer/>
+         
       </>
   )
 }

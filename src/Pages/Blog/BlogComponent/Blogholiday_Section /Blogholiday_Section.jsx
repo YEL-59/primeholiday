@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import BlogCard from "../../../../Components/BlogCard/BlogCard";
-import img1 from "../../../../../public/Kerala.png";
-import img2 from "../../../../../public/Sri Lanka.png";
+import img1 from "/BlogImg/DamiBlogimg1.webp";
+import img2 from "/BlogImg/DamiBlogimg2.webp";
 const Blogholiday_Section = () => {
   const blogData = [
     {

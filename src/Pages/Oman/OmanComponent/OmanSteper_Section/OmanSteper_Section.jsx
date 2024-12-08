@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 
 const OmanSteper_Section = () => {
   // State to manage which section is active

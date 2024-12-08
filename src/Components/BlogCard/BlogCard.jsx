@@ -1,28 +1,30 @@
-import React from 'react';
+/* eslint-disable react/prop-types */
+
 
 const BlogCard = ({ image, title, date, description, isExpanded, onToggle }) => {
   const truncatedDescription = description.slice(0, 150); // Truncate description to 150 chars
 
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-2xl h-[450px] min-w-[400px] max-w-[350px] ">
+    <div className="bg-text-primary border rounded overflow-hidden shadow   ">
       {/* Image Section */}
-      <img className="h-72 w-full object-cover object-end" src={image} alt={title} />
+      <img className="h-[340px] w-[525px] object-cover object-end" src={image} alt={title} />
 
       <div className="p-6">
-        {/* Title */}
-        <h4 className="mt-2 font-semibold text-lg leading-tight truncate">{title}</h4>
-
-        {/* Date */}
-        <div className="mt-1 text-gray-600 text-xs uppercase font-semibold tracking-wide">
+          {/* Date */}
+          <div className=" text-black text-sm uppercase font-normal tracking-wide leading-6">
           {date}
         </div>
+        {/* Title */}
+        <h4 className="text-green font-semibold text-lg leading-6 truncate">{title}</h4>
+
+      
 
         {/* Description */}
         <div className="mt-2 text-gray-600 text-sm">
           {isExpanded ? description : `${truncatedDescription}...`}
           <button
             onClick={onToggle}
-            className="text-yellow-500 font-semibold ml-1"
+            className="text-primary font-semibold ml-1"
           >
             {isExpanded ? 'Read Less' : 'Read More'}
           </button>

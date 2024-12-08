@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
-import img1 from "../../../../../public/Frame 770.png";
-import img2 from "../../../../../public/Oman2.png";
-import img3 from "../../../../../public/Oman3.png";
-import img4 from "../../../../../public/Oman.png";
+import img1 from "../../../../../public/DestinationImg/destinationimg3.webp";
+import img2 from "../../../../../public/DestinationImg/destinationimg3.webp";
+import img3 from "../../../../../public/DestinationImg/destinationimg3.webp";
+import img4 from "../../../../../public/DestinationImg/destinationimg3.webp";
 
 import "./style.css";
 import MainTitle from "../../../../Components/MainTitle/MainTitle";

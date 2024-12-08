@@ -1,9 +1,10 @@
-// Navbar.js
-import React, { useState } from "react";
+
+import { useState } from "react";
 import mylogo from "../../../public/Transparent-logo-3 4.png";
 import { FaBars } from "react-icons/fa";
 import { IoClose } from "react-icons/io5"; // Close icon from react-icons
 import Modal from "../Modal/Modal";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   // State to manage sidebar visibility
@@ -25,7 +26,7 @@ const Navbar = () => {
     <div>
       {/* Navbar */}
       <div className="absolute top-0 left-0 w-full z-40 bg-transparent text-white">
-  <nav className="container mx-auto flex items-center justify-between px-6 py-4">
+      <nav className="container mx-auto flex items-center justify-between px-6 py-4">
     {/* Left Section - Bar */}
     <div className="flex items-center">
       <div
@@ -37,8 +38,8 @@ const Navbar = () => {
     </div>
 
     {/* Center Section - Logo */}
-    <div className="text-lg font-bold  ml-[85px]">
-      <img src={mylogo} className="h-24" alt="Logo" />
+    <div className=" ml-[85px]">
+      <img src={mylogo} className="h-8 sm:h-10 md:h-20 lg:h-full" alt="Logo" />
     </div>
 
     {/* Right Section - Button */}
@@ -51,10 +52,8 @@ const Navbar = () => {
       </button>
     </div>
   </nav>
-</div>
+      </div>
 
-
-    
       {/* Sidebar */}
       <div
         className={`fixed top-0 left-0 w-64 h-72 opacity-90 bg-[#F49D2A] text-white transform ${
@@ -67,30 +66,30 @@ const Navbar = () => {
           </div>
         </div>
         <div className="flex flex-col items-center mt-4">
-          <a
-            href="/home"
+          <Link
+            to="/home"
             className="text-white py-2 px-4 hover:bg-green-700 w-full text-center"
           >
             Home
-          </a>
-          <a
-            href="/"
+          </Link>
+          <Link
+            to="/"
             className="text-white py-2 px-4 hover:bg-green-700 w-full text-center"
           >
             About
-          </a>
-          <a
-            href="/destination"
+          </Link>
+          <Link
+            to="/destination"
             className="text-white py-2 px-4 hover:bg-green-700 w-full text-center"
           >
             Destination
-          </a>
-          <a
-            href="/blog"
+          </Link>
+          <Link
+            to="/blog"
             className="text-white py-2 px-4 hover:bg-green-700 w-full text-center"
           >
             Blog
-          </a>
+          </Link>
         </div>
       </div>
 

@@ -1,10 +1,9 @@
-import React from 'react'
+
 import bgImage from '../../../public/image 87.png';
 import Breadcrumb from '../../Components/Breadcrumb/Breadcrumb';
 import termscondition from '../../Components/termscondition/termscondition'
 import Termscondition from '../../Components/termscondition/termscondition';
-import Footer from '../../Components/Footer/Footer';
-import Navbar from '../../Components/Navbar/Navbar';
+
 const TearmsandCondition = () => {
     const termsData = [
         {
@@ -105,7 +104,7 @@ Email: contact@primeholidaydestinations.com
           backgroundImage: `url(${bgImage})`,
         }}
       >
-          <Navbar/>
+         
         <div
           className="relative z-30 p-5 text-6xl font-semibold text-[#F49D2A]  rounded-xl"
         >
@@ -135,7 +134,7 @@ Email: contact@primeholidaydestinations.com
           </div>
 
 
-      <Footer/>
+    
 
       </>
   )

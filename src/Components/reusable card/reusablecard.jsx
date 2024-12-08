@@ -1,17 +1,19 @@
-import React from 'react';
-
-const ReusableCard = ({ img, countryname, packeg }) => {
+const ReusableCard = ({ img, countryname, packeg, price }) => {
   return (
-    <div className="relative max-w-xl rounded-lg overflow-hidden h-[25rem] shadow-lg bg-white transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+    <div className="relative max-w-lg rounded overflow-hidden shadow-lg  h-[30.5rem] bg-white transform transition duration-300 hover:scale-105 hover:shadow-2xl">
       <img src={img} alt={countryname} className="w-full h-full object-cover" />
-      <div className="absolute bottom-0 w-full bg-green-800 p-4">
+      <div className="absolute bottom-0 w-full bg-green p-4">
         <div className="flex justify-between items-center text-white">
           <div>
-            <h2 className="text-xl font-semibold">{countryname}</h2>
-            <p className="text-sm">{packeg}</p>
+            <h2 className="text-xl font-semibold text-start text-text-primary font-montserrat uppercase tracking-[0.895px] leading-[164%]">
+              {countryname}
+            </h2>
+            <p className="text-xl font-normal text-center text-text-primary font-montserrat  tracking-[0.895px] leading-[164%]">
+              {packeg} <span className="font-bold">$ {price}</span>
+            </p>
           </div>
           <div>
-            <p className="text-sm py-1 px-4 bg-yellow-500 text-black rounded-lg font-semibold cursor-pointer hover:bg-yellow-400">
+            <p className="text-md py-2 px-5 bg-primary text-white  font-semibold cursor-pointer hover:bg-primary">
               View
             </p>
           </div>

@@ -8,7 +8,7 @@ const GridItem = ({ imgSrc, title, description,title_link }) => {
           <Link to={title_link}> <div className="relative rounded shadow overflow-hidden h-64 -z-10">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-center h-[525px]"
         style={{ backgroundImage: `url(${imgSrc})` }}
       ></div>
       {/* Overlay */}

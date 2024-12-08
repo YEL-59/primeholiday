@@ -2,8 +2,8 @@
 
 
 
-import bgImage from '../../../../../public/Oman.png';
-import Navbar from './../../../../Components/Navbar/Navbar';
+import bgImage from '../../../../../public/DestinationImg/destinationimg5.webp'
+
 
 const OmanHome_Section = () => {
   return (
@@ -14,7 +14,7 @@ const OmanHome_Section = () => {
           backgroundImage: `url(${bgImage})`,
         }}
       >
-        <Navbar />
+      
         <div
           className="relative z-30 p-5 text-6xl font-semibold text-[#F49D2A] text-center  rounded-xl"
         >

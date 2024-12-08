@@ -3,7 +3,7 @@ import AboutUs_Home_Section from './AboutUsComponent/AboutUs_Home_Section/AboutU
 import Breadcrumb from '../../Components/Breadcrumb/Breadcrumb'
 import AboutUsDescriptionSection from './AboutUsComponent/AboutUsDescription-Section/AboutUsDescription-Section';
 import AboutUscard from './AboutUsComponent/AboutUsCard/AboutUscard';
-import Footer from '../../Components/Footer/Footer';
+
 
 const AboutUs = () => {
     const breadcrumbItems = [
@@ -22,7 +22,7 @@ const AboutUs = () => {
               <AboutUsDescriptionSection />
               <AboutUscard />
               
-              <Footer/>
+            
           </div>
           </>
   )

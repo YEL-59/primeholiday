@@ -1,9 +1,9 @@
-import React from 'react'
+
 import bgImage from '../../../public/image 87.png'; 
 import Breadcrumb from '../../Components/Breadcrumb/Breadcrumb';
 import termscondition from '../../Components/termscondition/termscondition'
 import Termscondition from '../../Components/termscondition/termscondition';
-import Footer from '../../Components/Footer/Footer';
+
 const Privacy = () => {
     const termsData = [
         {
@@ -72,7 +72,7 @@ const Privacy = () => {
           </div>
       
       
-      <Footer/>
+  
       
       </>
   )

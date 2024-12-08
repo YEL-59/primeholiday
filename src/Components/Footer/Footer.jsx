@@ -1,5 +1,5 @@
-import React from "react";
-import img from "../../../public/imgpsh_fullsize_anim.png";
+
+
 import logo from "../../../public//Transparent-logo-3 4.png";
 
 import img1 from "../../../public/instagram.png";
@@ -17,38 +17,38 @@ const Footer = () => {
       <div
         className="relative bg-cover bg-center text-white py-8  -z-10"
         style={{
-          backgroundImage: `linear-gradient(90deg, rgba(19, 80, 41, 0.60) 12.5%, rgba(19, 80, 41, 0.39) 58%, rgba(19, 80, 41, 0.60) 95.95%), url('../../../public/imgpsh_fullsize_anim.png')`,
+          backgroundImage: `linear-gradient(90deg, rgba(19, 80, 41, 0.60) 12.5%, rgba(19, 80, 41, 0.39) 58%, rgba(19, 80, 41, 0.60) 95.95%), url('../../../public/footerbg.webp')`,
         }}
       >
         <div className="container mx-auto px-4">
-          <h1 className="text-[#F49D2A] text-4xl md:text-6xl font-semibold text-center mb-10 z-100 relative">
+          <h1 className="text-primary text-4xl md:text-6xl font-semibold text-center mb-10 z-100 relative">
             Connect With Us
           </h1>
 
           <div className="flex flex-wrap justify-between md:flex-row gap-6">
             <div className="flex items-center gap-5 border-b max-w-[14rem] md:max-w-none w-full md:w-auto">
-              <div className="text-3xl font-bold text-[#F49D2A]">
+              <div className="text-3xl font-bold text-primary">
                 <img src={img1} alt="Instagram" />
               </div>
-              <div className="text-3xl font-bold text-[#F49D2A]">
+              <div className="text-3xl font-bold text-primary">
                 <img src={img2} alt="Facebook" />
               </div>
-              <div className="text-3xl font-bold text-[#F49D2A]">
+              <div className="text-3xl font-bold text-primary">
                 <img src={img3} alt="Frame 1" />
               </div>
-              <div className="text-3xl font-bold text-[#F49D2A]">
+              <div className="text-3xl font-bold text-primary">
                 <img src={img4} alt="Frame 2" />
               </div>
             </div>
 
-            <div className="text-xl px-5 py-1 rounded-lg text-white border font-semibold mt-5 md:mt-0">
+            <div className="text-xl px-5 py-1 rounded-lg text-text-primary border font-semibold mt-5 md:mt-0">
               Enquire now
             </div>
           </div>
 
           <div className="mt-5">
             <div className="flex flex-col gap-2 border-b max-w-[14rem] ">
-              <div className="text-3xl text-[#F49D2A]">
+              <div className="text-3xl text-primary">
                 <img src={img6} alt="Location" />
               </div>
               <address className="text-lg">65 Hartfield Crescent Birmingham B27 7QE</address>
@@ -57,7 +57,7 @@ const Footer = () => {
 
           <div className="mt-5">
             <div className="flex flex-col gap-2 border-b max-w-[22rem] ">
-              <div className="text-3xl text-[#F49D2A]">
+              <div className="text-3xl text-primary">
                 <img src={img7} alt="SMS" />
               </div>
               <p className="text-lg">contact@primeholidaydestinations.com</p>
@@ -66,7 +66,7 @@ const Footer = () => {
 
           <div className="mt-5">
             <div className="flex flex-col gap-2">
-              <div className="text-3xl text-[#F49D2A]">
+              <div className="text-3xl text-primary">
                 <img src={img5} alt="Whatsapp" />
               </div>
               <p className="text-lg">+44 7553 778086</p>
@@ -116,24 +116,25 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="bg-[#135029]">
-        <div className="container mx-auto flex flex-col sm:flex-row justify-between p-4">
-          <div className="text-white">
-            <p>Stay up to date</p>
-            <h1 className="font-bold">Subscribe to our newsletter</h1>
-          </div>
-          <div className="flex flex-col sm:flex-row gap-2">
-            <input
-              type="text"
-              className="border rounded p-2 bg-transparent"
-              placeholder="Enter Your Name"
-            />
-            <button className="border rounded px-5 py-2 text-white font-normal mt-2 sm:mt-0 sm:ml-5">
-              Subscribe
-            </button>
-          </div>
-        </div>
-      </div>
+      <div className="bg-green">
+  <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between p-2">
+    <div className="text-white">
+      <p className="text-sm">Stay up to date</p>
+      <h1 className="text-lg font-bold">Subscribe to our newsletter</h1>
+    </div>
+    <div className="flex flex-col sm:flex-row gap-2">
+      <input
+        type="text"
+        className="border rounded py-1 px-3 bg-transparent h-8"
+        placeholder="Enter Your Name"
+      />
+      <button className="border rounded px-5 py-1 text-white font-medium mt-2 sm:mt-0 sm:ml-5 h-8">
+        Subscribe
+      </button>
+    </div>
+  </div>
+</div>
+
     </>
   );
 };

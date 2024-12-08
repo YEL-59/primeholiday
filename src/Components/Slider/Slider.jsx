@@ -13,12 +13,12 @@ import "./style.css";
 import { Pagination, Autoplay } from "swiper/modules";
 
 // Import images
-import img1 from "../../../public/Frame 303.png";
-import img2 from "../../../public/Frame 296.png";
-import img3 from "../../../public/Frame 309.png";
-import img4 from "../../../public/Frame 301.png";
-import img5 from "../../../public/Frame 296.png";
-import img6 from "../../../public/Frame 303.png";
+import img1 from "../../../public/DestinationImg/destinationimg3.webp";
+import img2 from "../../../public/DestinationImg/destinationimg3.webp";
+import img3 from "../../../public/DestinationImg/destinationimg3.webp";
+import img4 from "../../../public/DestinationImg/destinationimg3.webp";
+import img5 from "../../../public/DestinationImg/destinationimg3.webp";
+import img6 from "../../../public/DestinationImg/destinationimg3.webp";
 
 export default function CardSlider() {
   const cards = [

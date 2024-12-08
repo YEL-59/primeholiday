@@ -1,35 +1,45 @@
-import { Routes, Route, Navigate } from 'react-router-dom';
-import Home from './Pages/Home/Home';
-import Destination from './Pages/Destination/Destination';
+import { createBrowserRouter, Navigate } from "react-router-dom";
 
-import AboutUs from './Pages/AboutUs/AboutUs';
-import TearmsandCondition from './Pages/TearmsandCondition/TearmsandCondition';
-import Privacy from './Pages/Privacy/Privacy';
-import Cancellation from './Pages/Cancelation/Privacy';
-import Oman from './Pages/Oman/Oman';
-import Blog from './Pages/Blog/Blog';
+import Home from "./Pages/Home/Home";
+import Destination from "./Pages/Destination/Destination";
+import AboutUs from "./Pages/AboutUs/AboutUs";
+import Blog from "./Pages/Blog/Blog";
+import LayOut from "./LayOut/LayOut";
+import Oman from "./Pages/Oman/Oman";
 
+const App = createBrowserRouter([
+  {
+    path: "/",
+    element: <LayOut />,
+    children: [
+      {
+        index: true, // Renders AboutUs at the root "/"
+        element: <AboutUs />,
+      },
+      {
+        path: "home",
+        element: <Home />,
+      },
+      {
+        path: "destination",
+        element: <Destination />,
+      },
+      {
+        path: "destination/:id",
+        element: <Oman />,
+      },
+    
+    
+      {
+        path: "blog",
+        element: <Blog />,
+      },
+    ],
+  },
+  {
+    path: "*",
+    element: <Navigate to="/home" replace />,
+  },
+]);
 
-
-const App = () => {
-  return (
-    <>
-      <Routes>
-        <Route path="/home" element={<Home />} />
-        <Route path="/destination" element={<Destination />} />
-        <Route path="/" element={<AboutUs />} />
-        <Route path="/terms" element={<TearmsandCondition />} />
-        <Route path="/privacy" element={<Privacy />} />
-        <Route path="/cancel" element={<Cancellation />} />
-        <Route path="/blog" element={<Blog />} />
-
-
-        <Route path="/destination/:id" element={<Oman />} />
-      </Routes>
-
-
-    </>
-  )
-}
-
-export default App
+export default App;

@@ -1,6 +1,4 @@
 import Breadcrumb from "../../Components/Breadcrumb/Breadcrumb";
-import Footer from "../../Components/Footer/Footer";
-import PrimeDestination_Section from "../Destination/DestinationComponent/PrimeDestination_Section/PrimeDestination_Section";
 import Immersion_Section from "./OmanComponent/Immersion_Section/Immersion_Section";
 import OmanCard_Section from "./OmanComponent/OmanCard_Section/OmanCard_Section";
 import OmanDestinationCard from "./OmanComponent/OmanDestinationCard/OmanDestinationCard";
@@ -31,7 +29,7 @@ const Oman = () => {
               {/* <div className='mb-10'>
                   <PrimeDestination_Section/>
               </div> */}
-              <Footer/>
+             
           </div>
 
 

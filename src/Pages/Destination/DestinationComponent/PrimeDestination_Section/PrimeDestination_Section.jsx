@@ -1,86 +1,87 @@
-import React from "react";
-import img1 from "../../../../../public/Frame 775.png";
-import img2 from "../../../../../public/Frame 770.png";
-import img3 from "../../../../../public/Frame 750.png";
-import img4 from "../../../../../public/Zanzibar.png";
+import img1 from "../../../../../public/DestinationImg/destinationimg1.webp";
+import img2 from "../../../../../public/DestinationImg/destinationimg2.webp";
+import img3 from "../../../../../public/DestinationImg/destinationimg3.webp";
+import img4 from "../../../../../public/DestinationImg/destinationimg4.webp";
 import ImageOverlayCard from "../../../../Components/ImageOverlayCard/ImageOverlayCard";
-import GridItem from "../../../../Components/GridItem/GridItem";
 
 const PrimeDestination_Section = () => {
+  const destinations = [
+    {
+      id: "region-africa",
+      region: "Africa",
+      items: [
+        { id: "card-1", imgSrc: img1, title: "Egypt", description: "Come and see the show!" },
+        { id: "card-2", imgSrc: img2, title: "Morocho", description: "Come and see the show!" },
+        { id: "card-3", imgSrc: img3, title: "Zanzibar", description: "Come and see the show!" },
+      ],
+    },
+    {
+      id: "region-asia",
+      region: "Asia",
+      items: [
+        { id: "card-4", imgSrc: img1, title: "Japan", description: "Come and see the show!" },
+        { id: "card-5", imgSrc: img2, title: "Thailand", description: "Come and see the show!" },
+        { id: "card-6", imgSrc: img3, title: "Vietnam", description: "Come and see the show!" },
+      ],
+    },
+  ];
+  
+  const fixedDiv = {
+    id: "fixed-div-asia",
+    imgSrc: img4,
+    title: "Special Asia Destination",
+    description: "An unforgettable experience awaits you!",
+  };
+  
+
   return (
-    <>
-      <div>
-        <div className="container mx-auto ">
-          <h1 className="text-4xl font-bold text-[#F49D2A] text-center mt-5 mb-10">
-            Prime Destination
-          </h1>
-        </div>
-        <div>
-          <div className="container mx-auto ">
-            <h1 className="mb-2 mt-5 mb-5 text-2xl font-bold text-[#F49D2A]">
-              Africa 
-            </h1>
-            <div className=" grid grid1 md:grid-cols-3 ">
-              {" "}
-              <ImageOverlayCard
-                imgSrc={img1}
-                title="Egypt"
-                description="Come and see the show!"
-              />
-              <ImageOverlayCard
-                imgSrc={img4}
-                title="Morocho"
-                description="Come and see the show!"
-              />
-              <ImageOverlayCard
-                imgSrc={img1}
-                title="zanzibar"
-                description="Come and see the show!"
-              />
-            </div>
-          </div>
-        </div>
-        <div>
-          <div className="container mx-auto  space-y-8">
-            <h1 className="mb-2 mt-5 text-2xl font-bold text-[#F49D2A]">
-              Asia
-            </h1>
-            {/* First Row: Single Full-Width Column */}
-            <div className="grid grid-cols-1">
-              <GridItem
-                imgSrc={img2}
-                title="Full-Width Content"
-                description="This spans the entire width of the grid."
-              />
-            </div>
-
-            {/* Second Row: Three Columns */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              <GridItem
-                imgSrc={img2}
-                title="Column 1"
-                description="This is the first column."
-                title_link={"oman"}
-              />
-              <GridItem
-                imgSrc="https://via.placeholder.com/800x600"
-                title="Column 2"
-                description="This is the second column."
-              />
-              <GridItem
-                imgSrc="https://via.placeholder.com/800x600"
-                title="Column 3"
-                description="This is the third column."
-              />
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div></div>
-        </div>
+    <div>
+      <div className="container mx-auto">
+        <h1 className="text-6xl font-semibold leading-10 text-primary text-center p-20">
+          Prime Destination
+        </h1>
       </div>
-    </>
+
+      {destinations.map((destination) => (
+        <div key={destination.id} className="container mx-auto space-y-8">
+          {/* Region Title */}
+          <h1 className="mb-5 mt-5 text-4xl font-montserrat font-semibold text-primary">
+            {destination.region}
+          </h1>
+
+          {/* First Grid of Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+            {destination.items.map((item) => (
+              <ImageOverlayCard
+                key={item.id}
+                imgSrc={item.imgSrc}
+                title={item.title}
+                description={item.description}
+              />
+            ))}
+          </div>
+
+          {/* Render Fixed Div Content Between Regions */}
+          {destination.id === "region-africa" && (
+            <div className="relative mt-10">
+              <img
+                src={fixedDiv.imgSrc}
+                className="h-[555px] w-full"
+                alt={fixedDiv.title}
+              />
+              <div className="absolute -mt-[130px] p-4 w-full flex flex-col justify-end text-text-primary rounded bg-[rgba(0,0,0,0.35)] bg-opacity-0 z-10">
+                <h2 className="text-4xl uppercase font-medium px-4 pb-1 z-10 text-center">
+                  {fixedDiv.title}
+                </h2>
+                <p className="text-lg uppercase px-4 pb-2 text-center">
+                  {fixedDiv.description}
+                </p>
+              </div>
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
   );
 };
 
