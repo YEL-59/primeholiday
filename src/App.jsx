@@ -7,7 +7,8 @@ import Blog from "./Pages/Blog/Blog";
 import LayOut from "./LayOut/LayOut";
 import Oman from "./Pages/Oman/Oman";
 import TearmsandCondition from "./Pages/TearmsandCondition/TearmsandCondition";
-
+import Privacy from "./Pages/Privacy/Privacy"
+import Cancellation from "./Pages/Cancelation/Cancellation";
 const App = createBrowserRouter([
   {
     path: "/",
@@ -38,6 +39,14 @@ const App = createBrowserRouter([
       {
         path: "termscondition",
         element: <TearmsandCondition/>,
+      },
+      {
+        path: "privacy",
+        element: <Privacy/>,
+      },
+      {
+        path: "cancellation",
+        element: <Cancellation/>,
       },
     ],
   },

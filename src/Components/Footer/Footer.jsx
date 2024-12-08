@@ -83,13 +83,17 @@ const Footer = () => {
           <div className="flex flex-wrap justify-between mt-5">
             <div>
               <div className="flex flex-wrap gap-5 text-lg">
-                <p className="border-0 border-r-2 px-1">About</p>
-                <p className="border-r-2 px-1">Destinations</p>
-                <p className="border-r-2 px-1">Blog</p>
-                <Link to={'termscondition'}> <p className="border-r-2 px-1">Terms & Conditions</p></Link>
+              <Link to={'about'}> <p className="border-0 border-r-2 px-1">About</p></Link>
+              <Link to={'destination'}> <p className="border-r-2 px-1">Destinations</p></Link>
                
-                <p className="border-r-2 px-1">Privacy</p>
-                <p className="px-1">Cancellation & Refund</p>
+               
+                <Link to={'blog'}> <p className="border-r-2 px-1">Blog</p></Link>
+               
+                <Link to={'termscondition'}> <p className="border-r-2 px-1">Terms & Conditions</p></Link>
+               <Link to={'privacy'}>  <p className="border-r-2 px-1">Privacy</p></Link>
+              
+                <Link to={'cancellation'}> <p className="px-1">Cancellation & Refund</p></Link>
+               
               </div>
               <div>
                 <p>@ 2024 Rizmail Travel & Tours Limited</p>
