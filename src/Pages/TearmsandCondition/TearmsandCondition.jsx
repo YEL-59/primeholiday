@@ -1,6 +1,7 @@
 
 import bgImage from '../../../public/image 87.png';
 import Breadcrumb from '../../Components/Breadcrumb/Breadcrumb';
+import SectionHeader from '../../Components/SectionHeader/SectionHeader';
 import termscondition from '../../Components/termscondition/termscondition'
 import Termscondition from '../../Components/termscondition/termscondition';
 
@@ -92,25 +93,19 @@ Email: contact@primeholidaydestinations.com
     const breadcrumbItems = [
         { label: 'Home', href: '/' },
 
-        { label: 'Terms & Conditions' },
+        { label: 'Terms & Conditions',href: '/terms-and-conditions'  },
       ];
   return (
       <>
 
           <div>
-          <header
-        className="relative flex items-center justify-center h-[60vh]  bg-cover bg-center z-0"
-        style={{
-          backgroundImage: `url(${bgImage})`,
-        }}
-      >
          
-        <div
-          className="relative z-30 p-5 text-6xl font-semibold text-[#F49D2A]  rounded-xl"
-        >
-         Terms & Condition
-        </div>
-      </header>
+
+      <SectionHeader  
+      backgroundImage={bgImage}
+      title={' Terms & Condition'}
+      height={'60vh'}
+      />
           </div>
           <div>
               <Breadcrumb items={breadcrumbItems}/>
@@ -119,16 +114,14 @@ Email: contact@primeholidaydestinations.com
 
 
           <div>
-          <div className="bg-[#fffff0] p-6">
+          <div className="bg-text-primary p-6">
       <div className="container mx-auto">
         <h1 className="text-2xl font-bold text-gray-900 mb-4">Terms & Conditions</h1>
-        {termsData.map((section, index) => (
+        
             <Termscondition
-              key={index}
-              title={`${index + 1}. ${section.title}`}
-              content={section.content}
+             sections={termsData}
             />
-          ))}
+         
       </div>
     </div>
           </div>

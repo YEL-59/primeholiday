@@ -89,7 +89,7 @@ const Footer = () => {
                
                 <Link to={'blog'}> <p className="border-r-2 px-1">Blog</p></Link>
                
-                <Link to={'termscondition'}> <p className="border-r-2 px-1">Terms & Conditions</p></Link>
+                <Link to={'terms-and-conditions'}> <p className="border-r-2 px-1">Terms & Conditions</p></Link>
                <Link to={'privacy'}>  <p className="border-r-2 px-1">Privacy</p></Link>
               
                 <Link to={'cancellation'}> <p className="px-1">Cancellation & Refund</p></Link>

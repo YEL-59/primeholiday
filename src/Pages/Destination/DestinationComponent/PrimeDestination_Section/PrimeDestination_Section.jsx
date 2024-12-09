@@ -1,3 +1,5 @@
+
+import { Link } from "react-router-dom";
 import img1 from "../../../../../public/DestinationImg/destinationimg1.webp";
 import img2 from "../../../../../public/DestinationImg/destinationimg2.webp";
 import img3 from "../../../../../public/DestinationImg/destinationimg3.webp";
@@ -10,29 +12,64 @@ const PrimeDestination_Section = () => {
       id: "region-africa",
       region: "Africa",
       items: [
-        { id: "card-1", imgSrc: img1, title: "Egypt", description: "Come and see the show!" },
-        { id: "card-2", imgSrc: img2, title: "Morocho", description: "Come and see the show!" },
-        { id: "card-3", imgSrc: img3, title: "Zanzibar", description: "Come and see the show!" },
+        {
+          id: "card-1",
+          imgSrc: img1,
+          title: "Egypt",
+          description: "Come and see the show!",
+          url: "egypt",
+        },
+        {
+          id: "card-2",
+          imgSrc: img2,
+          title: "Morocho",
+          description: "Come and see the show!",
+          url: "morocco",
+        },
+        {
+          id: "card-3",
+          imgSrc: img3,
+          title: "Zanzibar",
+          description: "Come and see the show!",
+          url: "zanzibar",
+        },
       ],
     },
     {
       id: "region-asia",
       region: "Asia",
       items: [
-        { id: "card-4", imgSrc: img1, title: "Japan", description: "Come and see the show!" },
-        { id: "card-5", imgSrc: img2, title: "Thailand", description: "Come and see the show!" },
-        { id: "card-6", imgSrc: img3, title: "Vietnam", description: "Come and see the show!" },
+        {
+          id: "card-4",
+          imgSrc: img1,
+          title: "Japan",
+          description: "Come and see the show!",
+          url: "japan",
+        },
+        {
+          id: "card-5",
+          imgSrc: img2,
+          title: "Thailand",
+          description: "Come and see the show!",
+          url: "thailand",
+        },
+        {
+          id: "card-6",
+          imgSrc: img3,
+          title: "Vietnam",
+          description: "Come and see the show!",
+          url: "vietnam",
+        },
       ],
     },
   ];
-  
+
   const fixedDiv = {
     id: "fixed-div-asia",
     imgSrc: img4,
     title: "Special Asia Destination",
     description: "An unforgettable experience awaits you!",
   };
-  
 
   return (
     <div>
@@ -52,12 +89,13 @@ const PrimeDestination_Section = () => {
           {/* First Grid of Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
             {destination.items.map((item) => (
-              <ImageOverlayCard
-                key={item.id}
-                imgSrc={item.imgSrc}
-                title={item.title}
-                description={item.description}
-              />
+              <Link to={`/destination/${item.url}`} key={item.id}>
+                <ImageOverlayCard
+                  imgSrc={item.imgSrc}
+                  title={item.title}
+                  description={item.description}
+                />
+              </Link>
             ))}
           </div>
 

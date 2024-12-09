@@ -1,6 +1,7 @@
 
 import bgImage from '../../../public/image 87.png'; 
 import Breadcrumb from '../../Components/Breadcrumb/Breadcrumb';
+import SectionHeader from '../../Components/SectionHeader/SectionHeader';
 
 import Termscondition from '../../Components/termscondition/termscondition';
 
@@ -26,28 +27,30 @@ const Cancellation = () => {
               "Complying with legal obligations.",
             ],
           },
+          {
+            title: "Refund Policy",
+            bottomTitle: "Refunds depend on the timing of the cancellation, as follows:",
+            ulList: [
+              "30 days or more before departure: Full refund, minus a $50 administration fee.",
+              "29 – 22 days before departure: 50% refund, minus a $50 administration fee.",
+              "21 days or less before departure: No refund will be issued.",
+            ],
+          },
       ];
     const breadcrumbItems = [
         { label: 'Home', href: '/' },
        
-        { label: 'Terms & Conditions' }, 
+        { label: 'Terms & Conditions', href:'/cancellation'}, 
       ];
   return (
       <>
           
           <div>
-          <header
-        className="relative flex items-center justify-center h-[60vh]  bg-cover bg-center z-0"
-        style={{
-          backgroundImage: `url(${bgImage})`,
-        }}
-      >
-        <div
-          className="relative z-30 p-5 text-6xl font-semibold text-[#F49D2A]  rounded-xl"
-        >
-         Cancellation and Refund
-        </div>
-      </header>
+        <SectionHeader 
+        backgroundImage={bgImage}
+        title={"Cancellation and Refund Policy"}
+        height={'60vh'}
+        />
           </div>
           <div>
               <Breadcrumb items={breadcrumbItems}/>
@@ -56,19 +59,29 @@ const Cancellation = () => {
 
 
           <div>
-          <div className="bg-[#fffff0] p-6">
+          <div className="bg-text-primary p-6">
       <div className="container mx-auto">
             <h1 className="text-2xl font-bold text-gray-900 mb-4">  Cancellation and Refund Policy</h1>
             <p>At Prime Holiday Destinations (PHD), we aim to provide a flexible and fair cancellation and refund policy to meet the needs of our travelers while maintaining a smooth booking experience. Please review the terms below, which apply to all bookings made with us.
             </p>
-        {termsData.map((section, index) => (
+       
             <Termscondition
-              key={index}
-              title={`${index + 1}. ${section.title}`}
-              bottomTitle={section.bottomTitle}
-              ulList={section.ulList}
+             sections={termsData}
             />
-          ))}
+
+<div>
+  <strong>Note:</strong>
+  <p className='max-w-xl text-sm text-gray-900'>All refunds are subject to a $50 administration fee.
+The Cancellation & Refund Policy is subject to change without prior notice.
+
+</p>
+<p className='max-w-xl text-sm text-gray-900 mt-5'>For any questions or further clarifications, feel free to contact us.
+We’re here to make your holiday planning as seamless and enjoyable as possible.
+
+
+</p>
+</div>
+       
       </div>
     </div>
           </div>

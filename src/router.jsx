@@ -9,7 +9,7 @@ import Oman from "./Pages/Oman/Oman";
 import TearmsandCondition from "./Pages/TearmsandCondition/TearmsandCondition";
 import Privacy from "./Pages/Privacy/Privacy"
 import Cancellation from "./Pages/Cancelation/Cancellation";
-const App = createBrowserRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <LayOut />,
@@ -27,7 +27,7 @@ const App = createBrowserRouter([
         element: <Destination />,
       },
       {
-        path: "destination/:id",
+        path: "destination/:destinationName",
         element: <Oman />,
       },
     
@@ -37,7 +37,7 @@ const App = createBrowserRouter([
         element: <Blog />,
       },
       {
-        path: "termscondition",
+        path: "terms-and-conditions",
         element: <TearmsandCondition/>,
       },
       {
@@ -56,4 +56,4 @@ const App = createBrowserRouter([
   },
 ]);
 
-export default App;
+export default router;

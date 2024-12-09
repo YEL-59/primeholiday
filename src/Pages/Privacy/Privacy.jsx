@@ -1,30 +1,56 @@
 
 import bgImage from '../../../public/image 87.png'; 
 import Breadcrumb from '../../Components/Breadcrumb/Breadcrumb';
-import termscondition from '../../Components/termscondition/termscondition'
+import SectionHeader from '../../Components/SectionHeader/SectionHeader';
+
 import Termscondition from '../../Components/termscondition/termscondition';
 
 const Privacy = () => {
     const termsData = [
+      {
+        "title": "Introduction",
+        "subtitle": "Prime Holiday Destinations (\"we\", \"our\", or \"us\") is committed to protecting and respecting your privacy. This Privacy Policy explains how we collect, use, and share your personal data when you visit our website or purchase holiday packages from us."
+      },
+      
         {
-            title: "Your Rights",
-            bottomTitle: "You may have the following rights regarding your personal data:",
+            title: "Information We Collect",
+            subtitle: "We may collect the following personal information:",
             ulList: [
-              "Access: Request a copy of your personal data.",
-              "Correction: Request correction of inaccurate data.",
-              "Deletion: Request deletion of your data under certain conditions.",
-              "Object: Object to the processing of your data.",
-              "Data portability: Request transfer of your data to another service provider.",
+              "Personal details: Name, address, email, phone number, date of birth.",
+              "Financial information: Payment details when you make a booking.",
+              "Technical data: IP address, browser type, device information, location, and usage data through cookies and analytics tools.",
+              
             ],
           },
           {
-            title: "Data Processing",
-            bottomTitle: "We process data for purposes such as:",
+            title: "How We Use Your Information",
+            subtitle: "We collect and use your data to:",
             ulList: [
-              "Providing services to you.",
-              "Improving our offerings and user experience.",
-              "Complying with legal obligations.",
+              "Process bookings and provide the services you request.",
+              "Communicate with you regarding your bookings.",
+              "Send promotional material if you’ve subscribed to our newsletter.",
+              "Analyze website usage and improve our services.",
             ],
+          },
+          {
+            title: "Legal Basis for Processing",
+            subtitle: "We process your data based on:",
+            ulList: [
+              "Contractual necessity: To fulfil your bookings.",
+              "Legitimate interest: For marketing, improving our services, and ensuring website functionality.",
+              "Consent: When you opt-in for marketing communications.",
+              "Legal obligation: To comply with laws or regulatory requirements.",
+            ],
+          },
+          {
+            "title": "Sharing Your Information",
+            "subtitle": "We may share your data with:",
+            "bottomTitle": "We do not sell or rent your personal information to third parties.",
+            "ulList": [
+              "Service providers: Such as payment processors and travel operators.",
+              "Regulatory bodies: When required by law.",
+              
+            ]
           },
       ];
     const breadcrumbItems = [
@@ -36,18 +62,13 @@ const Privacy = () => {
       <>
           
           <div>
-          <header
-        className="relative flex items-center justify-center h-[60vh]  bg-cover bg-center z-0"
-        style={{
-          backgroundImage: `url(${bgImage})`,
-        }}
-      >
-        <div
-          className="relative z-30 p-5 text-6xl font-semibold text-[#F49D2A]  rounded-xl"
-        >
-         Privacy 
-        </div>
-      </header>
+         <SectionHeader 
+         backgroundImage={bgImage}
+
+         title={"Privacy"}
+         height={'60vh'}
+         
+         />
           </div>
           <div>
               <Breadcrumb items={breadcrumbItems}/>
@@ -56,17 +77,14 @@ const Privacy = () => {
 
 
           <div>
-          <div className="bg-[#fffff0] p-6">
+          <div className="bg-text-primary p-6">
       <div className="container mx-auto">
         <h1 className="text-2xl font-bold text-gray-900 mb-4"> Privacy Policy</h1>
-        {termsData.map((section, index) => (
+        
             <Termscondition
-              key={index}
-              title={`${index + 1}. ${section.title}`}
-              bottomTitle={section.bottomTitle}
-              ulList={section.ulList}
+              sections={termsData}
             />
-          ))}
+        
       </div>
     </div>
           </div>

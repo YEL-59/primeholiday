@@ -1,6 +1,6 @@
-import React from "react";
 
-const Termscondition = ({ title, content, bottomTitle, ulList }) => {
+
+const TermsCondition = ({ sections }) => {
   // Helper function to format text with bold keywords
   const formatListItem = (text) => {
     const [boldPart, ...rest] = text.split(":");
@@ -11,26 +11,36 @@ const Termscondition = ({ title, content, bottomTitle, ulList }) => {
       </>
     );
   };
-  return (
-    <>
-      <div className="mb-6">
-        <h2 className="text-lg font-semibold text-gray-800 mb-2">{title}</h2>
-        <p className="text-gray-700 leading-relaxed">{content}</p>
 
-        {/* {title && <h2 className="text-lg font-semibold text-gray-800 mb-4">{title}</h2>} */}
-        {bottomTitle && <p className="text-gray-600 mb-2">{bottomTitle}</p>}
-        {ulList && (
-          <ul className="list-disc list-inside text-gray-700">
-            {ulList.map((item, index) => (
-              <li key={index} className="leading-relaxed mb-1">
-                {formatListItem(item)}
-              </li>
-            ))}
-          </ul>
-        )}
-      </div>
-    </>
+  return (
+    <div>
+      {sections.map((section, index) => (
+        <div key={index} className="mb-6">
+         {section.title && (
+      <h2 className="text-lg font-semibold text-gray-800 mb-2">
+        {`${index + 1}. ${section.title}`}
+      </h2>
+    )}
+          {section.subtitle && (
+            <p className="text-gray-700 leading-relaxed mb-4">{section.subtitle}</p>
+          )}
+        
+          {section.ulList && (
+            <ul className="ms-4 list-disc list-inside text-gray-700 mb-4">
+              {section.ulList.map((item, idx) => (
+                <li key={idx} className="leading-relaxed mb-1">
+                  {formatListItem(item)}
+                </li>
+              ))}
+            </ul>
+          )}
+            {section.bottomTitle && (
+            <p className="text-gray-600 mb-2">{section.bottomTitle}</p>
+          )}
+        </div>
+      ))}
+    </div>
   );
 };
 
-export default Termscondition;
+export default TermsCondition;

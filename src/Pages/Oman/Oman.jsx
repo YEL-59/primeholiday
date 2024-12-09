@@ -1,3 +1,4 @@
+import { useParams } from "react-router-dom";
 import Breadcrumb from "../../Components/Breadcrumb/Breadcrumb";
 import Immersion_Section from "./OmanComponent/Immersion_Section/Immersion_Section";
 import OmanCard_Section from "./OmanComponent/OmanCard_Section/OmanCard_Section";
@@ -8,10 +9,11 @@ import OmanSteper_Section from "./OmanComponent/OmanSteper_Section/OmanSteper_Se
 
 
 const Oman = () => {
+    const { destinationName } = useParams();
     const breadcrumbItems = [
         { label: 'Home', href: '/' },
-
-        { label: 'Destination' },
+        { label: 'Destination', href: '/destination' },
+        { label: destinationName, href: `/destination/${destinationName}` }, 
       ];
   return (
       <>
@@ -26,9 +28,7 @@ const Oman = () => {
               <OmanDestinationCard/>
 
 
-              {/* <div className='mb-10'>
-                  <PrimeDestination_Section/>
-              </div> */}
+          
              
           </div>
 
