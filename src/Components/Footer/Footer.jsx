@@ -1,6 +1,6 @@
 import logo from "/Transparent-logo-3 4.png";
 
-import { VscChevronUp } from "react-icons/vsc";
+
 import { Link } from "react-router-dom";
 import Instagram from "../../assets/Icons/Instagram";
 import Facebook from "../../assets/Icons/Facebook";
@@ -8,8 +8,9 @@ import Pinterast from "../../assets/Icons/Pinterast";
 import Youtube from "../../assets/Icons/Youtube";
 import Location from "../../assets/Icons/Location";
 import Mail from "../../assets/Icons/Mail";
-import Watsapp from "../../assets/Icons/watsapp";
+
 import Uparrow from "../../assets/Icons/Uparrow";
+import Watsapp from "../../assets/Icons/watsapp";
 
 const Footer = () => {
   //to click the butoon to move to the top of page
@@ -79,7 +80,7 @@ const Footer = () => {
           <div className="mt-5">
             <div className="flex flex-col gap-2">
               <div className="text-3xl text-primary">
-                <Watsapp />
+                <Watsapp/>
               </div>
               <p className="text-text-primary font-inter text-[18px] font-normal leading-[29.52px]">
                 +44 7553 778086
