@@ -51,7 +51,7 @@ const Home_Main_Section = () => {
           className="absolute w-full h-full object-cover z-10"
         >
           <source
-            src="../../../../../public/1820193-uhd_3840_2160_30fps (2).mp4"
+            src="../../../../../public/homebgvideo.mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.
