@@ -10,7 +10,8 @@ import Location from "../../assets/Icons/Location";
 import Mail from "../../assets/Icons/Mail";
 
 import Uparrow from "../../assets/Icons/Uparrow";
-import Watsapp from "../../assets/Icons/watsapp";
+import Whatsappe from "../../assets/Icons/Whatsappe";
+
 
 
 const Footer = () => {
@@ -81,7 +82,7 @@ const Footer = () => {
           <div className="mt-5">
             <div className="flex flex-col gap-2">
               <div className="text-3xl text-primary">
-                <Watsapp/>
+                <Whatsappe/>
               </div>
               <p className="text-text-primary font-inter text-[18px] font-normal leading-[29.52px]">
                 +44 7553 778086
