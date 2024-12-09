@@ -1,5 +1,5 @@
 
-import img from "../../../../../public/homeimg1.webp";
+import img from "/HomeImg/homeimg1.webp";
 import SecoundaryTitle from "../../../../Components/SecoundaryTitle/SecoundaryTitle";
 
 const Home_Testiminial_Section = () => {
@@ -12,7 +12,7 @@ const Home_Testiminial_Section = () => {
               <img
                 src={img}
                 alt=""
-                className="h-[809px] w-[839px] rounded-xl"
+                className="h-[809px] w-[834px] "
               />
             </div>
             <div className="md:col-span-4 flex justify-center items-center">
@@ -20,7 +20,7 @@ const Home_Testiminial_Section = () => {
                 <SecoundaryTitle
                   head_title={"TESTIMONIALS OF SATISFACTION"}
                 />
-                <p className="text-[#191A19] font-inter text-[32px] font-normal leading-[1.64] tracking-[0.85px] mt-16 max-w-xl">
+                <p className="text-black font-inter text-[32px] font-normal leading-[1.64] tracking-[0.85px] mt-16 max-w-xl">
                   The best measure to our services comes from our customers.
                   Keep an eye out as our travellers share their stories. We'll
                   be sharing feedback from our travellers here shortly, so you

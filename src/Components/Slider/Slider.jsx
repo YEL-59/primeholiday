@@ -13,22 +13,18 @@ import "./style.css";
 import { Pagination, Autoplay } from "swiper/modules";
 
 // Import images
-import img1 from "../../../public/DestinationImg/destinationimg3.webp";
-import img2 from "../../../public/DestinationImg/destinationimg3.webp";
-import img3 from "../../../public/DestinationImg/destinationimg3.webp";
-import img4 from "../../../public/DestinationImg/destinationimg3.webp";
-import img5 from "../../../public/DestinationImg/destinationimg3.webp";
-import img6 from "../../../public/DestinationImg/destinationimg3.webp";
+import img1 from "../../../public/HomeImg/Keralabig.webp";
+import img2 from "../../../public/HomeImg/MorochoBig.webp";
+import img3 from "../../../public/HomeImg/oatarbig.webp";
+import img4 from "../../../public/HomeImg/zangerBig.webp";
 
 export default function CardSlider() {
   const cards = [
-    { image: img1, country: "Italy",descriptions: "7 days fROM $1234"},
-    { image: img2, country: "France",descriptions: "7 days fROM $1234" },
-    { image: img3, country: "Germany",descriptions: "7 days fROM $1234" },
-    { image: img4, country: "Japan",descriptions: "7 days fROM $1234" },
-    { image: img5, country: "Spain",descriptions: "7 days fROM $1234" },
-    { image: img6, country: "Australia",descriptions: "7 days fROM $1234" },
-  ]; 
+    { image: img1, country: "Kerala", descriptions: "7 days fROM $1234" },
+    { image: img2, country: "Morocho", descriptions: "7 days fROM $1234" },
+    { image: img3, country: "Qatar", descriptions: "7 days fROM $1234" },
+    { image: img4, country: "Zanger", descriptions: "7 days fROM $1234" },
+  ];
 
   return (
     <Swiper
@@ -47,15 +43,19 @@ export default function CardSlider() {
       {cards.map((card, index) => (
         <SwiperSlide key={index}>
           <div
-            className="card bg-cover bg-center rounded-lg shadow-lg h-[25rem]"
+            className="card bg-cover bg-center  "
             style={{
               backgroundImage: `url(${card.image})`,
             }}
           >
             {/* Optional Content for Cards */}
-            <div className="card-text bg-black opacity-70 z-10 text-white text-center w-full p-4">
-              <h2 className="text-xl font-bold">{card.country}</h2>
-              <p className="text-md font-medium">{card.descriptions}</p>
+            <div className="card-text bg-black bg-opacity-70 z-10 mt-20 text-white text-center w-full p-4  shadow-md">
+              <h2 className="text-4xl font-bold text-white leading-10">
+                {card.country}
+              </h2>
+              <p className="text-xl font-medium text-white leading-10">
+                {card.descriptions}
+              </p>
             </div>
           </div>
         </SwiperSlide>

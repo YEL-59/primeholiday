@@ -1,5 +1,5 @@
 
-import bgImage from '../../../public/image 87.png'; 
+import bgImage from '/staticimg.webp'; 
 import Breadcrumb from '../../Components/Breadcrumb/Breadcrumb';
 import SectionHeader from '../../Components/SectionHeader/SectionHeader';
 

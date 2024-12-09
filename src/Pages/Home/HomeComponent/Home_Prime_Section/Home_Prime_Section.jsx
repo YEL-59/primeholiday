@@ -1,60 +1,79 @@
-import React, { useEffect, useRef, useState } from "react";
-import img1 from "../../../../../public/DestinationImg/destinationimg3.webp";
-import img2 from "../../../../../public/DestinationImg/destinationimg3.webp";
-import img3 from "../../../../../public/DestinationImg/destinationimg3.webp";
-import img4 from "../../../../../public/DestinationImg/destinationimg3.webp";
+import  { useRef, useState, useEffect } from "react";
+import karala from "../../../../../public/HomeImg/karala.webp";
+import Egypt from "../../../../../public/HomeImg/Egypt.webp";
+import Morocco from "../../../../../public/HomeImg/Morocco.webp";
+import Oman from "../../../../../public/HomeImg/Oman.webp";
+import Qatar from "../../../../../public/HomeImg/Qatar.webp";
+import SriLanka from "../../../../../public/HomeImg/SriLanka.webp";
+import zanzibar from "../../../../../public/HomeImg/zanzibar.webp";
 
 import "./style.css";
 import MainTitle from "../../../../Components/MainTitle/MainTitle";
+import SecoundaryTitle from "../../../../Components/SecoundaryTitle/SecoundaryTitle";
+
 const Home_Prime_Section = () => {
   const images = [
-    { id: 1, src: img1, name: "Mike" },
-    { id: 2, src: img2, name: "Samite", role: "WordPress Developer" },
-    { id: 3, src: img3, name: "Hashi", role: "Java Developer" },
-    { id: 4, src: img4, name: "Kaity", role: "Web Developer" },
-    { id: 5, src: img3, name: "Lauren", role: "PHP Developer" },
-    { id: 6, src: img2, name: "Ryan", role: "SEO Developer" },
-    { id: 7, src: img1, name: "Dakes", role: "SQL Developer" },
+    { id: 1, src: karala, name: "karala",role: "God's Own Country" },
+    { id: 2, src: Egypt, name: "Egypt", role: "Beauty of Land" },
+    { id: 3, src: Morocco, name: "Morocco", role: "Land of Light" },
+    { id: 4, src: Oman, name: "Oman", role: "Beauty has an address" },
+    { id: 5, src: Qatar, name: "Qatar", role: "Experience the World Beyond" },
+    { id: 6, src: SriLanka, name: "SriLanka", role: "You'll Come Back for More" },
+    { id: 7, src: zanzibar, name: "zanzibar", role: "Spice Island" },
   ];
 
-  const [activeIndex, setActiveIndex] = useState(0); // Default active card index
-  const sliderRef = useRef(null); // Ref for the slider container
+  const [activeIndex, setActiveIndex] = useState(Math.floor(images.length / 2));
+  const sliderRef = useRef(null);
+  const hoverTimeoutRef = useRef(null);
 
-  // Auto-slide functionality
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); // Change slide every 3 seconds
-
-    return () => clearInterval(interval); // Cleanup on component unmount
-  }, [images.length]);
-
-  // Scroll to center the active card
   useEffect(() => {
     const slider = sliderRef.current;
     if (slider) {
       const activeCard = slider.children[activeIndex];
-      const sliderWidth = slider.offsetWidth;
-      const cardWidth = activeCard.offsetWidth;
-      const cardLeft = activeCard.offsetLeft;
-
-      // Center the active card
-      slider.scrollTo({
-        left: cardLeft - sliderWidth / 2 + cardWidth / 2,
-        behavior: "smooth",
-      });
+      if (activeCard) {
+        const sliderWidth = slider.offsetWidth;
+        const cardWidth = activeCard.offsetWidth;
+        const cardLeft = activeCard.offsetLeft;
+  
+        // Account for the last card to prevent flickering
+        const maxScrollLeft = slider.scrollWidth - sliderWidth;
+  
+        let scrollToPosition = cardLeft - sliderWidth / 2 + cardWidth / 2;
+  
+        // Prevent overshooting for the last card
+        if (scrollToPosition > maxScrollLeft) {
+          scrollToPosition = maxScrollLeft;
+        }
+  
+        requestAnimationFrame(() => {
+          slider.scrollTo({
+            left: Math.max(scrollToPosition, 0),
+            behavior: "smooth",
+          });
+        });
+      }
     }
   }, [activeIndex]);
+  
+  
 
-  const handleCardClick = (index) => {
+  const handleMouseEnter = (index) => {
+    if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
     setActiveIndex(index);
   };
 
+  const handleMouseLeave = () => {
+    hoverTimeoutRef.current = setTimeout(() => {
+      setActiveIndex(Math.floor(images.length / 2)); // Reset to middle card
+    }, 200); // Slight delay to avoid jitter
+  };
+
   return (
-    <div className="relative bg-[#FFFFF0] bg-cover bg-center py-16 h-[70vh] flex items-center justify-center">
+    <div className="relative bg-text-primary bg-cover bg-center py-16  flex items-center justify-center">
       <div className="container mx-auto px-4">
-        <div className="mb-32">
-          <MainTitle head_title={"ALL-INCLUSIVE Packages"} />
+      
+        <div className="flex justify-center mb-20">
+          <SecoundaryTitle head_title={"Prime Destinations"}/>
         </div>
 
         <div
@@ -64,18 +83,19 @@ const Home_Prime_Section = () => {
           {images.map((image, index) => (
             <div
               key={image.id}
-              className={`slider-card cursor-pointer transition-all duration-500 transform ${
+              className={`slider-card cursor-pointer transition-all duration-300 transform ${
                 activeIndex === index
-                  ? "active scale-110 shadow-xl"
-                  : "scale-90 opacity-75"
+                  ? "hovered scale-110 shadow-xl"
+                  : "scale-90 opacity-95"
               }`}
               style={{
                 backgroundImage: `url(${image.src})`,
-                width: activeIndex === index ? "40rem" : "15rem",
-
-                height: "25rem",
+                width: activeIndex === index ? "45rem" : "15rem",
+                height: "32rem",
+                
               }}
-              onClick={() => handleCardClick(index)}
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={handleMouseLeave}
             >
               <div className="flex flex-col justify-center items-center h-full text-center">
                 {activeIndex === index ? (
@@ -87,7 +107,7 @@ const Home_Prime_Section = () => {
                   </div>
                 ) : (
                   <div className="vertical-info">
-                    <h1 className="title text-white">{image.role}</h1>
+                    <h1 className="title text-white">{image.name}</h1>
                   </div>
                 )}
               </div>

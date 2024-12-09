@@ -2,17 +2,28 @@
 
 import logo from "/Transparent-logo-3 4.png";
 
-import img1 from "/instagram.png";
-import img2 from "/facebook.png";
-import img3 from "/Frame.png";
-import img4 from "/Frame 3.png";
-import img5 from "/whatsapp.png";
-import img6 from "/location.png";
-import img7 from "/sms.png";
+
+
 import { VscChevronUp } from "react-icons/vsc";
 import { Link } from "react-router-dom";
+import Instagram from "../../assets/Icons/Instagram";
+import Facebook from "../../assets/Icons/Facebook";
+import Pinterast from "../../assets/Icons/Pinterast";
+import Youtube from "../../assets/Icons/Youtube";
+import Location from "../../assets/Icons/Location";
+import Mail from "../../assets/Icons/Mail";
+import Watsapp from "../../assets/Icons/watsapp";
+import Uparrow from "../../assets/Icons/Uparrow";
 
 const Footer = () => {
+  //to click the butoon to move to the top of page
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0, 
+      behavior: 'smooth', 
+    });
+  };
+ 
   return (
     <>
       <div
@@ -29,16 +40,16 @@ const Footer = () => {
           <div className="flex flex-wrap justify-between md:flex-row gap-6">
             <div className="flex items-center gap-5 border-b max-w-[14rem] md:max-w-none w-full md:w-auto">
               <div className="text-3xl font-bold text-primary">
-                <img src={img1} alt="Instagram" />
+                <Instagram/>
               </div>
               <div className="text-3xl font-bold text-primary">
-                <img src={img2} alt="Facebook" />
+                <Facebook/>
               </div>
               <div className="text-3xl font-bold text-primary">
-                <img src={img3} alt="Frame 1" />
+                <Pinterast/>
               </div>
               <div className="text-3xl font-bold text-primary">
-                <img src={img4} alt="Frame 2" />
+                <Youtube/>
               </div>
             </div>
 
@@ -50,27 +61,27 @@ const Footer = () => {
           <div className="mt-5">
             <div className="flex flex-col gap-2 border-b max-w-[14rem] ">
               <div className="text-3xl text-primary">
-                <img src={img6} alt="Location" />
+               <Location/>
               </div>
-              <address className="text-lg">65 Hartfield Crescent Birmingham B27 7QE</address>
+              <address className="text-text-primary font-inter text-[18px] font-normal leading-[29.52px]">65 Hartfield Crescent Birmingham B27 7QE</address>
             </div>
           </div>
 
           <div className="mt-5">
             <div className="flex flex-col gap-2 border-b max-w-[22rem] ">
               <div className="text-3xl text-primary">
-                <img src={img7} alt="SMS" />
+                <Mail/>
               </div>
-              <p className="text-lg">contact@primeholidaydestinations.com</p>
+              <p className="text-text-primary font-inter text-[18px] font-normal leading-[29.52px]">contact@primeholidaydestinations.com</p>
             </div>
           </div>
 
           <div className="mt-5">
             <div className="flex flex-col gap-2">
               <div className="text-3xl text-primary">
-                <img src={img5} alt="Whatsapp" />
+               <Watsapp/>
               </div>
-              <p className="text-lg">+44 7553 778086</p>
+              <p className="text-text-primary font-inter text-[18px] font-normal leading-[29.52px]">+44 7553 778086</p>
             </div>
           </div>
 
@@ -82,7 +93,7 @@ const Footer = () => {
 
           <div className="flex flex-wrap justify-between mt-5">
             <div>
-              <div className="flex flex-wrap gap-5 text-lg">
+              <div className="flex flex-wrap gap-5 text-text-primary font-inter text-[18px] font-normal leading-[29.52px]">
               <Link to={'about'}> <p className="border-0 border-r-2 px-1">About</p></Link>
               <Link to={'destination'}> <p className="border-r-2 px-1">Destinations</p></Link>
                
@@ -96,27 +107,30 @@ const Footer = () => {
                
               </div>
               <div>
-                <p>@ 2024 Rizmail Travel & Tours Limited</p>
+                <p className="text-text-primary font-inter text-[18px] font-normal leading-[29.52px]">@ 2024 Rizmail Travel & Tours Limited</p>
               </div>
             </div>
 
             <div>
               <div>
-                <h1 className="text-lg">
+                <h1 className="text-text-primary font-inter text-[18px] font-normal leading-[29.52px]">
                   Prime Holiday Destinations a Brand by Rizmali Travel & Tours Limited
                 </h1>
-                <p className="text-lg">
+                <p className="text-text-primary font-inter text-[18px] font-normal leading-[29.52px]">
                   Company Number 14730696 I Registered in England
                 </p>
               </div>
               <div className="flex justify-between">
-                <p className="text-sm">
+                <p className="text-text-primary font-inter text-md font-normal leading-[29.52px]">
                   Colour palette inspired by @thehousewiththepinkbed
                 </p>
-                <div className="border rounded p-1 flex justify-center w-10">
-                  <VscChevronUp />
-                </div>
+               
               </div>
+             <div className="flex justify-end ">
+             <div className="border p-2  rounded  flex justify-end w-10" onClick={handleScrollToTop}>
+                 <Uparrow/>
+                </div>
+             </div>
             </div>
           </div>
         </div>

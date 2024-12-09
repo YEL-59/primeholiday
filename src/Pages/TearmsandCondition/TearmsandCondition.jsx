@@ -1,8 +1,8 @@
 
-import bgImage from '../../../public/image 87.png';
+import bgImage from '/public/staticimg.webp';
 import Breadcrumb from '../../Components/Breadcrumb/Breadcrumb';
 import SectionHeader from '../../Components/SectionHeader/SectionHeader';
-import termscondition from '../../Components/termscondition/termscondition'
+
 import Termscondition from '../../Components/termscondition/termscondition';
 
 const TearmsandCondition = () => {

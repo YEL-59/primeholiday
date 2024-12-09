@@ -4,7 +4,7 @@ const MainTitle = ({head_title}) => {
   return (
    <>
 
-<div className="text-primary text-center font-montserrat text-[38px] font-semibold leading-[1.32] tracking-[1.28px] uppercase">
+<div className="text-primary text-center font-montserrat text-[50px] font-semibold leading-[1.32] tracking-[1.28px] uppercase mt-10 ">
   <h1>{head_title}</h1>
 </div>
 
