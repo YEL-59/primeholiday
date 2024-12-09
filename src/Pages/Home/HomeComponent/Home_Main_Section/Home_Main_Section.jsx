@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react";
 
 import "../../../../../src/App.css";
+
+import homeBannerVideo from '../../../../assets/video/homebgvideo.mp4'
 const Home_Main_Section = () => {
   const videoRef = useRef(null);
 
@@ -51,7 +53,7 @@ const Home_Main_Section = () => {
           className="absolute w-full h-full object-cover z-10"
         >
           <source
-            src="../../../../../src/assets/video/homebgvideo.mp4"
+            src={homeBannerVideo}
             type="video/mp4"
           />
           Your browser does not support the video tag.
