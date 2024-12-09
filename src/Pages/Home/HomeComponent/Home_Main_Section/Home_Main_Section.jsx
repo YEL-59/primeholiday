@@ -1,6 +1,6 @@
-import  { useEffect, useRef } from 'react';
+import { useEffect, useRef } from "react";
 
-import '../../../../../src/App.css'
+import "../../../../../src/App.css";
 const Home_Main_Section = () => {
   const videoRef = useRef(null);
 
@@ -8,7 +8,7 @@ const Home_Main_Section = () => {
     const ensureVideoPlays = () => {
       if (videoRef.current && videoRef.current.paused) {
         videoRef.current.play().catch((error) => {
-          console.error('Video playback interrupted:', error);
+          console.error("Video playback interrupted:", error);
         });
       }
     };
@@ -24,23 +24,20 @@ const Home_Main_Section = () => {
 
   return (
     <div className="relative">
-    
-
       <header className="relative flex items-center justify-center h-[100vh]  overflow-hidden">
         {/* Overlay Text */}
         <div className="relative z-30 p-5 text-white  bg-opacity-50 rounded-xl">
           <div>
-          <h1 className="text-[#F49D2A] text-center font-salvager text-[5px] xl:text-[96px] font-normal leading-[1.24] tracking-[-1.92px]">
-  Your All-Inclusive Journey Starts Here
-</h1>
+            <h1 className="text-primary text-center font-salvager text-[5px] xl:text-[96px] font-normal leading-[1.24] tracking-[-1.92px]">
+              Your All-Inclusive Journey Starts Here
+            </h1>
 
-<p className="text-text-primary text-center font-montserrat text-[44px] font-bold leading-[1] tracking-[-1.28px] max-w-4xl mx-auto mt-5 mb-5">
-  <span className="text-[64px] font-bold">&ldquo;</span>
-  The Essence of a Holiday is to Enrich our lives and create lasting memories
-  <span className="text-[64px] font-bold">&rdquo;</span>
-</p>
-
-
+            <p className="text-ivory-white text-center font-montserrat text-[44px] font-bold leading-[1] tracking-[-1.28px] max-w-4xl mx-auto mt-5 mb-5">
+              <span className="text-[64px] font-bold">&ldquo;</span>
+              The Essence of a Holiday is to Enrich our lives and create lasting
+              memories
+              <span className="text-[64px] font-bold">&rdquo;</span>
+            </p>
           </div>
         </div>
 

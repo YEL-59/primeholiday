@@ -15,7 +15,7 @@ const Blog = () => {
   return (
       <>
           <Blog_Home_Section />
-          <Breadcrumb items={breadcrumbItems} />
+          <Breadcrumb items={breadcrumbItems} /> 
          
 
          <BlogPage/>

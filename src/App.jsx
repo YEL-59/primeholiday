@@ -17,11 +17,11 @@ const App = createBrowserRouter([
     children: [
       {
         index: true, // Renders AboutUs at the root "/"
-        element: <AboutUs />,
+        element: < Home />,
       },
       {
-        path: "home",
-        element: <Home />,
+        path: "aboutus",
+        element: <AboutUs />,
       },
       {
         path: "destination",

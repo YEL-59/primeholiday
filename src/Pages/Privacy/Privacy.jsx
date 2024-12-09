@@ -52,11 +52,65 @@ const Privacy = () => {
               
             ]
           },
+          {
+            "title": "Your Data Rights",
+            "subtitle": "Under UK GDPR, you have the following rights:"
+          },
+          {
+            "title": "Sharing Your Information",
+            "subtitle": "We may share your data with:",
+            "bottomTitle": "To exercise any of these rights, contact us at [Your Contact Email].",
+            "ulList": [
+              "Access: Request a copy of your personal data.",
+              "Correction: Request correction of inaccurate data.",
+              "Deletion: Request deletion of your data under certain conditions.",
+              "Object: Object to the processing of your data.",
+              "Data portability: Request transfer of your data to another service provider.",
+           
+              
+            ]
+          },
+          {
+            "title": "Cookies Policy",
+            "subtitle": "We use cookies to improve your experience on our website. Cookies are small files stored on your device that help us track user behavior and preferences.",
+            "bottomTitle": " Managing Cookies: You can manage or disable cookies through your browser settings. However, disabling essential cookies may affect the functionality of our website.",
+            "ulList": [
+              "Essential cookies: Necessary for website functionality (e.g., login or booking features).",
+              "Performance cookies: Gather information about how visitors use the site to help us improve it.",
+              "Marketing cookies: Track browsing habits to show relevant ads.",
+         
+           
+              
+            ]
+          },
+          {
+            "title": "Third-Party Links",
+            "subtitle": "Our website may contain links to third-party sites. We are not responsible for the privacy practices of these external websites."
+          },
+          {
+            "title": "Security",
+            "subtitle": "We implement appropriate technical and organizational measures to safeguard your personal data. However, no transmission over the internet is 100% secure, and we cannot guarantee the security of your data transmitted to our site."
+          },
+          {
+            "title": "Changes to this Policy",
+            "subtitle": "We may update this Privacy Policy periodically. Any changes will be posted on this page with an updated effective date."
+          },
+          {
+            "title": " Contact Us",
+             "subtitle": "If you have any questions or concerns regarding this Privacy Policy, please contact us at:",
+            "ulList": [
+              "Email: contact@primeholidaydestinations.com",
+             
+         
+           
+              
+            ]
+          },
       ];
     const breadcrumbItems = [
         { label: 'Home', href: '/' },
        
-        { label: 'Terms & Conditions' }, 
+        { label: 'Privacy Policy',href: '/privacy'}, 
       ];
   return (
       <>
@@ -77,7 +131,7 @@ const Privacy = () => {
 
 
           <div>
-          <div className="bg-text-primary p-6">
+          <div className="bg-ivory-white p-6">
       <div className="container mx-auto">
         <h1 className="text-2xl font-bold text-gray-900 mb-4"> Privacy Policy</h1>
         

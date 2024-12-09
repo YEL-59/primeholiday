@@ -46,6 +46,7 @@
   background: rgba(0, 0, 0, 0.5); /* Subtle background for contrast */
   padding: 0.5rem 1rem; /* Padding for better spacing */
   border-radius: 0.5rem; /* Rounded corners */
+  opacity:0.8;
 }
 .slider-card .vertical-info .title {
   font-size: 1.75rem; /* Increase font size for visibility */

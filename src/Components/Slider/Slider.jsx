@@ -20,10 +20,10 @@ import img4 from "../../../public/HomeImg/zangerBig.webp";
 
 export default function CardSlider() {
   const cards = [
-    { image: img1, country: "Kerala", descriptions: "7 days fROM $1234" },
-    { image: img2, country: "Morocho", descriptions: "7 days fROM $1234" },
-    { image: img3, country: "Qatar", descriptions: "7 days fROM $1234" },
-    { image: img4, country: "Zanger", descriptions: "7 days fROM $1234" },
+    { image: img1, country: "Kerala", descriptions: "7 days from ",price:"$1233" },
+    { image: img2, country: "Morocho", descriptions: "8 days from ",price:"$1133" },
+    { image: img3, country: "Qatar", descriptions: "2 days from ",price:"$1033" },
+    { image: img4, country: "Zanger", descriptions: "3 days from ",price:"$933" },
   ];
 
   return (
@@ -49,12 +49,12 @@ export default function CardSlider() {
             }}
           >
             {/* Optional Content for Cards */}
-            <div className="card-text bg-black bg-opacity-70 z-10 mt-20 text-white text-center w-full p-4  shadow-md">
-              <h2 className="text-4xl font-bold text-white leading-10">
+            <div className="card-text bg-black bg-opacity-70 z-10 mt-20 text-ivory-white text-center w-full p-4  shadow-md">
+              <h2 className="text-4xl font-bold text-ivory-white leading-10">
                 {card.country}
               </h2>
-              <p className="text-xl font-medium text-white leading-10">
-                {card.descriptions}
+              <p className="text-xl font-normal text-ivory-white leading-10 uppercase">
+                {card.descriptions} <strong>{card.price}</strong>
               </p>
             </div>
           </div>

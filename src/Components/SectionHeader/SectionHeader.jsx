@@ -12,7 +12,7 @@ const SectionHeader = ({ backgroundImage, title, sub_title, height }) => {
         height: height || "100vh", 
       }}
     >
-      <div className="container mx-auto h-full flex flex-col items-center justify-center">
+      <div className="container mx-auto h-full flex flex-col items-center justify-center text-ivory-white">
         <MainHeading head_title={title} sub_title={sub_title}  />
       </div>
     </header>

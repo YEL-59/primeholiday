@@ -2,12 +2,12 @@
 
 const AboutUsDescriptionSection = () => {
   return (
-    <div className="bg-[#fffff0]">
+    <div className="bg-ivory-white">
       <div className="container mx-auto  px-4 p-14">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* Left Column: About Us */}
           <div className="space-y-6 ">
-            <h1 className="text-[#F49D2A] font-montserrat text-4xl font-semibold leading-[124%] tracking-[-0.64px]">
+            <h1 className="text-primary font-montserrat text-4xl font-semibold leading-[124%] tracking-[-0.64px]">
               About Prime Holiday Destinations
             </h1>
             <p className=" text-justify font-inter text-xl font-normal leading-[164%] tracking-[-0.48px] text-black max-w-2xl" >

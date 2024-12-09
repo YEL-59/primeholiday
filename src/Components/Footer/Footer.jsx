@@ -1,8 +1,4 @@
-
-
 import logo from "/Transparent-logo-3 4.png";
-
-
 
 import { VscChevronUp } from "react-icons/vsc";
 import { Link } from "react-router-dom";
@@ -19,11 +15,11 @@ const Footer = () => {
   //to click the butoon to move to the top of page
   const handleScrollToTop = () => {
     window.scrollTo({
-      top: 0, 
-      behavior: 'smooth', 
+      top: 0,
+      behavior: "smooth",
     });
   };
- 
+
   return (
     <>
       <div
@@ -38,18 +34,18 @@ const Footer = () => {
           </h1>
 
           <div className="flex flex-wrap justify-between md:flex-row gap-6">
-            <div className="flex items-center gap-5 border-b max-w-[14rem] md:max-w-none w-full md:w-auto">
+            <div className="flex items-center gap-5 border-b pb-2 max-w-[14rem] md:max-w-none w-full md:w-auto">
               <div className="text-3xl font-bold text-primary">
-                <Instagram/>
+                <Instagram />
               </div>
               <div className="text-3xl font-bold text-primary">
-                <Facebook/>
+                <Facebook />
               </div>
               <div className="text-3xl font-bold text-primary">
-                <Pinterast/>
+                <Pinterast />
               </div>
               <div className="text-3xl font-bold text-primary">
-                <Youtube/>
+                <Youtube />
               </div>
             </div>
 
@@ -61,27 +57,33 @@ const Footer = () => {
           <div className="mt-5">
             <div className="flex flex-col gap-2 border-b max-w-[14rem] ">
               <div className="text-3xl text-primary">
-               <Location/>
+                <Location />
               </div>
-              <address className="text-text-primary font-inter text-[18px] font-normal leading-[29.52px]">65 Hartfield Crescent Birmingham B27 7QE</address>
+              <address className="text-text-primary font-inter text-[18px] font-normal leading-[29.52px]">
+                65 Hartfield Crescent Birmingham B27 7QE
+              </address>
             </div>
           </div>
 
           <div className="mt-5">
             <div className="flex flex-col gap-2 border-b max-w-[22rem] ">
               <div className="text-3xl text-primary">
-                <Mail/>
+                <Mail />
               </div>
-              <p className="text-text-primary font-inter text-[18px] font-normal leading-[29.52px]">contact@primeholidaydestinations.com</p>
+              <p className="text-text-primary font-inter text-[18px] font-normal leading-[29.52px]">
+                contact@primeholidaydestinations.com
+              </p>
             </div>
           </div>
 
           <div className="mt-5">
             <div className="flex flex-col gap-2">
               <div className="text-3xl text-primary">
-               <Watsapp/>
+                <Watsapp />
               </div>
-              <p className="text-text-primary font-inter text-[18px] font-normal leading-[29.52px]">+44 7553 778086</p>
+              <p className="text-text-primary font-inter text-[18px] font-normal leading-[29.52px]">
+                +44 7553 778086
+              </p>
             </div>
           </div>
 
@@ -94,27 +96,46 @@ const Footer = () => {
           <div className="flex flex-wrap justify-between mt-5">
             <div>
               <div className="flex flex-wrap gap-5 text-text-primary font-inter text-[18px] font-normal leading-[29.52px]">
-              <Link to={'about'}> <p className="border-0 border-r-2 px-1">About</p></Link>
-              <Link to={'destination'}> <p className="border-r-2 px-1">Destinations</p></Link>
-               
-               
-                <Link to={'blog'}> <p className="border-r-2 px-1">Blog</p></Link>
-               
-                <Link to={'terms-and-conditions'}> <p className="border-r-2 px-1">Terms & Conditions</p></Link>
-               <Link to={'privacy'}>  <p className="border-r-2 px-1">Privacy</p></Link>
-              
-                <Link to={'cancellation'}> <p className="px-1">Cancellation & Refund</p></Link>
-               
+                <Link to={"aboutus"}>
+                  {" "}
+                  <p className="border-0 border-r-2 px-1">About</p>
+                </Link>
+                <Link to={"destination"}>
+                  {" "}
+                  <p className="border-r-2 px-1">Destinations</p>
+                </Link>
+
+                <Link to={"blog"}>
+                  {" "}
+                  <p className="border-r-2 px-1">Blog</p>
+                </Link>
+
+                <Link to={"terms-and-conditions"}>
+                  {" "}
+                  <p className="border-r-2 px-1">Terms & Conditions</p>
+                </Link>
+                <Link to={"privacy"}>
+                  {" "}
+                  <p className="border-r-2 px-1">Privacy</p>
+                </Link>
+
+                <Link to={"cancellation"}>
+                  {" "}
+                  <p className="px-1">Cancellation & Refund</p>
+                </Link>
               </div>
               <div>
-                <p className="text-text-primary font-inter text-[18px] font-normal leading-[29.52px]">@ 2024 Rizmail Travel & Tours Limited</p>
+                <p className="text-text-primary font-inter text-[18px] font-normal leading-[29.52px]">
+                  @ 2024 Rizmail Travel & Tours Limited
+                </p>
               </div>
             </div>
 
             <div>
               <div>
                 <h1 className="text-text-primary font-inter text-[18px] font-normal leading-[29.52px]">
-                  Prime Holiday Destinations a Brand by Rizmali Travel & Tours Limited
+                  Prime Holiday Destinations a Brand by Rizmali Travel & Tours
+                  Limited
                 </h1>
                 <p className="text-text-primary font-inter text-[18px] font-normal leading-[29.52px]">
                   Company Number 14730696 I Registered in England
@@ -124,37 +145,38 @@ const Footer = () => {
                 <p className="text-text-primary font-inter text-md font-normal leading-[29.52px]">
                   Colour palette inspired by @thehousewiththepinkbed
                 </p>
-               
               </div>
-             <div className="flex justify-end ">
-             <div className="border p-2  rounded  flex justify-end w-10" onClick={handleScrollToTop}>
-                 <Uparrow/>
+              <div className="flex justify-end ">
+                <div
+                  className="border p-2  rounded  flex justify-end w-10"
+                  onClick={handleScrollToTop}
+                >
+                  <Uparrow />
                 </div>
-             </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <div className="bg-green">
-  <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between p-2">
-    <div className="text-white">
-      <p className="text-sm">Stay up to date</p>
-      <h1 className="text-lg font-bold">Subscribe to our newsletter</h1>
-    </div>
-    <div className="flex flex-col sm:flex-row gap-2">
-      <input
-        type="text"
-        className="border rounded py-1 px-3 bg-transparent h-8"
-        placeholder="Enter Your Name"
-      />
-      <button className="border rounded px-5 py-1 text-white font-medium mt-2 sm:mt-0 sm:ml-5 h-8">
-        Subscribe
-      </button>
-    </div>
-  </div>
-</div>
-
+        <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between p-2">
+          <div className="text-white">
+            <p className="text-sm">Stay up to date</p>
+            <h1 className="text-lg font-bold">Subscribe to our newsletter</h1>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-2">
+            <input
+              type="text"
+              className="border rounded py-1 px-3 bg-transparent h-8"
+              placeholder="Enter Your Name"
+            />
+            <button className="border rounded px-5 py-1 text-white font-medium mt-2 sm:mt-0 sm:ml-5 h-8">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

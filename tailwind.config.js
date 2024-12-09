@@ -4,10 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#FEBF00",
+        primary: "#F49D2A",
         secondary: "#BD1F17",
         green: "#135029",
-        "text-primary": "#FFFFF0",
+        "ivory-white": "#FFFFF0",
         black:"#191A19"
       },
       fontFamily: {
@@ -30,6 +30,10 @@ export default {
         "2xl": "1620px", // Custom size for larger screens
       },
     },
+  },
+  corePlugins: {
+    backgroundOpacity: false,
+    textOpacity: false, // Disables `bg-opacity-*` utilities.
   },
   plugins: [],
 };

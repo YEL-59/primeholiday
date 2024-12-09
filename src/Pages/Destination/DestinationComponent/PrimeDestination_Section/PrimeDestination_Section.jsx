@@ -16,21 +16,21 @@ const PrimeDestination_Section = () => {
           id: "card-1",
           imgSrc: img1,
           title: "Egypt",
-          description: "Come and see the show!",
+          description: "The Gift of the Nile",
           url: "egypt",
         },
         {
           id: "card-2",
           imgSrc: img2,
           title: "Morocho",
-          description: "Come and see the show!",
+          description: "Land of Light",
           url: "morocco",
         },
         {
           id: "card-3",
           imgSrc: img3,
           title: "Zanzibar",
-          description: "Come and see the show!",
+          description: "Spice Island",
           url: "zanzibar",
         },
       ],
@@ -42,23 +42,23 @@ const PrimeDestination_Section = () => {
         {
           id: "card-4",
           imgSrc: img1,
-          title: "Japan",
-          description: "Come and see the show!",
-          url: "japan",
+          title: "Oman",
+          description: "Beauty has an address",
+          url: "Oman",
         },
         {
           id: "card-5",
           imgSrc: img2,
-          title: "Thailand",
-          description: "Come and see the show!",
-          url: "thailand",
+          title: "Qatar",
+          description: "Experience the World Beyond",
+          url: "Qatar",
         },
         {
           id: "card-6",
           imgSrc: img3,
-          title: "Vietnam",
-          description: "Come and see the show!",
-          url: "vietnam",
+          title: "Sri lanka",
+          description: "You'll Come Back for More",
+          url: "Srilanka",
         },
       ],
     },
@@ -68,7 +68,7 @@ const PrimeDestination_Section = () => {
     id: "fixed-div-asia",
     imgSrc: img4,
     title: "Special Asia Destination",
-    description: "An unforgettable experience awaits you!",
+    description: "God's Own Country",
   };
 
   return (
@@ -107,8 +107,8 @@ const PrimeDestination_Section = () => {
                 className="h-[555px] w-full"
                 alt={fixedDiv.title}
               />
-              <div className="absolute -mt-[130px] p-4 w-full flex flex-col justify-end text-text-primary rounded bg-[rgba(0,0,0,0.35)] bg-opacity-0 z-10">
-                <h2 className="text-4xl uppercase font-medium px-4 pb-1 z-10 text-center">
+              <div className="absolute -mt-[130px] p-4 w-full flex flex-col justify-end text-ivory-white rounded bg-[rgba(0,0,0,0.35)] bg-opacity-0 z-10">
+                <h2 className="text-4xl uppercase font-medium px-4 pb-1 z-10 text-center ">
                   {fixedDiv.title}
                 </h2>
                 <p className="text-lg uppercase px-4 pb-2 text-center">

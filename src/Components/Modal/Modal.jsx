@@ -15,8 +15,8 @@ const Modal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-      <div className="bg-text-primary p-4 sm:p-6 rounded shadow-lg w-full max-h-[90vh] sm:max-w-md lg:max-w-2xl overflow-y-auto">
+    <div className="fixed inset-0  flex justify-center items-center z-50">
+      <div className="bg-ivory-white p-4 sm:p-6 rounded shadow-lg w-full max-h-[90vh] sm:max-w-md lg:max-w-2xl overflow-y-auto">
         <div className="flex justify-between items-center border-b pb-3 mb-4">
           <h1 className="text-lg text-green sm:text-xl font-semibold uppercase">
             ENQUIRY FORM

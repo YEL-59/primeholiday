@@ -16,9 +16,9 @@ const BlogSection = ({ sectionData }) => {
     <>
       <div className="bg-text-primary">
         <div className="container mx-auto p-14">
-          <h1 className="font-montserrat text-[40px] font-semibold leading-[124%] uppercase text-[#F49D2A] text-center mt-10 mb-14 relative">
+          <h1 className="font-montserrat text-[40px] font-semibold leading-[124%] uppercase text-primary text-center mt-10 mb-14 relative">
             {sectionData.heading}
-            <span className="absolute left-1/2 transform -translate-x-1/2 bottom-[-14px] w-[10%] border-b-2 border-[#F49D2A]"></span>
+            <span className="absolute left-1/2 transform -translate-x-1/2 bottom-[-14px] w-[10%] border-b-2 border-primary"></span>
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {sectionData.blogData.map((blog) => (

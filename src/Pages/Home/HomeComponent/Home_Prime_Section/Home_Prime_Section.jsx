@@ -8,7 +8,7 @@ import SriLanka from "../../../../../public/HomeImg/SriLanka.webp";
 import zanzibar from "../../../../../public/HomeImg/zanzibar.webp";
 
 import "./style.css";
-import MainTitle from "../../../../Components/MainTitle/MainTitle";
+
 import SecoundaryTitle from "../../../../Components/SecoundaryTitle/SecoundaryTitle";
 
 const Home_Prime_Section = () => {
@@ -69,7 +69,7 @@ const Home_Prime_Section = () => {
   };
 
   return (
-    <div className="relative bg-text-primary bg-cover bg-center py-16  flex items-center justify-center">
+    <div className="relative bg-ivory-white bg-cover bg-center py-16  flex items-center justify-center">
       <div className="container mx-auto px-4">
       
         <div className="flex justify-center mb-20">
@@ -100,14 +100,14 @@ const Home_Prime_Section = () => {
               <div className="flex flex-col justify-center items-center h-full text-center">
                 {activeIndex === index ? (
                   <div className="overlay active-overlay">
-                    <h2 className="text-4xl font-bold text-white">
+                    <h2 className="text-4xl font-bold text-ivory-white">
                       {image.name}
                     </h2>
-                    <p className="text-lg text-gray-200 mt-2">{image.role}</p>
+                    <p className="text-md font-normal text-ivory-white mt-2">{image.role}</p>
                   </div>
                 ) : (
                   <div className="vertical-info">
-                    <h1 className="title text-white">{image.name}</h1>
+                    <h1 className="title text-ivory-white">{image.name}</h1>
                   </div>
                 )}
               </div>
