@@ -47,9 +47,9 @@ const Navbar = () => {
           </div>
 
           {/* Center Section - Logo */}
-          <div className=" ml-[85px]">
+         <Link to={'/'}> <div className=" ml-[85px]">
             <img src={mylogo} className="h-8 sm:h-10 md:h-20 lg:h-full" alt="Logo" />
-          </div>
+          </div></Link>
 
           {/* Right Section - Button */}
           <div>
