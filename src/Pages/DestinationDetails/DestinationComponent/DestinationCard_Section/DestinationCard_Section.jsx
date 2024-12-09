@@ -1,21 +1,24 @@
 
-import reusablecard from './../../../../Components/reusable card/reusablecard';
-import ReusableCard from './../../../../Components/reusable card/reusablecard';
 
-const OmanDestinationCard = () => {
+import ReusableCard from '../../../../Components/reusable card/reusablecard';
+import MainTitle from '../../../../Components/MainTitle/MainTitle';
+import img from '../../../../../public/DestinationImg/destinationimg1.webp'
+import img1 from '../../../../../public/DestinationImg/destinationimg2.webp'
+import img2 from '../../../../../public/DestinationImg/destinationimg3.webp'
+const DestinationCard_Section = () => {
   const data = [
     {
-      img: '../../../../../public/Frame 775.png',
+      img: img,
       countryname: 'Oman',
       packeg: '7 days from $1475',
     },
     {
-        img: '../../../../../public/Frame 775.png',
+        img:img1,
         countryname: 'Oman',
         packeg: '7 days from $1475',
       },
       {
-        img: '../../../../../public/Frame 775.png',
+        img: img2,
         countryname: 'Oman',
         packeg: '7 days from $1475',
       },
@@ -24,9 +27,10 @@ const OmanDestinationCard = () => {
     <>
       <div>
         <div>
-          <h1 className="text-center text-2xl font-bold">
-            Destinations you'll love
-          </h1>
+
+       <div className='mt-5 mb-5'>
+       <MainTitle head_title={"All-Inclusive ground packages"} />
+       </div>
 
           <div>
             <div className="container mx-auto grid grid-cols-3 gap-5 mb-10 mt-10">
@@ -46,4 +50,4 @@ const OmanDestinationCard = () => {
   );
 };
 
-export default OmanDestinationCard;
+export default DestinationCard_Section;

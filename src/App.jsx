@@ -5,11 +5,12 @@ import Destination from "./Pages/Destination/Destination";
 import AboutUs from "./Pages/AboutUs/AboutUs";
 import Blog from "./Pages/Blog/Blog";
 import LayOut from "./LayOut/LayOut";
-import Oman from "./Pages/Oman/Oman";
+
 import TearmsandCondition from "./Pages/TearmsandCondition/TearmsandCondition";
 import Privacy from "./Pages/Privacy/Privacy"
 import Cancellation from "./Pages/Cancelation/Cancellation";
-const router = createBrowserRouter([
+import DestinationDetails from "./Pages/DestinationDetails/DestinationDetails";
+const App = createBrowserRouter([
   {
     path: "/",
     element: <LayOut />,
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
       },
       {
         path: "destination/:destinationName",
-        element: <Oman />,
+        element: <DestinationDetails />,
       },
     
     
@@ -56,4 +57,4 @@ const router = createBrowserRouter([
   },
 ]);
 
-export default router;
+export default App;

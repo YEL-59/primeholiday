@@ -1,23 +1,24 @@
 
-import reusablecard from './../../../../Components/reusable card/reusablecard';
-import ReusableCard from './../../../../Components/reusable card/reusablecard';
+
+import ReusableCard from '../../../../Components/reusable card/reusablecard';
 import MainTitle from '../../../../Components/MainTitle/MainTitle';
-
-
-const OmanCard_Section = () => {
+import img from '../../../../../public/DestinationImg/destinationimg1.webp'
+import img1 from '../../../../../public/DestinationImg/destinationimg2.webp'
+import img2 from '../../../../../public/DestinationImg/destinationimg3.webp'
+const DestinationCard_Section = () => {
   const data = [
     {
-      img: '../../../../../public/Frame 775.png',
+      img: img,
       countryname: 'Oman',
       packeg: '7 days from $1475',
     },
     {
-        img: '../../../../../public/Frame 775.png',
+        img:img1,
         countryname: 'Oman',
         packeg: '7 days from $1475',
       },
       {
-        img: '../../../../../public/Frame 775.png',
+        img: img2,
         countryname: 'Oman',
         packeg: '7 days from $1475',
       },
@@ -49,4 +50,4 @@ const OmanCard_Section = () => {
   );
 };
 
-export default OmanCard_Section;
+export default DestinationCard_Section;

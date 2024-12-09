@@ -1,6 +1,6 @@
 import  { useState } from 'react';
 
-const OmanSteper_Section = () => {
+const DestinationSteper_Section = () => {
   // State to manage which section is active
   const [activeStep, setActiveStep] = useState(0);
 
@@ -61,9 +61,9 @@ const OmanSteper_Section = () => {
   };
 
   return (
-    <div className="border-green-600 border p-5">
+    <div className="container mx-auto border-green border h-[60vh] p-5 mt-10">
       {/* Stepper buttons */}
-      <div className="container mx-auto flex justify-between gap-5">
+      <div className="flex justify-between gap-5">
         {steps.map((step, index) => (
           <button
             key={index}
@@ -90,4 +90,4 @@ const OmanSteper_Section = () => {
   );
 };
 
-export default OmanSteper_Section;
+export default DestinationSteper_Section;

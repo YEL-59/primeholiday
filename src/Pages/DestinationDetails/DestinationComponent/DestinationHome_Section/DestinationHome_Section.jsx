@@ -5,7 +5,7 @@
 import bgImage from '../../../../../public/DestinationImg/destinationimg5.webp'
 
 
-const OmanHome_Section = () => {
+const DestinationHome_Section = () => {
   return (
     <>
       <header
@@ -31,4 +31,4 @@ const OmanHome_Section = () => {
   );
 };
 
-export default OmanHome_Section
+export default DestinationHome_Section
