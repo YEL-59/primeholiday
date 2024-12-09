@@ -1,6 +1,6 @@
 
 
-const Watsapp = () => {
+const watsapp = () => {
   return (
    <>
    
@@ -13,4 +13,4 @@ const Watsapp = () => {
   )
 }
 
-export default Watsapp
+export default watsapp

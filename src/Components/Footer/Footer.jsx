@@ -12,6 +12,7 @@ import Mail from "../../assets/Icons/Mail";
 import Uparrow from "../../assets/Icons/Uparrow";
 import Watsapp from "../../assets/Icons/watsapp";
 
+
 const Footer = () => {
   //to click the butoon to move to the top of page
   const handleScrollToTop = () => {
