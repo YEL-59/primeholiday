@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import img1 from "/BlogImg/DamiBlogimg1.webp";
 import img2 from "/BlogImg/DamiBlogimg2.webp";
-import BlogSection from "../BlogSection/BlogSection";
+import BlogSection from "../../BlogSection";
 const BlogPage = () => {
   const [sections, setSections] = useState([]);
 

@@ -26,11 +26,11 @@ const Home_Main_Section = () => {
     <div className="relative">
     
 
-      <header className="relative flex items-center justify-center h-[90vh]  overflow-hidden">
+      <header className="relative flex items-center justify-center h-[100vh]  overflow-hidden">
         {/* Overlay Text */}
-        <div className="relative z-30 p-5 text-2xl text-white  bg-opacity-50 rounded-xl">
+        <div className="relative z-30 p-5 text-white  bg-opacity-50 rounded-xl">
           <div>
-          <h1 className="text-[#F49D2A] text-center font-salvager text-[96px] font-normal leading-[1.24] tracking-[-1.92px]">
+          <h1 className="text-[#F49D2A] text-center font-salvager text-[5px] xl:text-[96px] font-normal leading-[1.24] tracking-[-1.92px]">
   Your All-Inclusive Journey Starts Here
 </h1>
 

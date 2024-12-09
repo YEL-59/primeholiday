@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 
 import { useState } from "react";
-import BlogCard from "../../../../Components/BlogCard/BlogCard";
+import BlogCard from "../../Components/BlogCard/BlogCard";
 
 
 

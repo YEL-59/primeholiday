@@ -16,9 +16,7 @@ const Blog = () => {
       <>
           <Blog_Home_Section />
           <Breadcrumb items={breadcrumbItems} />
-          {/* <BlogTravelTio_Section />
-          <Blogdestinationguid_Section />
-         <Blogholiday_Section/> */}
+         
 
          <BlogPage/>
 
