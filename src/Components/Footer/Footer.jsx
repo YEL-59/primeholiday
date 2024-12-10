@@ -80,7 +80,7 @@ const toggleModal = () => {
               <div className="text-3xl text-primary pb-2">
                 <Mail />
               </div>
-              <p className="text-text-primary font-inter text-[18px] font-normal leading-[29.52px]">
+              <p className="text-text-primary font-inter text-[15px] md:text-[18px] font-normal leading-[29.52px]">
                 contact@primeholidaydestinations.com
               </p>
             </div>
@@ -99,7 +99,7 @@ const toggleModal = () => {
 
           <div>
             <div className="flex justify-end -mt-20">
-              <img src={logo} alt="Logo" className="h-30" />
+              <img src={logo} alt="Logo" className="h-30 hidden md:block" />
             </div>
           </div>
 
