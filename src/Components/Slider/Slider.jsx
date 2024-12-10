@@ -17,9 +17,11 @@ import img1 from "../../../public/HomeImg/Keralabig.webp";
 import img2 from "../../../public/HomeImg/MorochoBig.webp";
 import img3 from "../../../public/HomeImg/oatarbig.webp";
 import img4 from "../../../public/HomeImg/zangerBig.webp";
+import img5 from "../../../public/HomeImg/OmanBig.png"
 
 export default function CardSlider() {
   const cards = [
+    { image: img5, country: "Oman", descriptions: "7 days from ", price: "$1475" },
     { image: img3, country: "Kerala", descriptions: "7 days from ", price: "$1233" },
     { image: img2, country: "Morocho", descriptions: "8 days from ", price: "$1133" },
     { image: img1, country: "Qatar", descriptions: "2 days from ", price: "$1033" },
