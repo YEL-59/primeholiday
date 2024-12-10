@@ -13,13 +13,14 @@ import SecoundaryTitle from "../../../../Components/SecoundaryTitle/SecoundaryTi
 
 const Home_Prime_Section = () => {
   const images = [
-    { id: 1, src: karala, name: "karala",role: "God's Own Country" },
-    { id: 2, src: Egypt, name: "Egypt", role: "Beauty of Land" },
-    { id: 3, src: Morocco, name: "Morocco", role: "Land of Light" },
+    { id: 1, src: karala, name: "kerala",role: "God's Own Country" },
+    { id: 2, src: SriLanka, name: "SriLanka", role: "You'll Come Back for More" },
+    { id: 3, src: zanzibar, name: "zanzibar", role: "Spice Island" },
     { id: 4, src: Oman, name: "Oman", role: "Beauty has an address" },
     { id: 5, src: Qatar, name: "Qatar", role: "Experience the World Beyond" },
-    { id: 6, src: SriLanka, name: "SriLanka", role: "You'll Come Back for More" },
-    { id: 7, src: zanzibar, name: "zanzibar", role: "Spice Island" },
+    { id: 6, src: Egypt, name: "Egypt", role: "Beauty of Land" },
+    { id: 7, src: Morocco, name: "Morocco", role: "Land of Light" },
+ 
   ];
 
   const [activeIndex, setActiveIndex] = useState(Math.floor(images.length / 2));
@@ -90,7 +91,7 @@ const Home_Prime_Section = () => {
               }`}
               style={{
                 backgroundImage: `url(${image.src})`,
-                width: activeIndex === index ? "45rem" : "15rem",
+                width: activeIndex === index ? "50rem" : "15rem",
                 height: "32rem",
                 
               }}
@@ -100,14 +101,14 @@ const Home_Prime_Section = () => {
               <div className="flex flex-col justify-center items-center h-full text-center">
                 {activeIndex === index ? (
                   <div className="overlay active-overlay">
-                    <h2 className="text-4xl font-bold text-ivory-white">
+                    <h2 className="text-4xl font-bold text-ivory-white tracking-wider">
                       {image.name}
                     </h2>
                     <p className="text-md font-normal text-ivory-white mt-2">{image.role}</p>
                   </div>
                 ) : (
-                  <div className="vertical-info">
-                    <h1 className="title text-ivory-white">{image.name}</h1>
+                  <div className="vertical-info ">
+                    <h1 className="title text-ivory-white tracking-widest">{image.name}</h1>
                   </div>
                 )}
               </div>

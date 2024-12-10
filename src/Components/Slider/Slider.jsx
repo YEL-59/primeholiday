@@ -20,10 +20,10 @@ import img4 from "../../../public/HomeImg/zangerBig.webp";
 
 export default function CardSlider() {
   const cards = [
-    { image: img1, country: "Kerala", descriptions: "7 days from ",price:"$1233" },
-    { image: img2, country: "Morocho", descriptions: "8 days from ",price:"$1133" },
-    { image: img3, country: "Qatar", descriptions: "2 days from ",price:"$1033" },
-    { image: img4, country: "Zanger", descriptions: "3 days from ",price:"$933" },
+    { image: img3, country: "Kerala", descriptions: "7 days from ", price: "$1233" },
+    { image: img2, country: "Morocho", descriptions: "8 days from ", price: "$1133" },
+    { image: img1, country: "Qatar", descriptions: "2 days from ", price: "$1033" },
+    { image: img4, country: "Zanger", descriptions: "3 days from ", price: "$933" },
   ];
 
   return (
@@ -42,14 +42,9 @@ export default function CardSlider() {
     >
       {cards.map((card, index) => (
         <SwiperSlide key={index}>
-          <div
-            className="card bg-cover bg-center  "
-            style={{
-              backgroundImage: `url(${card.image})`,
-            }}
-          >
-            {/* Optional Content for Cards */}
-            <div className="card-text bg-black bg-opacity-70 z-10 mt-20 text-ivory-white text-center w-full p-4  shadow-md">
+          <div className="card">
+            <img src={card.image} alt={card.country} />
+            <div className="card-text z-10 text-ivory-white text-center w-full p-4 shadow-md">
               <h2 className="text-4xl font-bold text-ivory-white leading-10">
                 {card.country}
               </h2>

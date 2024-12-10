@@ -6,14 +6,19 @@
   font-weight: bold;
   color: white;
   text-transform: uppercase;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease, margin 0.3s ease;
   transform-origin: center center;
   height: 35rem;
+  margin: 0 .5rem; /* Add consistent horizontal gap */
 }
 
 .slider-card:hover {
   transform: scale(1.1);
   opacity: 1;
+}
+
+.slider-card.active {
+  margin: 0 1rem; /* Increase the gap for the active card */
 }
 
 .slider-card .overlay {
@@ -22,7 +27,7 @@
   right: 0;
   bottom: 0;
   padding: 2rem;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.35);
   color: white;
   text-align: center;
   border-radius: 0 0 0.5rem 0.5rem;
@@ -39,25 +44,24 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(90deg);
+  transform: translate(-50%, -50%) rotate(-90deg);
   text-align: center;
   pointer-events: none;
-  /* transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; */
-  background: rgba(0, 0, 0, 0.5); /* Subtle background for contrast */
-  padding: 0.5rem 1rem; /* Padding for better spacing */
-  border-radius: 0.5rem; /* Rounded corners */
-  opacity:0.8;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  opacity: 0.8;
 }
+
 .slider-card .vertical-info .title {
-  font-size: 1.75rem; /* Increase font size for visibility */
+  font-size: 1.75rem;
   font-weight: bold;
-  color: white; /* Ensure text color stands out */
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add shadow for better readability */
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
   text-transform: uppercase;
-  margin: 0; /* Reset default margin */
+  margin: 0;
 }
 
 .slider-card:hover .vertical-info {
   transform: translate(-50%, -50%) rotate(0deg);
-  opacity: 0;  
+  opacity: 0;
 }
