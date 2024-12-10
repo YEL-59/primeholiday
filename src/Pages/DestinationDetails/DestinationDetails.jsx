@@ -4,6 +4,7 @@ import DestinationHome_Section from "./DestinationComponent/DestinationHome_Sect
 import DestinationCard_Section from "./DestinationComponent/OmanDestinationCard/OmanDestinationCard";
 import Immersion_Section from "./DestinationComponent/Immersion_Section/Immersion_Section";
 import DestinationSteper_Section from "./DestinationComponent/DestinationSteper_Section/DestinationSteper_Section";
+import AboutUscard from "../AboutUs/AboutUsComponent/AboutUsCard/AboutUscard";
 
 
 const DestinationDetails = () => {
@@ -15,7 +16,7 @@ const DestinationDetails = () => {
       ];
   return (
       <>
-          <div className="bg-text-primary">
+          <div className="bg-ivory-white">
             <DestinationHome_Section/>
 
 
@@ -23,7 +24,7 @@ const DestinationDetails = () => {
               <DestinationCard_Section/>
               <Immersion_Section/>
               <DestinationSteper_Section/>
-              <DestinationCard_Section/>
+            <AboutUscard/>
 
 
           

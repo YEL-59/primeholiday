@@ -1,5 +1,5 @@
 import React from 'react';
-import bgImage from '../../../../../public/DestinationImg/Destinationbg.webp';
+import bgImage from '../../../../../public/DestinationImg/destinationbg.png';
 import SectionHeader from '../../../../Components/SectionHeader/SectionHeader';
 
 

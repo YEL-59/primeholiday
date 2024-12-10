@@ -8,7 +8,7 @@ const ReusableCard = ({ img, countryname, packeg, price }) => {
             <h2 className="text-xl font-semibold text-start text-text-primary font-montserrat uppercase tracking-[0.895px] leading-[164%]">
               {countryname}
             </h2>
-            <p className="text-xl font-normal text-center text-text-primary font-montserrat  tracking-[0.895px] leading-[164%]">
+            <p className="text-xl font-normal text-start text-text-primary font-montserrat  tracking-[0.895px] leading-[164%]">
               {packeg} <span className="font-bold">$ {price}</span>
             </p>
           </div>

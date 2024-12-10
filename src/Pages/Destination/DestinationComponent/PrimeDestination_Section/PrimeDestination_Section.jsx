@@ -1,16 +1,19 @@
 
 import { Link } from "react-router-dom";
-import img1 from "../../../../../public/DestinationImg/destinationimg1.webp";
-import img2 from "../../../../../public/DestinationImg/destinationimg2.webp";
-import img3 from "../../../../../public/DestinationImg/destinationimg3.webp";
-import img4 from "../../../../../public/DestinationImg/destinationimg4.webp";
+import img1 from "../../../../../public/DestinationImg/egypt.png";
+import img2 from "../../../../../public/DestinationImg/morocco.png";
+import img3 from "../../../../../public/DestinationImg/zinzaber.jpg";
+import img4 from "../../../../../public/DestinationImg/oman.jpg";
+import img5 from "../../../../../public/DestinationImg/kerala.jpg";
+import img6 from "../../../../../public/DestinationImg/qatart.jpg";
+import img7 from "../../../../../public/DestinationImg/srilanka.jpg";
 import ImageOverlayCard from "../../../../Components/ImageOverlayCard/ImageOverlayCard";
 
 const PrimeDestination_Section = () => {
   const destinations = [
     {
       id: "region-africa",
-      region: "Africa",
+      region: "Asia",
       items: [
         {
           id: "card-1",
@@ -22,7 +25,7 @@ const PrimeDestination_Section = () => {
         {
           id: "card-2",
           imgSrc: img2,
-          title: "Morocho",
+          title: "Morocco",
           description: "Land of Light",
           url: "morocco",
         },
@@ -37,25 +40,25 @@ const PrimeDestination_Section = () => {
     },
     {
       id: "region-asia",
-      region: "Asia",
+      // region: "Asia",
       items: [
         {
           id: "card-4",
-          imgSrc: img1,
+          imgSrc: img4,
           title: "Oman",
           description: "Beauty has an address",
           url: "Oman",
         },
         {
           id: "card-5",
-          imgSrc: img2,
+          imgSrc: img6,
           title: "Qatar",
           description: "Experience the World Beyond",
           url: "Qatar",
         },
         {
           id: "card-6",
-          imgSrc: img3,
+          imgSrc: img7,
           title: "Sri lanka",
           description: "You'll Come Back for More",
           url: "Srilanka",
@@ -66,16 +69,17 @@ const PrimeDestination_Section = () => {
 
   const fixedDiv = {
     id: "fixed-div-asia",
-    imgSrc: img4,
-    title: "Special Asia Destination",
+    imgSrc: img5,
+    title: "Kerala",
     description: "God's Own Country",
+    region: "Asia",
   };
 
   return (
     <div>
       <div className="container mx-auto">
         <h1 className="text-6xl font-semibold leading-10 text-primary text-center p-20">
-          Prime Destination
+        Prime Destinations
         </h1>
       </div>
 
@@ -102,6 +106,9 @@ const PrimeDestination_Section = () => {
           {/* Render Fixed Div Content Between Regions */}
           {destination.id === "region-africa" && (
             <div className="relative mt-10">
+               <h1 className="mb-5 mt-5 text-4xl font-montserrat font-semibold text-primary">
+            {destination.region}
+          </h1>
               <img
                 src={fixedDiv.imgSrc}
                 className="h-[555px] w-full"

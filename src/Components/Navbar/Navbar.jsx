@@ -91,7 +91,7 @@ const Navbar = () => {
             }`}
             onClick={closeSidebar} 
           >
-            About
+            Abouts
           </Link>
           <Link
             to="/destination"
@@ -100,7 +100,7 @@ const Navbar = () => {
             }`}
             onClick={closeSidebar} 
           >
-            Destination
+            Destinations
           </Link>
           <Link
             to="/blog"
@@ -109,7 +109,7 @@ const Navbar = () => {
             }`}
             onClick={closeSidebar} 
           >
-            Blog
+            Blogs
           </Link>
         </div>
       </div>

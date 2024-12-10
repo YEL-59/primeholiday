@@ -2,34 +2,37 @@
 
 import ReusableCard from '../../../../Components/reusable card/reusablecard';
 import MainTitle from '../../../../Components/MainTitle/MainTitle';
-import img from '../../../../../public/DestinationImg/destinationimg1.webp'
-import img1 from '../../../../../public/DestinationImg/destinationimg2.webp'
-import img2 from '../../../../../public/DestinationImg/destinationimg3.webp'
+import img from "../../../../../public/DestinationImg/cultureimg.jpg";
+import img1 from "../../../../../public/DestinationImg/essen.jpg";
+import img2 from "../../../../../public/DestinationImg/luxyry.jpg";
 const DestinationCard_Section = () => {
   const data = [
     {
       img: img,
-      countryname: 'Oman',
-      packeg: '7 days from $1475',
+      countryname: 'Immersion in Cultural Oman',
+      packeg: '9 Days From ',
+      price:'2525'
     },
     {
         img:img1,
-        countryname: 'Oman',
-        packeg: '7 days from $1475',
+        countryname: 'Essence of Oman',
+        packeg: '10 Days From ',
+         price:'2835'
       },
       {
         img: img2,
-        countryname: 'Oman',
-        packeg: '7 days from $1475',
+        countryname: 'Luxury Oman',
+        packeg: '7 Days From ',
+         price:'3765'
       },
   ];
   return (
     <>
-      <div>
+      <div >
         <div>
 
-       <div className='mt-5 mb-5'>
-       <MainTitle head_title={"Destinations you'll love"} />
+       <div className='mt-5 mb-5 '>
+       <MainTitle head_title={"All-Inclusive ground packages"} />
        </div>
 
           <div>
@@ -40,6 +43,7 @@ const DestinationCard_Section = () => {
                   img={item.img}
                   countryname={item.countryname}
                   packeg={item.packeg}
+                  price={item.price}
                 />
               ))}
             </div>

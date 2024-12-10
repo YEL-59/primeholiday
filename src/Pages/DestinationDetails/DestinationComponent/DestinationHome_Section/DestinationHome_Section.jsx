@@ -2,8 +2,8 @@
 
 
 
-import bgImage from '../../../../../public/DestinationImg/destinationimg5.webp'
-import SectionHeader from '../../../../Components/SectionHeader/SectionHeader';
+import bgImage from '../../../../../public/DestinationImg/Omanbg.png'
+
 
 
 const DestinationHome_Section = () => {

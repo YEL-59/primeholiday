@@ -25,9 +25,9 @@ export default function CardSlider() {
     { image: img5, country: "Oman", descriptions: "7 days from ", price: "$1475" },
     { image: img3, country: "Qatar", descriptions: "7 days from ", price: "$1475" },
     { image: img6, country: "Malaysia", descriptions: "7 days from ", price: "$1475" },
-    { image: img2, country: "Morocco", descriptions: "8 days from ", price: "$1475" },
-    { image: img1, country: "Kerala", descriptions: "2 days from ", price: "$1475" },
-    { image: img4, country: "Zanzibar", descriptions: "3 days from ", price: "$1475" },
+    { image: img2, country: "Morocco", descriptions: "7 days from ", price: "$1475" },
+    { image: img1, country: "Kerala", descriptions: "7 days from ", price: "$1475" },
+    { image: img4, country: "Zanzibar", descriptions: "7 days from ", price: "$1475" },
   ];
 
   return (

@@ -31,13 +31,12 @@ const Home_Main_Section = () => {
         <div className="relative z-30 p-5 text-white  bg-opacity-50 rounded-xl">
           <div>
             <h1 className="text-primary text-center font-salvager text-[5px] xl:text-[96px] font-normal leading-[1.24] tracking-[-1.92px]">
-              Your All-Inclusive Journey Starts Here
+            Your All-Inclusive Journey Starts Here
             </h1>
 
             <p className="text-ivory-white text-center font-montserrat text-[44px] font-bold leading-[1] tracking-[-1.28px] max-w-4xl mx-auto mt-5 mb-5">
               <span className="text-[64px] font-bold">&ldquo;</span>
-              The Essence of a Holiday is to Enrich our lives and create lasting
-              memories
+              The Essence of a Holiday is to Enrich Our Lives and Create Lasting Memories
               <span className="text-[64px] font-bold">&rdquo;</span>
             </p>
           </div>
