@@ -111,11 +111,11 @@ const PrimeDestination_Section = () => {
           </h1>
               <img
                 src={fixedDiv.imgSrc}
-                className="h-[555px] w-full"
+                className="h-[555px] w-full  object-cover aspect-[16/9] md:aspect-[4/3] lg:aspect-[3/3]"
                 alt={fixedDiv.title}
               />
               <div className="absolute -mt-[130px] p-4 w-full flex flex-col justify-end text-ivory-white rounded bg-[rgba(0,0,0,0.35)] bg-opacity-0 z-10">
-                <h2 className="text-4xl uppercase font-medium px-4 pb-1 z-10 text-center ">
+                <h2 className="text-xl xl:text-4xl uppercase font-medium px-4 pb-1 z-10 text-center ">
                   {fixedDiv.title}
                 </h2>
                 <p className="text-lg uppercase px-4 pb-2 text-center">
