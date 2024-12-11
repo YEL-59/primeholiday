@@ -65,47 +65,47 @@ const toggleModal = () => {
           </div>
 
           <div className="mt-5">
-            <div className="flex flex-col gap-2 pb-4 border-b max-w-[14rem] ">
+            <div className="flex flex-row sm:flex-col items-center sm:items-start gap-2 sm:pb-4 border-b max-w-[14rem] ">
               <div className="text-3xl text-primary pb-2">
                 <Location />
               </div>
-              <address className="text-text-primary font-inter text-[18px] font-normal leading-[29.52px]">
+              <address className="text-text-primary font-inter text-[13.5px] md:text-[18px] font-normal leading-[29.52px]">
                 65 Hartfield Crescent Birmingham B27 7QE
               </address>
             </div>
           </div>
 
           <div className="mt-5">
-            <div className="flex flex-col gap-2 pb-4 border-b max-w-[22rem] ">
+            <div className="flex flex-row sm:flex-col gap-2 sm:pb-4 border-b max-w-[22rem] ">
               <div className="text-3xl text-primary pb-2">
                 <Mail />
               </div>
-              <p className="text-text-primary font-inter text-[15px] md:text-[18px] font-normal leading-[29.52px]">
+              <p className="text-text-primary font-inter text-[13.5px] md:text-[18px] font-normal leading-[29.52px]">
                 contact@primeholidaydestinations.com
               </p>
             </div>
           </div>
 
           <div className="mt-5">
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-row sm:flex-col gap-2">
               <div className="text-3xl text-primary pb-2">
                 <Whatsappe />
               </div>
-              <p className="text-text-primary font-inter text-[18px] font-normal leading-[29.52px]">
+              <p className="text-text-primary font-inter text-[13.5px] md:text-[18px] font-normal leading-[29.52px]">
                 +44 7553 778086
               </p>
             </div>
           </div>
 
           <div>
-            <div className="flex justify-end -mt-20">
+            <div className="flex justify-end md:-mt-20">
               <img src={logo} alt="Logo" className="h-30 hidden md:block" />
             </div>
           </div>
 
           <div className="flex flex-wrap justify-between mt-5">
             <div>
-              <div className="flex flex-wrap text-text-primary font-inter text-[18px] font-normal leading-[29.52px]">
+              <div className="flex flex-wrap text-text-primary font-inter text-[13.5px] md:text-[18px] font-normal leading-[29.52px]">
                 <Link to={"aboutus"} className="flex items-center px-2">
                   <p className="inline-flex items-center relative pr-4 after:content-[''] after:border-r-2 after:border-gray-300 after:h-4 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">
                     About
@@ -141,7 +141,7 @@ const toggleModal = () => {
                 </Link>
               </div>
 
-              <div className="w-full text-text-primary font-inter text-[18px] font-normal leading-[29.52px] flex sm:flex-row gap-2 flex-col items-center justify-between py-4">
+              <div className="w-full text-text-primary font-inter text-[13.5px] md:text-[18px] font-normal leading-[29.52px] flex sm:flex-row gap-2 flex-col md:items-center justify-between py-4">
                 <p>&copy; 2024 Rizmail Travel & Tours Limited</p>
               </div>
 
@@ -150,16 +150,16 @@ const toggleModal = () => {
 
             <div>
               <div>
-                <h1 className="text-text-primary font-inter text-[18px] font-normal leading-[29.52px]">
+                <h1 className="text-text-primary font-inter text-[13.5px] md:text-[18px] font-normal leading-[29.52px]">
                   Prime Holiday Destinations a Brand by Rizmali Travel & Tours
                   Limited
                 </h1>
-                <p className="text-text-primary text-end font-inter text-[18px] font-normal leading-[29.52px] pb-4">
+                <p className="text-text-primary text-start 2xl:text-end font-inter text-[13.5px] md:text-[18px]] font-normal leading-[29.52px] pb-4">
                   Company Number 14730696 I Registered in England
                 </p>
               </div>
               <div className="">
-                <p className="text-text-primary font-inter text-end text-sm font-normal leading-[29.52px]">
+                <p className="text-text-primary font-inter text-start 2xl:text-end text-sm font-normal leading-[29.52px]">
                 Colour palette inspired by @thehousewiththepinkbed
                 </p>
               </div>
@@ -169,7 +169,7 @@ const toggleModal = () => {
         </div>
 
 
-        <div className="flex justify-end mr-14 -mt-10">
+        <div className="flex justify-end mr-14 -mt-10 hidden md:flex">
                 <div
                   className="text-4xl  border-[2px] h-[48px] rounded-xl py-3 px-3 border-primary flex justify-center items-center"
                   onClick={handleScrollToTop}
@@ -181,7 +181,7 @@ const toggleModal = () => {
 
       <div className="bg-green">
         <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between p-2">
-          <div className="text-ivory-white">
+          <div className="text-ivory-white text-center md:text-start">
             <p className="text-sm">Stay up to date</p>
             <h1 className="text-lg font-bold">Subscribe to our newsletter</h1>
           </div>

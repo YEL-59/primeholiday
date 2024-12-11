@@ -2,19 +2,21 @@
 import img from "../../../../../public/HomeImg/FrameBig.png";
 
 import CardSlider from "../../../../Components/Slider/Slider";
-import MainTitle from "../../../../Components/MainTitle/MainTitle";
+import SecoundaryTitle from "../../../../Components/SecoundaryTitle/SecoundaryTitle";
 
 const Home_Packeg_Section = () => {
   return (
     <div>
       <div
-          className="relative bg-cover bg-center py-10 h-[100vh]"
+          className="relative bg-cover bg-center py-10 "
           style={{
             backgroundImage: `linear-gradient(239deg, #FFFFF0 37.35%, rgba(255, 255, 240, 0.00) 82.3%), url(${img})`,
           }}
       >
-        <MainTitle head_title={"ALL-INCLUSIVE Packages"} />
-        <div className=" mt-10">
+      <div className="flex justify-center">
+      <SecoundaryTitle head_title={"ALL-INCLUSIVE Packages"} />
+      </div>
+        <div className=" md:mt-10">
           <CardSlider />
         </div>
       </div>

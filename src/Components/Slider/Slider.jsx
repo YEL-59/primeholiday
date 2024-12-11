@@ -49,10 +49,10 @@ export default function CardSlider() {
         <div className="card">
           <img src={card.image} className="h-[498px]" alt={card.country} />
           <div className="card-text z-10 text-ivory-white text-center w-full p-4 shadow-md">
-            <h2 className="text-4xl font-bold text-ivory-white leading-10">
+            <h2 className="md:text-4xl font-bold text-ivory-white leading-10">
               {card.country}
             </h2>
-            <p className="text-xl font-normal text-ivory-white leading-10 uppercase">
+            <p className="md:text-xl font-normal text-ivory-white leading-10 uppercase">
               {card.descriptions} <strong>{card.price}</strong>
             </p>
           </div>

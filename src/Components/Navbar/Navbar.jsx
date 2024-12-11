@@ -47,7 +47,7 @@ const Navbar = () => {
           </div>
 
           {/* Center Section - Logo */}
-         <Link to={'/'}> <div className=" ml-[85px]">
+         <Link to={'/'}> <div className="hidden md:block md:ml-[85px]">
             <img src={mylogo} className="h-8 sm:h-10 md:h-20 lg:h-full" alt="Logo" />
           </div></Link>
 
@@ -55,7 +55,7 @@ const Navbar = () => {
           <div>
             <button
               onClick={toggleModal}
-              className="px-4 py-2 bg-transparent border font-semibold text-white hover:bg-primary rounded uppercase"
+              className="px-4 py-2 text-sm md:text-lg bg-transparent border font-semibold text-ivory-white hover:bg-primary rounded uppercase"
             >
               Enquire now
             </button>
@@ -65,7 +65,7 @@ const Navbar = () => {
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 left-0 w-64 h-72 opacity-90 bg-primary text-white transform ${
+        className={`fixed top-0 left-0 w-64 h-72 opacity-90 bg-primary text-ivory-white transform ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 ease-in-out z-50 rounded-br-2xl overflow-y-auto`}
       >

@@ -26,7 +26,7 @@ export default {
         sm: "100%", // Full width for small screens
         md: "768px", // Medium screen size
         lg: "1024px", // Large screen size
-        xl: "1280px", // Extra large screen size
+        xl: "1440px", // Extra large screen size
         "2xl": "1620px", // Custom size for larger screens
       },
     },
