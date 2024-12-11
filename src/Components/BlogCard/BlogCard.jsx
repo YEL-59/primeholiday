@@ -7,9 +7,9 @@ const BlogCard = ({ image, title, date, description, isExpanded, onToggle }) => 
   return (
     <div className="bg-text-primary border rounded overflow-hidden shadow   ">
       {/* Image Section */}
-      <img className="h-[340px] w-[525px] object-cover object-end" src={image} alt={title} />
+      <img className="      xl:h-[340px] xl:w-[525px]  w-full h-auto object-cover aspect-[16/9] md:aspect-[4/3] xl:aspect-[3/3]" src={image} alt={title} />
 
-      <div className="p-6">
+      <div className="p-3 xl:p-6">
           {/* Date */}
           <div className=" text-black text-sm uppercase font-normal tracking-wide leading-6">
           {date}

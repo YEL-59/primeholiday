@@ -103,7 +103,7 @@ const BlogPage = () => {
         <BlogSection key={index} sectionData={section} />
       ))}
 
-      <div className="bg-green p-4 text-ivory-white font-bold text-center text-xl">
+      <div className="bg-green p-4 mt-5 text-ivory-white font-bold text-center text-xl">
         <h1>Load More</h1>
       </div>
     </div>

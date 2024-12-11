@@ -183,12 +183,12 @@ const toggleModal = () => {
         <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between p-2">
           <div className="text-ivory-white text-center md:text-start">
             <p className="text-sm">Stay up to date</p>
-            <h1 className="text-lg font-bold">Subscribe to our newsletter</h1>
+            <h1 className="text-lg font-bold truncate">Subscribe to our newsletter</h1>
           </div>
-          <div className="flex flex-col sm:flex-row gap-2">
+          <div className="flex flex-col sm:flex-row justify-end gap-2 w-full">
             <input
               type="text"
-              className="border rounded py-1 px-3 bg-transparent h-8 text-ivory-white"
+              className="border rounded py-1 px-3 bg-transparent h-8 text-ivory-white focus:outline-none"
               placeholder="Enter Your Name"
             />
             <button className="border rounded px-5 py-1 text-ivory-white font-medium mt-2 sm:mt-0 sm:ml-5 h-8">
