@@ -22,13 +22,13 @@ export default {
     container: {
       center: true, // Center the container
       padding: "1rem", // Optional padding
-      screens: {
-        sm: "100%", // Full width for small screens
-        md: "768px", // Medium screen size
-        lg: "1024px", // Large screen size
-        xl: "1440px", // Extra large screen size
-        "2xl": "1620px", // Custom size for larger screens
-      },
+      // screens: {
+      //   sm: "100%", 
+      //   md: "768px", 
+      //   lg: "1024px", 
+      //   xl: "1440px", 
+      //   "2xl": "1620px", 
+      // },
     },
   },
   corePlugins: {

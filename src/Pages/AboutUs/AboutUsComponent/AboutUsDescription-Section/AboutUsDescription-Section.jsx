@@ -69,7 +69,7 @@ const AboutUsDescriptionSection = () => {
               </li>
             </ul>
 
-            <p className=" font-inter text-xl font-normal leading-[164%] tracking-[-0.48px]">
+            <p className=" font-inter text-black text-xl font-normal leading-[164%] tracking-[-0.48px]">
               <strong>How to Book</strong>
               <br />
               Booking your dream holiday with Prime Holiday Destinations is

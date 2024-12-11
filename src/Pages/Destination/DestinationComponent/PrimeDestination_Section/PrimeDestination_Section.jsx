@@ -93,7 +93,7 @@ const PrimeDestination_Section = () => {
           {/* First Grid of Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
             {destination.items.map((item) => (
-              <Link to={`/destination/${item.url}`} key={item.id}>
+              <Link to={`/destination/${item.url}`} key={item.id}  state={{ imgSrc: item.imgSrc }}>
                 <ImageOverlayCard
                   imgSrc={item.imgSrc}
                   title={item.title}

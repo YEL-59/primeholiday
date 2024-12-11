@@ -12,7 +12,7 @@ const Home_Inclusive_Section = () => {
             <div className="md:col-span-4">
               <div>
                 <SecoundaryTitle head_title={"COMMITMENT TO EXCELLENCE"} />
-                <p className="text-black font-inter text-[20px] xl:text-[32px] font-normal leading-[1.64] tracking-[0.85px] mt-5 max-w-xl">
+                <p className="text-black font-inter text-[20px] xl:text-[28px] 2xl:text-[32px] font-normal leading-[1.64] tracking-[0.85px] mt-5 max-w-xl">
                   At PHD, we are committed to transforming each holiday into a
                   memorable experience, prioritizing our clients' comfort,
                   enjoyment, and peace of mind from start to finish. When you
@@ -26,7 +26,7 @@ const Home_Inclusive_Section = () => {
               <img
                 src={img}
                 alt=""
-                className="xl:h-[809px] w-[834px] "
+                className="xl:h-[700px] w-[834px] "
               />
             </div>
           </div>
