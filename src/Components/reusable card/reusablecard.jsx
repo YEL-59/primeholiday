@@ -1,14 +1,14 @@
 const ReusableCard = ({ img, countryname, packeg, price }) => {
   return (
     <div className="relative w-full  overflow-hidden shadow-lg h-[20rem] md:h-[30.5rem] bg-white transform transition duration-300 hover:scale-105 hover:shadow-2xl">
-      <img src={img} alt={countryname} className="w-full h-full object-cover" />
+      <img src={img} alt={countryname} className="w-full h-[492px] object-cover   aspect-[16/9] md:aspect-[4/3] lg:aspect-[3/2]" />
       <div className="absolute bottom-0 w-full bg-green p-4">
         <div className="flex justify-between items-center text-ivory-white">
           <div>
             <h2 className="text-[15px] xl:text-xl font-semibold text-start text-text-primary font-montserrat uppercase tracking-[0.895px] leading-[164%]">
               {countryname}
             </h2>
-            <p className="text-[12px] xl:text-xl font-normal text-start text-text-primary font-montserrat  tracking-[0.895px] leading-[164%]">
+            <p className="text-[12px] xl:text-xl font-normal text-start text-text-primary font-montserrat  ">
               {packeg} <span className="font-bold">$ {price}</span>
             </p>
           </div>

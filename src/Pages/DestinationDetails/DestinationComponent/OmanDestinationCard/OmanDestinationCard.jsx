@@ -5,6 +5,7 @@ import MainTitle from '../../../../Components/MainTitle/MainTitle';
 import img from "../../../../../public/DestinationImg/cultureimg.jpg";
 import img1 from "../../../../../public/DestinationImg/essen.jpg";
 import img2 from "../../../../../public/DestinationImg/luxyry.jpg";
+import SecoundaryTitle from '../../../../Components/SecoundaryTitle/SecoundaryTitle';
 const DestinationCard_Section = () => {
   const data = [
     {
@@ -31,12 +32,12 @@ const DestinationCard_Section = () => {
       <div >
         <div>
 
-       <div className='mt-5 mb-5 '>
-       <MainTitle head_title={"All-Inclusive ground packages"} />
+       <div className='mt-5 mb-5 flex justify-center '>
+       <SecoundaryTitle head_title={"All-Inclusive ground packages"} />
        </div>
 
           <div>
-            <div className="container mx-auto grid grid-cols-3 gap-5 mb-10 mt-10">
+            <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 mb-10">
               {data.map((item, index) => (
                 <ReusableCard
                   key={index}

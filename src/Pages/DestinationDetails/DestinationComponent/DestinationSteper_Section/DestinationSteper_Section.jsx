@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import { useState } from 'react';
 
 const DestinationSteper_Section = () => {
   // State to manage which section is active
@@ -9,24 +9,22 @@ const DestinationSteper_Section = () => {
     {
       title: "INCLUDES & Excludes",
       content: (
-        <>
-          <div className="container mx-auto flex gap-5">
-            <div className="border-r-4 ml-10">
-              <ul>
-                <li>Return airport transfers.</li>
-                <li>8 Nights hotel accommodation in selected hotel category.</li>
-                <li>Meals are provided as outlined in the itinerary.</li>
-              </ul>
-            </div>
-            <div>
-              <ul>
-                <li>Personal expenses.</li>
-                <li>Visa fees (if applicable).</li>
-                <li>Additional meals not outlined in the itinerary.</li>
-              </ul>
-            </div>
+        <div className="flex flex-col md:flex-row gap-5">
+          <div className="border-r-4 md:ml-10 md:w-1/2 p-4">
+            <ul className="list-disc pl-5">
+              <li>Return airport transfers.</li>
+              <li>8 Nights hotel accommodation in selected hotel category.</li>
+              <li>Meals are provided as outlined in the itinerary.</li>
+            </ul>
           </div>
-        </>
+          <div className="p-4 md:w-1/2">
+            <ul className="list-disc pl-5">
+              <li>Personal expenses.</li>
+              <li>Visa fees (if applicable).</li>
+              <li>Additional meals not outlined in the itinerary.</li>
+            </ul>
+          </div>
+        </div>
       ),
     },
     {
@@ -61,13 +59,13 @@ const DestinationSteper_Section = () => {
   };
 
   return (
-    <div className="container mx-auto border-green border h-[60vh] p-5 mt-10">
+    <div className="container mx-auto border-green border h-auto p-5 mt-10">
       {/* Stepper buttons */}
-      <div className="flex justify-between gap-5">
+      <div className="flex flex-wrap justify-start md:justify-between gap-5">
         {steps.map((step, index) => (
           <button
             key={index}
-            className={`px-5 py-1 text-black border-green-600 border hover:text-white hover:bg-green-800 ${
+            className={`px-5 py-2 text-black border-green-600 border hover:text-white hover:bg-green-800 rounded-lg mb-2 md:mb-0 ${
               activeStep === index ? 'bg-green-800 text-white' : ''
             }`}
             onClick={() => handleStepChange(index)}
@@ -79,13 +77,13 @@ const DestinationSteper_Section = () => {
 
       {/* Stepper content */}
       <div className="container mx-auto mt-5 bg-green-800 rounded text-white p-5">
-        <div className="flex justify-between">
-          <div>{steps[activeStep].title}</div>
-        </div>
+        <div className="text-lg font-semibold">{steps[activeStep].title}</div>
       </div>
 
       {/* Active content based on the step */}
-      <div className="container mx-auto mt-5">{steps[activeStep].content}</div>
+      <div className="container mx-auto mt-5 text-gray-800">
+        {steps[activeStep].content}
+      </div>
     </div>
   );
 };

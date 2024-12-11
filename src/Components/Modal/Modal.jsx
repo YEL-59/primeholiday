@@ -1,3 +1,5 @@
+
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 
 const Modal = ({ isOpen, onClose }) => {
@@ -5,11 +7,38 @@ const Modal = ({ isOpen, onClose }) => {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm();
+  const [loading, setLoading] = useState(false);
 
-  const onSubmit = (data) => {
-    console.log("Form Data:", data); // Replace this with backend API call
-    onClose(); // Close modal on successful submission
+  const onSubmit = async (data) => {
+    setLoading(true);
+    try {
+      const response = await fetch("https://your-api-endpoint.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        const errorDetails = await response.json();
+        throw new Error(errorDetails.message || "An error occurred");
+      }
+
+      alert("Form submitted successfully!");
+      reset();
+      onClose();
+    } catch (error) {
+      console.error("Submission error:", error);
+      alert(error.message || "Submission failed. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleClose = () => {
+    reset(); // Clear form on close
+    onClose();
   };
 
   if (!isOpen) return null;
@@ -22,7 +51,7 @@ const Modal = ({ isOpen, onClose }) => {
             ENQUIRY FORM
           </h1>
           <button
-            onClick={onClose}
+              onClick={handleClose}
             className="text-gray-500 hover:text-gray-700 text-2xl font-bold"
           >
             ×
@@ -198,9 +227,12 @@ const Modal = ({ isOpen, onClose }) => {
 
           <button
             type="submit"
-            className=" bg-primary text-white uppercase  py-2 px-5   shadow hover:bg-primary-dark focus:ring focus:ring-primary-light"
+            className={`bg-primary text-white uppercase py-2 px-5 shadow ${
+              loading ? "opacity-50 cursor-not-allowed" : "hover:bg-primary-dark"
+            }`}
+            disabled={loading}
           >
-            Submit
+            {loading ? "Submitting..." : "Submit"}
           </button>
         </form>
       </div>
