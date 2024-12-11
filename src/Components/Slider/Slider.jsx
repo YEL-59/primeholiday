@@ -13,7 +13,7 @@ import "./style.css";
 import { Pagination, Autoplay } from "swiper/modules";
 
 // Import images
-import img1 from "../../../public/HomeImg/Keralabig.jpg";
+import img1 from "../../../public/HomeImg/Keralabig.webp";
 import img2 from "../../../public/HomeImg/moroccho.png";
 import img3 from "../../../public/HomeImg/qatarbig.jpg";
 import img4 from "../../../public/HomeImg/zangerBig.webp";
