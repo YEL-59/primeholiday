@@ -3,7 +3,7 @@
 const AboutUsDescriptionSection = () => {
   return (
     <div className="bg-ivory-white">
-      <div className="container mx-auto  px-4 p-14">
+      <div className="container mx-auto  px-4 p-5 md:p-14">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* Left Column: About Us */}
           <div className="space-y-6 ">
@@ -69,7 +69,7 @@ const AboutUsDescriptionSection = () => {
               </li>
             </ul>
 
-            <p className="text-xl text-gray-700 mt-6">
+            <p className=" font-inter text-xl font-normal leading-[164%] tracking-[-0.48px]">
               <strong>How to Book</strong>
               <br />
               Booking your dream holiday with Prime Holiday Destinations is
