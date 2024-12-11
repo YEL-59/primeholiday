@@ -16,7 +16,7 @@ const BlogSection = ({ sectionData }) => {
     <>
       <div className="bg-text-primary">
         <div className="container mx-auto xl:p-14">
-          <h1 className="font-montserrat text-[20px] xl:text-[40px] font-semibold leading-[124%] uppercase text-primary text-center mt-10 mb-14 relative">
+          <h1 className="font-montserrat text-[20px] xl:text-[40px] font-semibold leading-[124%] uppercase text-primary text-center  mb-10 relative">
             {sectionData.heading}
             <span className="absolute left-1/2 transform -translate-x-1/2 bottom-[-14px] w-[10%] border-b-2 border-primary"></span>
           </h1>

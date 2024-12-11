@@ -4,7 +4,7 @@ import SectionHeader from "../../../../Components/SectionHeader/SectionHeader";
 const Blog_Home_Section = () => {
   return (
     <>
-      <div className="h-[70vh] ">
+      <div className=" ">
         <SectionHeader
           backgroundImage={bgImage}
           title={"Explore Our Blogs"}

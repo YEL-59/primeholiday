@@ -30,11 +30,11 @@ const Home_Main_Section = () => {
         {/* Overlay Text */}
         <div className="relative z-30 p-5 text-white  bg-opacity-50 rounded-xl">
           <div>
-            <h1 className="text-primary text-center font-salvager text-[50px] lg:text-[70px] xl:text-[96px] font-bold md:font-normal leading-[1.24] tracking-wide md:tracking-[-1.92px]">
+            <h1 className="text-primary text-center font-salvager text-[50px] lg:text-[70px] xl:text-[80px] 2xl:[96px] font-bold md:font-normal leading-[1.24] tracking-wide md:tracking-[-1.92px]">
             Your All-Inclusive Journey Starts Here
             </h1>
 
-            <p className="text-ivory-white text-center font-montserrat text-[18px] md:text-[25px] lg:text-[30px] xl:text-[44px] font-bold leading-[50px]  xl:leading-[1] tracking-[-1.28px] max-w-xl xl:max-w-4xl mx-auto mt-5 mb-5">
+            <p className="text-ivory-white text-center font-montserrat text-[18px] md:text-[25px] lg:text-[30px] xl:text-[38px] 2xl:text-[44px] font-bold leading-[50px]  xl:leading-[1] tracking-[-1.28px] max-w-xl xl:max-w-4xl mx-auto mt-5 mb-5">
               <span className="text-[20px] md:text-[64px] font-bold">&ldquo;</span>
               The Essence of a Holiday is to Enrich Our Lives and Create Lasting Memories
               <span className="text-[20px] md:text-[64px] font-bold">&rdquo;</span>
