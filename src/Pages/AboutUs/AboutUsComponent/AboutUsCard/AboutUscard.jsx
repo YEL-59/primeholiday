@@ -27,7 +27,7 @@ const AboutUscard = () => {
   ];
   return (
     <div className="bg-ivory-white">
-         <div className="container mx-auto pb-10 p-5 md:p-14">
+         <div className="container mx-auto pb-10 p-5 ">
        <h1 className="text-primary font-montserrat text-4xl text-center mb-16 font-semibold leading-[124%] tracking-[-0.64px]">Destinations you'll love</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         

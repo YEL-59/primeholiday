@@ -3,7 +3,7 @@
 const AboutUsDescriptionSection = () => {
   return (
     <div className="bg-ivory-white">
-      <div className="container mx-auto  px-4 p-5 md:p-14">
+      <div className="container mx-auto  px-4 p-5 xl:p-14">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* Left Column: About Us */}
           <div className="space-y-6 ">
