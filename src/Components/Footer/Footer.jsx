@@ -116,7 +116,7 @@ const toggleModal = () => {
                     Destinations
                   </p>
                 </Link>
-                <Link to={"blog"} className="flex items-center px-2">
+                <Link to={"/"} className="flex items-center px-2">
                   <p className="inline-flex items-center relative pr-4 after:content-[''] after:border-r-2 after:border-gray-300 after:h-4 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">
                     Blog
                   </p>
