@@ -1,38 +1,33 @@
-
 import img from "/HomeImg/homeimg1.webp";
 import SecoundaryTitle from "../../../../Components/SecoundaryTitle/SecoundaryTitle";
 
 const Home_Inclusive_Section = () => {
   return (
-    <>
-      {" "}
-      <div>
-        <div className="container mx-auto">
-          <div className="lg:w-3/3 mx-auto grid lg:grid-cols-9 gap-16   md:my-20 p-5">
-            <div className="md:col-span-4">
-              <div>
-                <SecoundaryTitle head_title={"COMMITMENT TO EXCELLENCE"} />
-                <p className="text-black font-inter text-[20px] xl:text-[28px] 2xl:text-[32px] font-normal leading-[1.64] tracking-[0.85px] mt-5 max-w-xl">
-                  At PHD, we are committed to transforming each holiday into a
-                  memorable experience, prioritizing our clients' comfort,
-                  enjoyment, and peace of mind from start to finish. When you
-                  travel with prime Holiday Destinations, you're not just
-                  exploring a new place, you're embarking on a journey crafted
-                  with passion, experience, and a commitment to excellence.
-                </p>
-              </div>
-            </div>
-            <div className="md:col-span-5">
-              <img
-                src={img}
-                alt=""
-                className="xl:h-[700px] w-[834px] "
-              />
-            </div>
-          </div>
+    <div className="container mx-auto px-5 md:px-10">
+      <div className="grid lg:grid-cols-9 items-center gap-10 md:gap-16 py-10 md:py-20">
+        {/* Text Section */}
+        <div className="lg:col-span-4">
+          <SecoundaryTitle head_title={"COMMITMENT TO EXCELLENCE"} />
+          <p className="text-black font-inter text-sm md:text-base xl:text-lg 2xl:text-4xl font-normal leading-tight tracking-wide mt-5 2xl:max-w-xl">
+            At PHD, we are committed to transforming each holiday into a
+            memorable experience, prioritizing our clients' comfort, enjoyment,
+            and peace of mind from start to finish. When you travel with Prime
+            Holiday Destinations, you're not just exploring a new place, you're
+            embarking on a journey crafted with passion, experience, and a
+            commitment to excellence.
+          </p>
+        </div>
+
+        {/* Image Section */}
+        <div className="lg:col-span-5">
+          <img
+            src={img}
+            alt="Commitment to Excellence"
+            className="w-full h-auto max-h-[500px] md:max-h-[600px] lg:max-h-[700px] object-cover rounded-md shadow-lg"
+          />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
