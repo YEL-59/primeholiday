@@ -16,19 +16,19 @@ export default {
         montserrat: ["Montserrat", "sans-serif"],
       },
       maxWidth: {
-        container: "1620px",
+        container: "1640px",
       },
     },
     container: {
       center: true, // Center the container
       padding: "1rem", // Optional padding
-      // screens: {
-      //   sm: "100%", 
-      //   md: "768px", 
-      //   lg: "1024px", 
-      //   xl: "1440px", 
-      //   "2xl": "1620px", 
-      // },
+      screens: {
+        sm: "480px", 
+        md: "768px", 
+        lg: "1024px", 
+        xl: "1440px", 
+        "2xl": "1640px", 
+      },
     },
   },
   corePlugins: {
