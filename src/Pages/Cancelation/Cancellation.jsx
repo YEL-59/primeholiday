@@ -56,7 +56,7 @@ const Cancellation = () => {
       </div>
 
       <div>
-        <div className="bg-text-primary p-6">
+        <div className="bg-ivory-white p-6">
           <div className="container mx-auto">
             <h1 className="text-2xl font-bold text-gray-900 mb-4">
               {" "}

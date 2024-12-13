@@ -28,7 +28,7 @@ const DestinationHome_Section = () => {
 
           {/* Bottom Content */}
           <div className="w-full flex justify-center  p-4">
-            <p className="max-w-lg sm:max-w-2xl md:max-w-5xl leading-6 sm:leading-8 lg:leading-10 p-5 bg-gray-700 text-ivory-white font-medium text-sm sm:text-lg md:text-xl lg:text-[26px] opacity-80 rounded-md z-10">
+            <p className="max-w-lg sm:max-w-2xl md:max-w-5xl leading-6 sm:leading-8 lg:leading-10 p-5 bg-[#00000059] text-ivory-white font-medium text-sm sm:text-lg md:text-xl lg:text-[26px]  rounded-md z-10">
               Discover the enchanting beauty of Oman, a destination where ancient heritage meets stunning natural landscapes. Known for its warm hospitality and rich cultural tapestry, Oman offers travelers a unique blend of experiences.
             </p>
           </div>

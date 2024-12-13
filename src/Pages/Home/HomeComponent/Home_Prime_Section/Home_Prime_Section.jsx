@@ -70,7 +70,7 @@ const Home_Prime_Section = () => {
   };
 
   return (
-    <div className="relative bg-ivory-white bg-cover bg-center py-16  flex items-center justify-center">
+    <div className="relative bg-ivory-white bg-cover bg-center py-16  flex items-center justify-center hidden md:block">
       <div className="container mx-auto px-4">
       
         <div className="flex justify-center mb-20">

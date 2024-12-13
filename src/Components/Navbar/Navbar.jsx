@@ -103,9 +103,9 @@ const Navbar = () => {
             Destinations
           </Link>
           <Link
-            to="/blog"
+            to="/"
             className={`py-2 px-4 w-full text-center font-medium hover:bg-green hover:text-ivory-white ${
-              isActive("/blog") ? "bg-green text-ivory-white font-bold" : "text-green"
+              isActive("/") ? "bg-green text-ivory-white font-bold" : "text-green"
             }`}
             onClick={closeSidebar} 
           >
