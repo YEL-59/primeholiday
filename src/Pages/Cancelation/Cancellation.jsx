@@ -47,7 +47,7 @@ const Cancellation = () => {
       <div>
         <SectionHeader
           backgroundImage={bgImage}
-          title={"Cancellation and Refund Policy"}
+          title={"Cancellation & Refund Policy"}
           height={"60vh"}
         />
       </div>

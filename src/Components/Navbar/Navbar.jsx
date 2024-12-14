@@ -25,11 +25,14 @@ const Navbar = () => {
   const closeSidebar = () => {
     setIsSidebarOpen(false);
   };
-   // Get the current location
-   const location = useLocation();
+  const openSidebar = () => {
+    setIsSidebarOpen(true);
+  };
+  // Get the current location
+  const location = useLocation();
 
-   // Function to check if the current route is the active link
-   const isActive = (path) => location.pathname === path;
+  // Function to check if the current route is the active link
+  const isActive = (path) => location.pathname === path;
 
   return (
     <div>
@@ -39,15 +42,16 @@ const Navbar = () => {
           {/* Left Section - Bar */}
           <div className="flex items-center">
             <div
-              className="text-3xl font-bold cursor-pointer text-ivory-white"
+              className="text-3xl font-bold cursor-pointer text-ivory-white hover:text-primary"
               onClick={toggleSidebar}
+            // onMouseEnter={openSidebar}
             >
               <FaBars />
             </div>
           </div>
 
           {/* Center Section - Logo */}
-         <Link to={'/'}> <div className="hidden md:block md:ml-[85px]">
+          <Link to={'/'}> <div className="hidden md:block md:ml-[85px]">
             <img src={mylogo} className="h-8 sm:h-10 md:h-20 lg:h-full" alt="Logo" />
           </div></Link>
 
@@ -65,9 +69,10 @@ const Navbar = () => {
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 left-0 w-64 h-72 opacity-90 bg-primary text-ivory-white transform ${
-          isSidebarOpen ? "translate-x-0" : "-translate-x-full"
-        } transition-transform duration-300 ease-in-out z-50 rounded-br-2xl overflow-y-auto`}
+        className={`fixed top-0 left-0 w-64 h-72 opacity-90 bg-primary text-ivory-white transform ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"
+          } transition-transform duration-300 ease-in-out z-50 rounded-br-2xl overflow-y-auto`}
+        onMouseLeave={closeSidebar}
+
       >
         <div className="flex justify-end p-4">
           <div className="text-3xl cursor-pointer" onClick={toggleSidebar}>
@@ -75,39 +80,34 @@ const Navbar = () => {
           </div>
         </div>
         <div className="flex flex-col items-center gap-2 mt-4">
-        <Link
+          <Link
             to="/"
-            className={`py-2 px-4 w-full text-center font-medium hover:bg-green hover:text-ivory-white ${
-              isActive("/") ? "bg-green text-ivory-white font-bold" : "text-green"
-            }`}
-            onClick={closeSidebar} // Close sidebar when clicked
+            className={`relative py-2 px-4 w-full text-center font-medium text-lg ${isActive("/")
+                ? "text-ivory-white font-bold after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-ivory-white after:scale-100"
+                : "text-green after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-ivory-white after:scale-0"
+              } hover:after:scale-100 hover:text-ivory-white after:transition-transform after:duration-300`}
+            onClick={closeSidebar}
           >
             Home
           </Link>
-          <Link
-            to="/aboutus"
-            className={`py-2 px-4 w-full text-center font-medium hover:bg-green hover:text-ivory-white ${
-              isActive("/aboutus") ? "bg-green text-ivory-white font-bold" : "text-green"
-            }`}
-            onClick={closeSidebar} 
-          >
-            Abouts
-          </Link>
+
           <Link
             to="/destination"
-            className={`py-2 px-4 w-full text-center font-medium hover:bg-green hover:text-ivory-white ${
-              isActive("/destination") ? "bg-green text-ivory-white font-bold" : "text-green"
-            }`}
-            onClick={closeSidebar} 
+            className={`relative py-2 px-4 w-full text-center font-medium text-lg ${isActive("/destination")
+                ? "text-ivory-white font-bold after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-ivory-white after:scale-100"
+                : "text-green after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-ivory-white after:scale-0"
+              } hover:after:scale-100 hover:text-ivory-white after:transition-transform after:duration-300`}
+            onClick={closeSidebar}
           >
             Destinations
           </Link>
           <Link
-            to="/"
-            className={`py-2 px-4 w-full text-center font-medium hover:bg-green hover:text-ivory-white ${
-              isActive("/") ? "bg-green text-ivory-white font-bold" : "text-green"
-            }`}
-            onClick={closeSidebar} 
+            to="/blog"
+            className={`relative py-2 px-4 w-full text-center font-medium text-lg ${isActive("/blog")
+                ? "text-ivory-white font-bold after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-ivory-white after:scale-100"
+                : "text-green after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-ivory-white after:scale-0"
+              } hover:after:scale-100 hover:text-ivory-white after:transition-transform after:duration-300`}
+            onClick={closeSidebar}
           >
             Blogs
           </Link>

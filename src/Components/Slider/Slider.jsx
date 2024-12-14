@@ -33,26 +33,26 @@ export default function CardSlider() {
   return (
     <Swiper
     slidesPerView="auto" 
-    spaceBetween={20} /* Control gap between cards */
+    spaceBetween={20} 
     pagination={{
       clickable: true,
     }}
     autoplay={{
-      delay: 3000, // Delay between slides (3 seconds)
-      disableOnInteraction: false, // Autoplay continues after user interaction
+      delay: 3000, 
+      disableOnInteraction: false, 
     }}
-    modules={[Pagination, Autoplay]} // Include the Autoplay module
+    modules={[Pagination, Autoplay]} 
     className="mySwiper"
   >
     {cards.map((card, index) => (
       <SwiperSlide key={index} style={{ width: "60%" }}> 
         <div className="card">
-          <img src={card.image} className="h-[498px]" alt={card.country} />
-          <div className="card-text z-10 text-ivory-white text-center w-full p-4 shadow-md">
-            <h2 className="md:text-4xl font-bold text-ivory-white leading-10">
+          <img src={card.image} className="h-[200px] sm:h-[250px] md:h-[300px] 2xl:h-[498px]" alt={card.country} />
+          <div className="card-text z-10 text-ivory-white text-center w-full p-2 md:p-4 shadow-md">
+            <h2 className="text-sm md:text-2xl lg:text-4xl font-bold text-ivory-white 2xl:leading-10">
               {card.country}
             </h2>
-            <p className="md:text-xl font-normal text-ivory-white leading-10 uppercase">
+            <p className="text-sm md:text-lg lg:text-[xl] font-normal text-ivory-white 2xl:leading-10 uppercase">
               {card.descriptions} <strong>{card.price}</strong>
             </p>
           </div>

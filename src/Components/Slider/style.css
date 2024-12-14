@@ -1,8 +1,7 @@
 /* style.css */
 .swiper {
   width: 80vw; 
-  height: 100%;
- 
+  
   margin: 0 auto; 
   margin-left: 19%;
 }
@@ -19,7 +18,6 @@
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 498px;
     margin: 10px;
  
     overflow: hidden;
@@ -31,10 +29,10 @@
   
   .card-text {
     position: absolute;
-    bottom: 30px;
+    bottom: 28px;
     left: 0;
     width: 100%;
-    padding: 1rem;
+
     text-align: center;
     background: rgba(0, 0, 0, 0.35); 
   }
@@ -43,5 +41,57 @@
   .card:hover {
     transform: scale(1.05);
   }
+
+
+
+
+
+
+  .mySwiper .swiper-pagination {
+    position: absolute;
+    bottom: 10px; 
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 10; 
+  }
   
+  .mySwiper .swiper-pagination-bullet {
+    height: 10px;
+    width: 10px;
+    background-color: #ffffff; 
+    opacity: 0.8; 
+  }
+  
+  .mySwiper .swiper-pagination-bullet-active {
+    background-color: #F49D2A; 
+    opacity: 1; 
+  }
+  
+
+
+  
+
+
+
+  @media (max-width: 799px) {
+    
+    .swiper {
+      margin-left: 0; 
+      width: 100vw; 
+      height: 40vh; 
+    }
+  
+    .card-text{
+      bottom: 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .swiper {
+      height: 42vh; 
+    }
+  }
+
+ 
 
