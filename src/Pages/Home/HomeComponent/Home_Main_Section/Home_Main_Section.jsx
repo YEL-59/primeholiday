@@ -34,10 +34,10 @@ const Home_Main_Section = () => {
             Your All-Inclusive Journey Starts Here
             </h1>
 
-            <p className="text-ivory-white text-center font-montserrat text-[15px] sm:text-[18px] md:text-[25px] lg:text-[30px] xl:text-[38px] 2xl:text-[44px] font-bold leading-[20px] md:leading-[40px]  2xl:leading-[1] tracking-[-1.28px] max-w-xl xl:max-w-4xl mx-auto mt-5 mb-5">
+            <p className="text-ivory-white text-center font-montserrat text-[15px] sm:text-[18px] md:text-[25px] lg:text-[30px] xl:text-[38px] 2xl:text-[44px] font-bold leading-[20px] md:leading-[40px]  2xl:leading-[1] tracking-[-1.28px] max-w-[28rem] lg:max-w-xl xl:max-w-[52rem] mx-auto mt-5 mb-5">
               <span className="text-[20px] md:text-[64px] font-bold">&ldquo;</span>
-              The Essence of a Holiday is to Enrich Our Lives and Create Lasting Memories
-              <span className="text-[20px] md:text-[64px] font-bold">&rdquo;</span>
+              The Essence of a Holiday is to Enrich Our Lives and Create Lasting Memories.
+              {/* <span className="text-[20px] md:text-[64px] font-bold">&rdquo;</span> */}
             </p>
           </div>
         </div>
