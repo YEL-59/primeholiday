@@ -15,7 +15,7 @@ const Destination = () => {
 
         <Breadcrumb items={breadcrumbItems} />
 
-        <div className="relative pb-14">
+        <div className="relative pb-14 bg-ivory-white">
           {/* Background */}
           <div className="absolute inset-0 bg-ivory-white -z-10"></div>
 

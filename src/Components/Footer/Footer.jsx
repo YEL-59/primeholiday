@@ -59,7 +59,7 @@ const toggleModal = () => {
               </div>
             </div>
 
-            <div onClick={toggleModal} className="text-[13.5px] md:text-[10px] lg:text-[12px] xl:text-[18px] px-5 py-1 rounded text-text-primary border font-semibold flex justify-center items-center cursor-pointer">
+            <div onClick={toggleModal} className="text-[13.5px] md:text-[10px] lg:text-[12px] xl:text-[18px] px-5 py-1 rounded text-text-primary border font-semibold flex justify-center items-center cursor-pointer hover:bg-[#f49d2a]">
               Enquire now
             </div>
           </div>

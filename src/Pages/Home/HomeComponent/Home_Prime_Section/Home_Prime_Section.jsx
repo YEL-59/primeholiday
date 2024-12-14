@@ -89,34 +89,34 @@ const Home_Prime_Section = () => {
             pagination={{ clickable: true }}
             loop={true}
             autoplay={{
-              delay: 2000, 
-              disableOnInteraction: false, 
+              delay: 2000,
+              disableOnInteraction: false,
             }}
-            modules={[Pagination, Autoplay]} 
+            modules={[Pagination, Autoplay]}
             className="swiperContainer"
           >
             {images.map((image) => (
               <SwiperSlide key={image.id}>
                 <div
-  className="slider-card cursor-pointer transition-all duration-300 transform scale-95 hover:scale-105 shadow-lg"
-  style={{
-    backgroundImage: `url(${image.src})`,
-    width: "100%",
-    height: "25rem",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  }}
->
-  <div className="flex justify-center items-end h-full text-center relative">
-    {/* Overlay positioned at the bottom */}
-    <div className="absolute bottom-0 p-4 w-full bg-[rgba(0,0,0,0.5)] text-ivory-white rounded-t-lg">
-      <h2 className="text-md lg:text-4xl font-bold tracking-wider">
-        {image.name}
-      </h2>
-      <p className="text-xs lg:text-md font-normal mt-2">{image.role}</p>
-    </div>
-  </div>
-</div>
+                  className="slider-card cursor-pointer transition-all duration-300 transform scale-95 hover:scale-105 shadow-lg"
+                  style={{
+                    backgroundImage: `url(${image.src})`,
+                    width: "100%",
+                    height: "25rem",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                >
+                  <div className="flex justify-center items-end h-full text-center relative">
+                    {/* Overlay positioned at the bottom */}
+                    <div className="absolute bottom-0 p-4 w-full bg-[rgba(0,0,0,0.5)] text-ivory-white rounded-t-lg">
+                      <h2 className="text-md lg:text-4xl font-bold tracking-wider">
+                        {image.name}
+                      </h2>
+                      <p className="text-xs lg:text-md font-normal mt-2">{image.role}</p>
+                    </div>
+                  </div>
+                </div>
 
               </SwiperSlide>
             ))}
@@ -127,19 +127,18 @@ const Home_Prime_Section = () => {
         <div className="hidden lg:block">
           <div
             ref={sliderRef}
-            className="flex gap-2 justify-center items-center overflow-hidden"
+            className="flex gap-5 justify-center items-center overflow-hidden"
           >
             {images.map((image, index) => (
               <div
                 key={image.id}
-                className={`slider-card cursor-pointer transition-all duration-300 transform ${
-                  activeIndex === index
+                className={`slider-card cursor-pointer transition-all duration-300 transform ${activeIndex === index
                     ? "hovered scale-110 shadow-xl"
                     : "scale-90 opacity-95"
-                }`}
+                  }`}
                 style={{
                   backgroundImage: `url(${image.src})`,
-                  width: activeIndex === index ? "50rem" : "15rem",
+                  width: activeIndex === index ? "50rem" : "7.5rem",
                   height: "32rem",
                 }}
                 onMouseEnter={() => handleMouseEnter(index)}
