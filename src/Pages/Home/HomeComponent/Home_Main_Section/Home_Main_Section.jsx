@@ -26,15 +26,15 @@ const Home_Main_Section = () => {
 
   return (
     <div className="relative">
-      <header className="relative flex items-center justify-center h-[50vh] md:h-[70vh] lg:h-[85vh] xl:h-[100vh]  overflow-hidden">
+      <header className="relative flex items-center justify-center h-[55vh] md:h-[70vh] lg:h-[85vh] xl:h-[100vh]  overflow-hidden">
         {/* Overlay Text */}
-        <div className="container mx-auto relative z-30 p-5 text-white  bg-opacity-50 rounded-xl mt-10 md:mt-0">
+        <div className="container mx-auto relative z-30 p-5 text-white  bg-opacity-50 rounded-xl mt-10 ">
           <div>
-            <h1 className="text-primary text-center font-salvager sm:text-[40px] md:text-[50px] lg:text-[70px] xl:text-[70px] 2xl:text-[96px] font-bold md:font-normal leading-[1.24] tracking-wide md:tracking-[-1.92px]">
+            <h1 className="text-primary text-center font-salvager text-[17px] sm:text-[26px] md:text-[50px] lg:text-[70px] xl:text-[70px] 2xl:text-[96px] font-bold md:font-normal leading-[1.24] tracking-wide md:tracking-[-1.92px]">
             Your All-Inclusive Journey Starts Here
             </h1>
 
-            <p className="text-ivory-white text-center font-montserrat text-[18px] md:text-[25px] lg:text-[30px] xl:text-[38px] 2xl:text-[44px] font-bold leading-[40px]  2xl:leading-[1] tracking-[-1.28px] max-w-xl xl:max-w-4xl mx-auto mt-5 mb-5">
+            <p className="text-ivory-white text-center font-montserrat text-[15px] sm:text-[18px] md:text-[25px] lg:text-[30px] xl:text-[38px] 2xl:text-[44px] font-bold leading-[20px] md:leading-[40px]  2xl:leading-[1] tracking-[-1.28px] max-w-xl xl:max-w-4xl mx-auto mt-5 mb-5">
               <span className="text-[20px] md:text-[64px] font-bold">&ldquo;</span>
               The Essence of a Holiday is to Enrich Our Lives and Create Lasting Memories
               <span className="text-[20px] md:text-[64px] font-bold">&rdquo;</span>
