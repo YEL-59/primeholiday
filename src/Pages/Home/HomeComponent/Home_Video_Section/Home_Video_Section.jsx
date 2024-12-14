@@ -28,7 +28,7 @@ const Home_Video_Section = () => {
       }}
     >
       {/* Video Container */}
-      <div className="relative w-[82%] h-[70%]  shadow-lg rounded-lg overflow-hidden ">
+      <div className="relative w-[82%] h-[78%]  shadow-lg rounded-lg overflow-hidden ">
         {/* Video Element */}
         <video
           ref={videoRef}

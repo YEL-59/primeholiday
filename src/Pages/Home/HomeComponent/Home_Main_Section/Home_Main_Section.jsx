@@ -30,7 +30,7 @@ const Home_Main_Section = () => {
         {/* Overlay Text */}
         <div className="container mx-auto relative z-30 p-5 text-white  bg-opacity-50 rounded-xl mt-10 ">
           <div>
-            <h1 className="text-primary text-center font-salvager text-[17px] sm:text-[26px] md:text-[50px] lg:text-[70px] xl:text-[70px] 2xl:text-[96px] font-bold md:font-normal leading-[1.24] tracking-wide md:tracking-[-1.92px]">
+            <h1 className="text-primary text-center font-salvager text-[20px] sm:text-[26px] md:text-[50px] lg:text-[70px] xl:text-[70px] 2xl:text-[96px] font-bold md:font-normal leading-[1.24] tracking-wide md:tracking-[-1.92px]">
             Your All-Inclusive Journey Starts Here
             </h1>
 
