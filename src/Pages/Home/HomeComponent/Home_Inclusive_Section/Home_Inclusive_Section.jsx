@@ -8,7 +8,7 @@ const Home_Inclusive_Section = () => {
         {/* Text Section */}
         <div className="lg:col-span-4">
           <SecoundaryTitle head_title={"COMMITMENT TO EXCELLENCE"} />
-          <p className="text-black font-inter text-sm md:text-base xl:text-lg 2xl:text-4xl font-normal leading-tight tracking-wide mt-5 2xl:max-w-xl">
+          <p className="text-black font-inter text-sm md:text-base xl:text-lg 2xl:text-3xl font-normal leading-tight tracking-wide mt-5 2xl:max-w-xl">
             At PHD, we are committed to transforming each holiday into a
             memorable experience, prioritizing our clients' comfort, enjoyment,
             and peace of mind from start to finish. When you travel with Prime

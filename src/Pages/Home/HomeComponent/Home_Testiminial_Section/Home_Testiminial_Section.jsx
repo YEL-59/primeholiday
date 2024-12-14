@@ -19,7 +19,7 @@ const Home_Testiminial_Section = () => {
           <div className="md:col-span-4 flex justify-center items-center">
             <div>
               <SecoundaryTitle head_title={"TESTIMONIALS OF SATISFACTION"} />
-              <p className="text-black font-inter text-sm md:text-base xl:text-lg 2xl:text-4xl font-normal leading-tight tracking-wide mt-5 2xl:max-w-xl">
+              <p className="text-black font-inter text-sm md:text-base xl:text-lg 2xl:text-3xl font-normal leading-tight tracking-wide mt-5 2xl:max-w-xl">
                 The best measure to our services comes from our customers. Keep
                 an eye out as our travelers share their stories. We'll be
                 sharing feedback from our travelers here shortly, so you can
