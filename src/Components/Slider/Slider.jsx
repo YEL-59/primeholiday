@@ -28,6 +28,7 @@ export default function CardSlider() {
     { image: img2, country: "Morocco", descriptions: "7 days from ", price: "$1475" },
     { image: img1, country: "Kerala", descriptions: "7 days from ", price: "$1475" },
     { image: img4, country: "Zanzibar", descriptions: "7 days from ", price: "$1475" },
+    { image: img2, country: "Morocco", descriptions: "7 days from ", price: "$1475" },
   ];
 
   return (
