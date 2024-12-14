@@ -18,7 +18,7 @@ import img2 from "../../../public/HomeImg/moroccho.png";
 import img3 from "../../../public/HomeImg/qatarbig.jpg";
 import img4 from "../../../public/HomeImg/zangerBig.webp";
 import img5 from "../../../public/HomeImg/omanbig.jpg"
-import img6 from "../../../public/HomeImg/malaisia.jpg"
+import img6 from "../../../public/HomeImg/malaysia.png"
 
 export default function CardSlider() {
   const cards = [
