@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import img1 from "../../../../../public/DestinationImg/egypt.png";
 import img2 from "../../../../../public/DestinationImg/morocco.png";
@@ -12,8 +11,9 @@ import ImageOverlayCard from "../../../../Components/ImageOverlayCard/ImageOverl
 const PrimeDestination_Section = () => {
   const destinations = [
     {
+      type: "region",
       id: "region-africa",
-      region: "Asia",
+      region: "Africa",
       items: [
         {
           id: "card-1",
@@ -36,12 +36,6 @@ const PrimeDestination_Section = () => {
           description: "Spice Island",
           url: "Zanzibar",
         },
-      ],
-    },
-    {
-      id: "region-asia",
-      // region: "Asia",
-      items: [
         {
           id: "card-4",
           imgSrc: img4,
@@ -59,73 +53,120 @@ const PrimeDestination_Section = () => {
         {
           id: "card-6",
           imgSrc: img7,
-          title: "Sri lanka",
+          title: "Sri Lanka",
           description: "You'll Come Back for More",
           url: "Srilanka",
         },
       ],
     },
+    {
+      type: "fixedDiv",
+      id: "fixed-div-asia",
+      imgSrc: img5,
+      title: "Kerala",
+      description: "God's Own Country",
+      region: "Asia",
+    },
   ];
-
-  const fixedDiv = {
-    id: "fixed-div-asia",
-    imgSrc: img5,
-    title: "Kerala",
-    description: "God's Own Country",
-    region: "Asia",
-  };
 
   return (
     <div>
       <div className="container mx-auto">
-        <h1 className="text-2xl md:text-5xl font-semibold leading-10 text-primary text-center p-2 py-5">
-        Prime Destinations
+        <h1 className="text-2xl md:text-5xl font-semibold leading-10 text-primary text-center p-5 ">
+          Prime Destinations
         </h1>
       </div>
 
-      {destinations.map((destination) => (
-        <div key={destination.id} className="container mx-auto space-y-8">
-          {/* Region Title */}
-          <h1 className="mb-5 mt-5 text-4xl font-montserrat font-semibold text-primary">
-            {destination.region}
-          </h1>
+      {/* First 3 Cards */}
+      {destinations.map((item) => {
+        if (item.type === "region") {
+          return (
+            <div key={item.id} className="container mx-auto space-y-8">
+              <h1 className="mb-3 mt-5 text-3xl font-montserrat font-semibold text-primary">
+                {item.region}
+              </h1>
 
-          {/* First Grid of Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
-            {destination.items.map((item) => (
-              <Link to={`/destination/${item.url}`} key={item.id}  state={{ imgSrc: item.imgSrc ,description: item.description }}>
-                <ImageOverlayCard
-                  imgSrc={item.imgSrc}
-                  title={item.title}
-                  description={item.description}
-                />
-              </Link>
-            ))}
-          </div>
-
-          {/* Render Fixed Div Content Between Regions */}
-          {destination.id === "region-africa" && (
-            <div className="relative mt-10">
-               <h1 className="mb-5 mt-5 text-4xl font-montserrat font-semibold text-primary">
-            {destination.region}
-          </h1>
-              <img
-                src={fixedDiv.imgSrc}
-                className="h-[555px] w-full  object-cover aspect-[16/9] md:aspect-[4/3] lg:aspect-[3/3]"
-                alt={fixedDiv.title}
-              />
-              <div className="absolute -mt-[130px] p-4 w-full flex flex-col justify-end text-ivory-white rounded bg-[rgba(0,0,0,0.35)] bg-opacity-0 z-10">
-                <h2 className="text-xl xl:text-4xl uppercase font-medium px-4 pb-1 z-10 text-center ">
-                  {fixedDiv.title}
-                </h2>
-                <p className="text-lg uppercase px-4 pb-2 text-center">
-                  {fixedDiv.description}
-                </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+                {item.items.slice(0, 3).map((regionItem) => (
+                  <Link
+                    to={`/destination/${regionItem.url}`}
+                    key={regionItem.id}
+                    state={{
+                      imgSrc: regionItem.imgSrc,
+                      description: regionItem.description,
+                    }}
+                  >
+                    <ImageOverlayCard
+                      imgSrc={regionItem.imgSrc}
+                      title={regionItem.title}
+                      description={regionItem.description}
+                    />
+                  </Link>
+                ))}
               </div>
             </div>
-          )}
-        </div>
-      ))}
+          );
+        }
+        return null; // In case the item type is not recognized
+      })}
+
+      {/* Fixed Div  */}
+      {destinations.map((item) => {
+        if (item.type === "fixedDiv") {
+          return (
+            <div key={item.id} className="container mx-auto relative mt-10 mb-10">
+              <h1 className="mb-3 mt-5 text-3xl font-montserrat font-semibold text-primary">
+                {item.region}
+              </h1>
+              <div className="relative">
+                <img
+                  src={item.imgSrc}
+                  className="h-[555px] w-full object-cover aspect-[16/9] md:aspect-[4/3] lg:aspect-[3/3]"
+                  alt={item.title}
+                />
+                <div className="absolute -mt-[130px] p-4 w-full flex flex-col justify-end text-ivory-white rounded bg-[rgba(0,0,0,0.35)] bg-opacity-0 z-10">
+                  <div className="text-center text-ivory-white  p-4">
+                    <h2 className="text-xl xl:text-4xl uppercase font-medium">
+                      {item.title}
+                    </h2>
+                    <p className="text-lg">{item.description}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        }
+        return null; 
+      })}
+
+      {/* Remaining Cards */}
+      {destinations.map((item) => {
+        if (item.type === "region") {
+          return (
+            <div key={item.id} className="container mx-auto space-y-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+                {item.items.slice(3).map((regionItem) => (
+                  <Link
+                    to={`/destination/${regionItem.url}`}
+                    key={regionItem.id}
+                    state={{
+                      imgSrc: regionItem.imgSrc,
+                      description: regionItem.description,
+                    }}
+                  >
+                    <ImageOverlayCard
+                      imgSrc={regionItem.imgSrc}
+                      title={regionItem.title}
+                      description={regionItem.description}
+                    />
+                  </Link>
+                ))}
+              </div>
+            </div>
+          );
+        }
+        return null; 
+      })}
     </div>
   );
 };
