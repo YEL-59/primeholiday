@@ -44,7 +44,7 @@ const toggleModal = () => {
           </h1>
 
           <div className="flex flex-wrap justify-between md:flex-row gap-8">
-            <div className="flex items-center gap-5 border-ivory-white border-b pb-4 max-w-sm w-full ">
+            <div className="flex items-center gap-5 border-ivory-white border-b pb-4 max-w-[24rem] w-full ">
               <div className="text-3xl font-bold text-primary">
                 <Instagram />
               </div>
@@ -65,22 +65,22 @@ const toggleModal = () => {
           </div>
 
           <div className="mt-5">
-            <div className="flex flex-row sm:flex-col items-center sm:items-start gap-2 sm:pb-4 border-ivory-white border-b max-w-xs ">
+            <div className="flex flex-row sm:flex-col items-center sm:items-start gap-2 sm:pb-4 border-ivory-white border-b max-w-[24rem] ">
               <div className="text-3xl text-primary ">
                 <Location />
               </div>
-              <p className="text-ivory-white font-inter text-[13.5px] md:text-[10px] lg:text-[12px] xl:text-[18px] font-normal w-[180px] ">
+              <p className="text-ivory-white font-inter text-[13.5px] md:text-[10px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] font-normal w-[180px] ">
                 65 Hartfield Crescent Birmingham B27 7QE
               </p>
             </div>
           </div>
 
           <div className="mt-5">
-            <div className="flex flex-row sm:flex-col gap-2 sm:pb-4 border-ivory-white border-b max-w-sm ">
+            <div className="flex flex-row sm:flex-col gap-2 sm:pb-4 border-ivory-white border-b max-w-[24rem] ">
               <div className="text-3xl text-primary ">
                 <Mail />
               </div>
-              <p className="text-ivory-white font-inter text-[13.5px] md:text-[10px] lg:text-[12px] xl:text-[18px] font-normal ">
+              <p className="text-ivory-white font-inter text-[13.5px] md:text-[10px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] font-normal ">
                 contact@primeholidaydestinations.com
               </p>
             </div>
@@ -91,7 +91,7 @@ const toggleModal = () => {
               <div className="text-3xl text-primary ">
                 <Whatsappe />
               </div>
-              <p className="text-ivory-white font-inter text-[13.5px] md:text-[10px] lg:text-[12px] xl:text-[18px] font-normal ">
+              <p className="text-ivory-white font-inter text-[13.5px] md:text-[10px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] font-normal ">
                 +44 7553 778086
               </p>
             </div>
@@ -105,7 +105,7 @@ const toggleModal = () => {
 
           <div className="flex flex-wrap md:flex-nowrap justify-between mt-5">
             <div>
-              <div className="flex flex-wrap text-ivory-white font-inter text-[13.5px] md:text-[10px] lg:text-[12px] xl:text-[18px] font-normal leading-[29.52px]">
+              <div className="flex flex-wrap text-ivory-white font-inter text-[13.5px] md:text-[10px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] font-normal leading-[29.52px]">
                 <Link to={"aboutus"} className="flex items-center px-2">
                   <p className="inline-flex items-center relative pr-4 after:content-[''] after:border-r-2 after:border-gray-300 after:h-4 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">
                     About
@@ -141,7 +141,7 @@ const toggleModal = () => {
                 </Link>
               </div>
 
-              <div className="w-full text-ivory-white font-inter text-[13.5px] md:text-[10px] lg:text-[12px] xl:text-[18px] font-normal leading-[29.52px] flex sm:flex-row gap-2 flex-col md:items-center justify-between py-4">
+              <div className="w-full text-ivory-white font-inter text-[13.5px] md:text-[10px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] font-normal leading-[29.52px] flex sm:flex-row gap-2 flex-col md:items-center justify-between py-4">
                 <p>&copy; 2024 Rizmail Travel & Tours Limited</p>
               </div>
 
@@ -150,11 +150,11 @@ const toggleModal = () => {
 
             <div>
               <div>
-                <h1 className="text-ivory-white font-inter text-[13.5px] md:text-[10px] lg:text-[12px] xl:text-[18px] font-normal leading-[29.52px]">
+                <h1 className="text-ivory-white font-inter text-[13.5px] md:text-[10px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] font-normal leading-[29.52px]">
                   Prime Holiday Destinations a Brand by Rizmali Travel & Tours
                   Limited
                 </h1>
-                <p className="text-ivory-white text-start 2xl:text-end font-inter text-[13.5px] md:text-[10px] lg:text-[12px] xl:text-[18px] font-normal leading-[29.52px] pb-4">
+                <p className="text-ivory-white text-start 2xl:text-end font-inter text-[13.5px] md:text-[10px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] font-normal leading-[29.52px] pb-4">
                   Company Number 14730696 I Registered in England
                 </p>
               </div>
