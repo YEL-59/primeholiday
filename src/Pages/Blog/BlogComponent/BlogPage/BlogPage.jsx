@@ -98,7 +98,7 @@ const BlogPage = () => {
   }, []);
 
   return (
-    <div>
+    <div className="bg-ivory-white">
       {sections.map((section, index) => (
         <BlogSection key={index} sectionData={section} />
       ))}

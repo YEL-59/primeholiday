@@ -39,7 +39,7 @@ const toggleModal = () => {
         }}
       >
         <div className="container mx-auto px-4">
-          <h1 className="text-primary text-4xl md:text-6xl font-semibold text-center mb-10 z-100 relative">
+          <h1 className="text-primary text-4xl md:text-5xl font-semibold text-center mb-10 z-100 relative">
             Connect With Us
           </h1>
 

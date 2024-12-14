@@ -78,7 +78,7 @@ const PrimeDestination_Section = () => {
   return (
     <div>
       <div className="container mx-auto">
-        <h1 className="text-2xl md:text-6xl font-semibold leading-10 text-primary text-center p-5 md:p-20">
+        <h1 className="text-2xl md:text-5xl font-semibold leading-10 text-primary text-center p-2 py-5">
         Prime Destinations
         </h1>
       </div>
