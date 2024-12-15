@@ -1,4 +1,4 @@
-import logo from "/Transparent-logo-3 4.png";
+import logo from "/mylogo.png";
 
 import { Link } from "react-router-dom";
 import Instagram from "../../assets/Icons/Instagram";

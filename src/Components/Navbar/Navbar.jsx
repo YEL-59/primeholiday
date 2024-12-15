@@ -1,5 +1,5 @@
 import { useState } from "react";
-import mylogo from "../../../public/Transparent-logo-3 4.png";
+import mylogo from "../../../public/mylogo.png";
 import { FaBars } from "react-icons/fa";
 import { IoClose } from "react-icons/io5"; // Close icon from react-icons
 import Modal from "../Modal/Modal";
