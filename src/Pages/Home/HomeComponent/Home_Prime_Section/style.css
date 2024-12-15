@@ -11,13 +11,9 @@
   text-transform: uppercase;
   transition: transform 0.3s ease, opacity 0.3s ease, margin 0.3s ease;
   transform-origin: center center;
- margin:0 .5rem;
 }
 
-.slider-card:hover {
-  transform: scale(1.1);
-  opacity: 1;
-}
+
 
 
 

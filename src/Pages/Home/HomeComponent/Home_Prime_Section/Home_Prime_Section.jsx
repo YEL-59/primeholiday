@@ -127,7 +127,7 @@ const Home_Prime_Section = () => {
         <div className="hidden lg:block">
           <div
             ref={sliderRef}
-            className="flex gap-10 justify-center items-center overflow-hidden"
+            className="flex  justify-center items-center overflow-hidden"
           >
             {images.map((image, index) => (
               <div
@@ -140,6 +140,8 @@ const Home_Prime_Section = () => {
                   backgroundImage: `url(${image.src})`,
                   width: activeIndex === index ? "50rem" : "7.5rem",
                   height: "32rem",
+                  margin: activeIndex === index ? "0 2.9rem" : "0 .2rem",
+                 
                 }}
                 onMouseEnter={() => handleMouseEnter(index)}
                 onMouseLeave={handleMouseLeave}
