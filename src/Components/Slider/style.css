@@ -92,7 +92,7 @@
 /* Medium Screens (1280px to 1919px) */
 @media (min-width: 1280px) and (max-width: 1919px) {
   .swiper {
-    height: 50vh;
+    height: 52vh;
     margin-left: 19%;
   }
 }
@@ -101,8 +101,8 @@
 @media (min-width: 800px) and (max-width: 1279px) {
   .swiper {
     height: 45vh;
-    width: 100vw;
-    margin-left: 5%;
+    width: 80vw;
+   
   }
 }
 
