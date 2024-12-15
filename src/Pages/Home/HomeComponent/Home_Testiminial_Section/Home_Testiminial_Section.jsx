@@ -1,4 +1,4 @@
-import img from "/HomeImg/homeimg1.webp";
+import img from "/HomeImg/homeimg2.webp";
 import SecoundaryTitle from "../../../../Components/SecoundaryTitle/SecoundaryTitle";
 
 const Home_Testiminial_Section = () => {

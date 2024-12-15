@@ -1,9 +1,10 @@
 /* style.css */
 .swiper {
   width: 80vw; 
-  
   margin: 0 auto; 
   margin-left: 19%;
+  position: relative;
+  padding-bottom: 40px; 
 }
 
 .swiper-slide {
@@ -70,28 +71,43 @@
   
 
 
-  
+  /* Responsive Styles */
+@media (max-width: 2560px) {
+  .swiper {
+    height: 60vh; 
+  }
+}
 
-
-
-  @media (max-width: 799px) {
-    
-    .swiper {
-      margin-left: 0; 
-      width: 100vw; 
-      height: 40vh; 
-    }
-  
-    .card-text{
-      bottom: 8px;
-    }
+@media (max-width: 1910px) {
+  .swiper {
+    height: 50vh; 
+  }
+}
+@media (min-width: 1880px) and (max-width: 1536px) {
+  .swiper {
+    height: 52vh; 
+    margin-left: 10%; 
+  }
+}
+@media (max-width: 799px) {
+  .swiper {
+    margin-left: 0; 
+    width: 100vw; 
+    height: 32vh; 
+    padding-bottom: 30px; 
   }
   
-  @media (max-width: 480px) {
-    .swiper {
-      height: 42vh; 
-    }
+  .card-text {
+    bottom: 8px;
   }
+}
+
+@media (max-width: 480px) {
+  .swiper {
+    height: 25vh; 
+    padding-bottom: 20px; 
+  }
+}
 
  
 

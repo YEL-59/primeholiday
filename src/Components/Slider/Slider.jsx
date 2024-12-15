@@ -18,17 +18,19 @@ import img2 from "../../../public/HomeImg/moroccho.png";
 import img3 from "../../../public/HomeImg/qatarbig.jpg";
 import img4 from "../../../public/HomeImg/zangerBig.webp";
 import img5 from "../../../public/HomeImg/omanbig.jpg"
+import img6 from "../../../public/HomeImg/SriLanka.webp"
+import img7 from "../../../public/HomeImg/Egypt.webp"
 
 
 export default function CardSlider() {
   const cards = [
     { image: img5, country: "Oman", descriptions: "7 days from ", price: "$1475" },
     { image: img3, country: "Qatar", descriptions: "7 days from ", price: "$1475" },
-    { image: img1, country: "Malaysia", descriptions: "7 days from ", price: "$1475" },
-    { image: img2, country: "Morocco", descriptions: "7 days from ", price: "$1475" },
     { image: img1, country: "Kerala", descriptions: "7 days from ", price: "$1475" },
-    { image: img4, country: "Zanzibar", descriptions: "7 days from ", price: "$1475" },
     { image: img2, country: "Morocco", descriptions: "7 days from ", price: "$1475" },
+    { image: img6, country: "Sri Lanka", descriptions: "7 days from ", price: "$1475" },
+    { image: img4, country: "Zanzibar", descriptions: "7 days from ", price: "$1475" },
+    { image: img7, country: "Egypt", descriptions: "7 days from ", price: "$1475" },
   ];
 
   return (
