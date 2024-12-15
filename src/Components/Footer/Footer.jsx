@@ -44,7 +44,7 @@ const Footer = () => {
           </h1>
 
           <div className="flex flex-wrap justify-between md:flex-row gap-8">
-            <div className="flex items-center gap-5 border-ivory-white border-b pb-4 max-w-[21rem] w-full ">
+            <div className="flex items-center gap-5 border-ivory-white border-b pb-4 max-w-[18rem] 2xl:max-w-[21rem] w-full ">
               <div className="text-3xl font-bold text-primary">
                 <Instagram />
               </div>
@@ -65,7 +65,7 @@ const Footer = () => {
           </div>
 
           <div className="mt-5">
-            <div className="flex flex-row sm:flex-col items-center sm:items-start gap-2 sm:pb-4 border-ivory-white border-b max-w-[21rem]">
+            <div className="flex flex-row sm:flex-col items-center sm:items-start gap-2 sm:pb-4 border-ivory-white border-b max-w-[18rem] 2xl:max-w-[21rem]">
               {/* Icon Section */}
               <div className="text-3xl text-primary flex-shrink-0">
                 <Location />
@@ -82,7 +82,7 @@ const Footer = () => {
 
 
           <div className="mt-5">
-            <div className="flex flex-row sm:flex-col gap-2 sm:pb-4 border-ivory-white border-b max-w-[21rem] ">
+            <div className="flex flex-row sm:flex-col gap-2 sm:pb-4 border-ivory-white border-b max-w-[18rem] 2xl:max-w-[21rem] ">
               <div className="text-3xl text-primary ">
                 <Mail />
               </div>
