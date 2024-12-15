@@ -4,6 +4,7 @@ import { FaBars } from "react-icons/fa";
 import { IoClose } from "react-icons/io5"; // Close icon from react-icons
 import Modal from "../Modal/Modal";
 import { Link, useLocation } from "react-router-dom";
+import Threebaricons from "../../assets/Icons/Threebaricons";
 
 const Navbar = () => {
   // State to manage sidebar visibility
@@ -42,11 +43,11 @@ const Navbar = () => {
           {/* Left Section - Bar */}
           <div className="flex items-center">
             <div
-              className="text-3xl font-bold cursor-pointer text-ivory-white hover:text-primary"
+              className=" cursor-pointer text-ivory-white hover:text-primary"
               onClick={toggleSidebar}
             // onMouseEnter={openSidebar}
             >
-              <FaBars />
+            <Threebaricons/>
             </div>
           </div>
 

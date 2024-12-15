@@ -21,30 +21,30 @@ const Footer = () => {
       behavior: "smooth",
     });
   };
-// State to manage modal visibility
-const [isModalOpen, setIsModalOpen] = useState(false);
+  // State to manage modal visibility
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
 
 
-// Toggle modal visibility
-const toggleModal = () => {
-  setIsModalOpen(!isModalOpen);
-};
+  // Toggle modal visibility
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  };
   return (
     <>
       <div
-        className="relative bg-cover bg-center text-ivory-white py-5  "
+        className="relative bg-cover bg-center text-ivory-white py-10  "
         style={{
           backgroundImage: `linear-gradient(90deg, rgba(19, 80, 41, 0.60) 12.5%, rgba(19, 80, 41, 0.39) 58%, rgba(19, 80, 41, 0.60) 95.95%), url('/footerbg.webp')`,
         }}
       >
         <div className="container mx-auto px-4">
-          <h1 className="text-primary text-4xl md:text-5xl font-semibold text-center mb-10 z-100 relative">
+          <h1 className="text-primary text-4xl md:text-5xl font-semibold text-center mb-10 z-100 relative ">
             Connect With Us
           </h1>
 
           <div className="flex flex-wrap justify-between md:flex-row gap-8">
-            <div className="flex items-center gap-5 border-ivory-white border-b pb-4 max-w-[24rem] w-full ">
+            <div className="flex items-center gap-5 border-ivory-white border-b pb-4 max-w-[21rem] w-full ">
               <div className="text-3xl font-bold text-primary">
                 <Instagram />
               </div>
@@ -65,18 +65,24 @@ const toggleModal = () => {
           </div>
 
           <div className="mt-5">
-            <div className="flex flex-row sm:flex-col items-center sm:items-start gap-2 sm:pb-4 border-ivory-white border-b max-w-[24rem] ">
-              <div className="text-3xl text-primary ">
+            <div className="flex flex-row sm:flex-col items-center sm:items-start gap-2 sm:pb-4 border-ivory-white border-b max-w-[21rem]">
+              {/* Icon Section */}
+              <div className="text-3xl text-primary flex-shrink-0">
                 <Location />
               </div>
-              <p className="text-ivory-white font-inter text-[13.5px] md:text-[10px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] font-normal w-[180px] ">
-                65 Hartfield Crescent Birmingham B27 7QE
+
+              {/* Address Section */}
+              <p className="text-ivory-white font-inter text-[13.5px] sm:text-[12px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] font-normal ">
+                <span className="block">65 Hartfield Crescent</span>
+                <span className="block">Birmingham</span>
+                <span className="block">B27 7QE</span>
               </p>
             </div>
           </div>
 
+
           <div className="mt-5">
-            <div className="flex flex-row sm:flex-col gap-2 sm:pb-4 border-ivory-white border-b max-w-[24rem] ">
+            <div className="flex flex-row sm:flex-col gap-2 sm:pb-4 border-ivory-white border-b max-w-[21rem] ">
               <div className="text-3xl text-primary ">
                 <Mail />
               </div>
@@ -141,11 +147,11 @@ const toggleModal = () => {
                 </Link>
               </div>
 
-              <div className="w-full text-ivory-white font-inter text-[13.5px] md:text-[10px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] font-normal leading-[29.52px] flex sm:flex-row gap-2 flex-col md:items-center justify-between py-4">
+              <div className="w-full text-ivory-white font-inter text-[13.5px] md:text-[10px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] font-normal leading-[29.52px] flex sm:flex-row gap-2 flex-col md:items-center justify-between ">
                 <p>&copy; 2024 Rizmail Travel & Tours Limited</p>
               </div>
 
-             
+
             </div>
 
             <div>
@@ -159,28 +165,28 @@ const toggleModal = () => {
                 </p>
               </div>
               <div className="">
-                <p className="text-ivory-white font-inter text-start 2xl:text-end text-[13.5px] md:text-[10px] lg:text-[12px] xl:text-[13px] font-normal leading-[29.52px]">
-                Colour palette inspired by @thehousewiththepinkbed
+                <p className="text-ivory-white font-inter text-start 2xl:text-end text-[13.5px] md:text-[10px] lg:text-[12px] xl:text-[15px] font-normal leading-[29.52px]">
+                  Colour palette inspired by @thehousewiththepinkbed
                 </p>
               </div>
-         
+
             </div>
           </div>
         </div>
 
 
         <div className="flex justify-end mr-14 -mt-10 hidden md:flex">
-                <div
-                  className="text-4xl  border-[2px] h-[48px] rounded-xl py-3 px-3 border-primary flex justify-center items-center"
-                  onClick={handleScrollToTop}
-                >
-                  <Uparrow  />
-                </div>
-              </div>
+          <div
+            className="text-4xl  border-[2px] h-[48px] rounded-xl py-3 px-3 border-primary flex justify-center items-center"
+            onClick={handleScrollToTop}
+          >
+            <Uparrow />
+          </div>
+        </div>
       </div>
 
       <div className="bg-green">
-        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between p-2">
+        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between py-5">
           <div className="text-ivory-white text-center md:text-start">
             <p className="text-sm">Stay up to date</p>
             <h1 className="text-lg font-bold truncate">Subscribe to our newsletter</h1>

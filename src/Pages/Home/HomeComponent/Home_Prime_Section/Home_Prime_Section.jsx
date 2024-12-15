@@ -127,7 +127,7 @@ const Home_Prime_Section = () => {
         <div className="hidden lg:block">
           <div
             ref={sliderRef}
-            className="flex gap-5 justify-center items-center overflow-hidden"
+            className="flex gap-10 justify-center items-center overflow-hidden"
           >
             {images.map((image, index) => (
               <div

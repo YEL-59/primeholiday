@@ -1,8 +1,8 @@
 import { useEffect, useRef } from "react";
-
 import "../../../../../src/App.css";
+import homeBannerVideo from "../../../../assets/video/homebgvideo.mp4";
+import AppostiIcon from "../../../../assets/Icons/AppostiIcon";
 
-import homeBannerVideo from '../../../../assets/video/homebgvideo.mp4'
 const Home_Main_Section = () => {
   const videoRef = useRef(null);
 
@@ -26,18 +26,24 @@ const Home_Main_Section = () => {
 
   return (
     <div className="relative">
-      <header className="relative flex items-center justify-center h-[55vh] md:h-[70vh] lg:h-[85vh] xl:h-[100vh]  overflow-hidden">
+      <header className="relative flex items-center justify-center h-[55vh] md:h-[70vh] lg:h-[85vh] xl:h-[100vh] overflow-hidden">
         {/* Overlay Text */}
-        <div className="container mx-auto relative z-30 p-5 text-white  bg-opacity-50 rounded-xl mt-10 ">
+        <div className="container mx-auto relative z-30 p-5 text-white bg-opacity-50 rounded-xl mt-10">
           <div>
+            {/* Title */}
             <h1 className="text-primary text-center font-salvager text-[20px] sm:text-[26px] md:text-[50px] lg:text-[70px] xl:text-[70px] 2xl:text-[96px] font-bold md:font-normal leading-[1.24] tracking-wide md:tracking-[-1.92px]">
-            Your All-Inclusive Journey Starts Here
+              Your All-Inclusive Journey Starts Here
             </h1>
 
-            <p className="text-ivory-white text-center font-montserrat text-[15px] sm:text-[18px] md:text-[25px] lg:text-[30px] xl:text-[38px] 2xl:text-[44px] font-bold leading-[20px] md:leading-[40px]  2xl:leading-[1] tracking-[-1.28px] max-w-[28rem] lg:max-w-xl xl:max-w-[52rem] mx-auto mt-5 mb-5">
-              <span className="text-[20px] md:text-[64px] font-bold">&ldquo;</span>
-              The Essence of a Holiday is to Enrich Our Lives and Create Lasting Memories.
-              {/* <span className="text-[20px] md:text-[64px] font-bold">&rdquo;</span> */}
+            {/* Subtitle */}
+            <p className="text-ivory-white text-center font-montserrat text-[15px] sm:text-[18px] md:text-[25px] lg:text-[30px] xl:text-[38px] 2xl:text-[44px] font-bold leading-[30px] md:leading-[50px] 2xl:leading-[60px] tracking-[-1.28px] max-w-[28rem] lg:max-w-xl xl:max-w-[52rem] mx-auto mt-5 mb-5">
+              {/* Icon */}
+              <span className="block mx-auto">
+                <AppostiIcon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 xl:w-10 xl:h-12" />
+              </span>
+              {/* Text */}
+              <span className="block">The Essence of a Holiday is to Enrich</span>
+              <span className="block">Our Lives and Create Lasting Memories.</span>
             </p>
           </div>
         </div>
@@ -51,10 +57,7 @@ const Home_Main_Section = () => {
           playsInline
           className="absolute w-full h-full object-cover z-10"
         >
-          <source
-            src={homeBannerVideo}
-            type="video/mp4"
-          />
+          <source src={homeBannerVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </header>
