@@ -2,9 +2,9 @@
 
 import ReusableCard from '../../../../Components/reusable card/reusablecard';
 import MainTitle from '../../../../Components/MainTitle/MainTitle';
-import img from "../../../../../public/DestinationImg/cultureimg.jpg";
-import img1 from "../../../../../public/DestinationImg/essen.jpg";
-import img2 from "../../../../../public/DestinationImg/luxyry.jpg";
+import img from "../../../../../src/assets/DestinationImg/cultureimg.jpg";
+import img1 from "../../../../../src/assets/DestinationImg/essen.jpg";
+import img2 from "../../../../../src/assets/DestinationImg/luxyry.jpg";
 import SecoundaryTitle from '../../../../Components/SecoundaryTitle/SecoundaryTitle';
 const DestinationCard_Section = () => {
   const data = [

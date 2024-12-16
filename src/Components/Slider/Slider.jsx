@@ -13,13 +13,13 @@ import "./style.css";
 import { Pagination, Autoplay } from "swiper/modules";
 
 // Import images
-import img1 from "../../../public/HomeImg/Keralabig.webp";
-import img2 from "../../../public/HomeImg/morocco.webp";
-import img3 from "../../../public/HomeImg/qatarbig.jpg";
-import img4 from "../../../public/HomeImg/zangerBig.webp";
-import img5 from "../../../public/HomeImg/omanbig.jpg"
-import img6 from "../../../public/HomeImg/SriLanka.webp"
-import img7 from "../../../public/HomeImg/Egypt.webp"
+import img1 from "../../../src/assets/HomeImg/Keralabig.webp";
+import img2 from "../../../src/assets/HomeImg/morocco.webp";
+import img3 from "../../../src/assets/HomeImg/qatarbig.jpg";
+import img4 from "../../../src/assets/HomeImg/zangerBig.webp";
+import img5 from "../../../src/assets/HomeImg/omanbig.jpg"
+import img6 from "../../../src/assets/HomeImg/SriLanka.webp"
+import img7 from "../../../src/assets/HomeImg/Egypt.webp"
 
 
 export default function CardSlider() {

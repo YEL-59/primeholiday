@@ -1,4 +1,4 @@
-import img from "/HomeImg/homeimg1.webp";
+import img from "../../../../../src/assets/HomeImg/homeimg1.webp";
 
 const Immersion_Section = () => {
   return (

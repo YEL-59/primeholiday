@@ -38,12 +38,12 @@ const Home_Main_Section = () => {
             {/* Subtitle */}
             <p className="relative custom-p text-ivory-white text-center font-montserrat text-[15px] sm:text-[18px] md:text-[25px] lg:text-[30px] xl:text-[38px] 2xl:text-[44px] font-bold leading-[30px] md:leading-[50px] 2xl:leading-[60px] tracking-[-1.28px] max-w-[28rem] lg:max-w-xl xl:max-w-[45rem] 2xl:max-w-[52rem] mx-auto  mb-5">
 
-              <span className="block mx-auto ">
+              <span className="block  ">
                 <AppostiIcon />
               </span>
 
 
-              <span className="block">The Essence of a Holiday is to Enrich</span>
+              <span className="block -mt-2">The Essence of a Holiday is to Enrich</span>
               <span className="block">Our Lives and Create Lasting Memories.</span>
             </p>
 

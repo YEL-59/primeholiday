@@ -1,4 +1,4 @@
-import bgImage from "../../../../../public/AboutusImg/abouotusbg.jpg";
+import bgImage from "../../../../assets/AboutusImg/abouotusbg.jpg";
 
 import SectionHeader from "../../../../Components/SectionHeader/SectionHeader";
 const AboutUs_Home_Section = () => {

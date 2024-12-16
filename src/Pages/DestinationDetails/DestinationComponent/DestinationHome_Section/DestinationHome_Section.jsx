@@ -1,5 +1,5 @@
 import { useLocation, useParams } from 'react-router-dom';
-import bgImage from '../../../../../public/DestinationImg/Omanbg.png';
+import bgImage from '../../../../../src/assets/DestinationImg/Omanbg.png';
 
 const DestinationHome_Section = () => {
   const { destinationName } = useParams();

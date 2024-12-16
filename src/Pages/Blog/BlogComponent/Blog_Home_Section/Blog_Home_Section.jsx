@@ -1,4 +1,4 @@
-import bgImage from "../../../../../public/BlogImg/blogbg.webp";
+import bgImage from "../../../../../src/assets/BlogImg/blogbg.webp";
 import SectionHeader from "../../../../Components/SectionHeader/SectionHeader";
 
 const Blog_Home_Section = () => {

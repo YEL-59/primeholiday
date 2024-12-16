@@ -1,5 +1,5 @@
 
-import bgImage from '../../../../../public/DestinationImg/destinationbg.png';
+import bgImage from '../../../../../src/assets/DestinationImg/destinationbg.png';
 import SectionHeader from '../../../../Components/SectionHeader/SectionHeader';
 
 

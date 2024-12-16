@@ -1,4 +1,4 @@
-import bgImage from "/staticimg.webp";
+import bgImage from "../../../src/assets/staticimg.webp";
 import Breadcrumb from "../../Components/Breadcrumb/Breadcrumb";
 import SectionHeader from "../../Components/SectionHeader/SectionHeader";
 

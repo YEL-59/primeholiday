@@ -1,7 +1,7 @@
 
-import img from "../../../../../public/AboutusImg/qatar.webp";
-import img1 from "../../../../../public/AboutusImg/malaisia.webp";
-import img2 from "../../../../../public/AboutusImg/srilanka.webp";
+import img from "../../../../assets/AboutusImg/qatar.webp";
+import img1 from "../../../../assets/AboutusImg/malaisia.webp";
+import img2 from "../../../../assets/AboutusImg/srilanka.webp";
 import ReusableCard from "../../../../Components/reusable card/reusablecard";
 
 const AboutUscard = () => {

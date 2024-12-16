@@ -2,9 +2,9 @@
 
 import ReusableCard from '../../../../Components/reusable card/reusablecard';
 import MainTitle from '../../../../Components/MainTitle/MainTitle';
-import img from '../../../../../public/DestinationImg/destinationimg1.webp'
-import img1 from '../../../../../public/DestinationImg/destinationimg2.webp'
-import img2 from '../../../../../public/DestinationImg/destinationimg3.webp'
+import img from '../../../../../src/DestinationImg/destinationimg1.webp'
+import img1 from '../../../../../src/DestinationImg/destinationimg2.webp'
+import img2 from '../../../../../src/DestinationImg/destinationimg3.webp'
 const DestinationCard_Section = () => {
   const data = [
     {

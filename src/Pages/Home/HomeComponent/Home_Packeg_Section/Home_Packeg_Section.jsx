@@ -1,5 +1,5 @@
 
-import img from "../../../../../public/HomeImg/FrameBig.png";
+import img from "../../../../../src/assets/HomeImg/FrameBig.png";
 
 import CardSlider from "../../../../Components/Slider/Slider";
 import SecoundaryTitle from "../../../../Components/SecoundaryTitle/SecoundaryTitle";

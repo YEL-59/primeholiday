@@ -1,6 +1,6 @@
 import { useState } from "react";
-import videoThumbnail from "../../../../../public/homevideo.png";
-import homevideo from "../../../../../public/HomeImg/homevideo.mp4";
+import videoThumbnail from "../../../../../src/assets/homevideo.png";
+import homevideo from "../../../../../src/assets/HomeImg/homevideo.mp4";
 
 const Home_Video_Section = () => {
   const [isPlaying, setIsPlaying] = useState(false);

@@ -1,4 +1,4 @@
-import logo from "/mylogo.png";
+import logo from "../../../src/assets/mylogo.png";
 
 import { Link } from "react-router-dom";
 import Instagram from "../../assets/Icons/Instagram";
@@ -10,6 +10,7 @@ import Mail from "../../assets/Icons/Mail";
 
 import Uparrow from "../../assets/Icons/Uparrow";
 import Whatsappe from "../../assets/Icons/Whatsappe";
+import footerbg from "../../assets/footerbg.webp"
 import Modal from "../Modal/Modal";
 import { useState } from "react";
 
@@ -35,7 +36,7 @@ const Footer = () => {
       <div
         className="relative bg-cover bg-center text-ivory-white py-10  "
         style={{
-          backgroundImage: `linear-gradient(90deg, rgba(19, 80, 41, 0.60) 12.5%, rgba(19, 80, 41, 0.39) 58%, rgba(19, 80, 41, 0.60) 95.95%), url('/footerbg.webp')`,
+          backgroundImage: `linear-gradient(90deg, rgba(19, 80, 41, 0.60) 12.5%, rgba(19, 80, 41, 0.39) 58%, rgba(19, 80, 41, 0.60) 95.95%), url(${footerbg})`,
         }}
       >
         <div className="container mx-auto px-4">
@@ -122,7 +123,7 @@ const Footer = () => {
                     Destinations
                   </p>
                 </Link>
-                <Link to={"/"} className="flex items-center px-2">
+                <Link to={"/blog"} className="flex items-center px-2">
                   <p className="inline-flex items-center relative pr-4 after:content-[''] after:border-r-2 after:border-gray-300 after:h-4 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">
                     Blog
                   </p>

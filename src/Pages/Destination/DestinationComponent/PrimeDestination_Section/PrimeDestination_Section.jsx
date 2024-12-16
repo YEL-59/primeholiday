@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import img1 from "../../../../../public/DestinationImg/egypt.png";
-import img2 from "../../../../../public/DestinationImg/morocco.png";
-import img3 from "../../../../../public/DestinationImg/zinzaber.jpg";
-import img4 from "../../../../../public/DestinationImg/oman.jpg";
-import img5 from "../../../../../public/DestinationImg/kerala.jpg";
-import img6 from "../../../../../public/DestinationImg/qatart.jpg";
-import img7 from "../../../../../public/DestinationImg/srilanka.jpg";
+import img1 from "../../../../assets//DestinationImg/egypt.png";
+import img2 from "../../../../assets/DestinationImg/morocco.png";
+import img3 from "../../../../assets/DestinationImg/zinzaber.jpg";
+import img4 from "../../../../assets/DestinationImg/oman.jpg";
+import img5 from "../../../../assets/DestinationImg/kerala.jpg";
+import img6 from "../../../../assets/DestinationImg/qatart.jpg";
+import img7 from "../../../../assets/DestinationImg/srilanka.jpg";
 import ImageOverlayCard from "../../../../Components/ImageOverlayCard/ImageOverlayCard";
 
 const PrimeDestination_Section = () => {

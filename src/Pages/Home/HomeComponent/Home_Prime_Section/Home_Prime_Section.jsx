@@ -1,11 +1,11 @@
 import { useRef, useState, useEffect } from "react";
-import karala from "../../../../../public/HomeImg/karala.webp";
-import Egypt from "../../../../../public/HomeImg/Egypt.webp";
-import Morocco from "../../../../../public/HomeImg/Morocco.webp";
-import Oman from "../../../../../public/HomeImg/Oman.webp";
-import Qatar from "../../../../../public/HomeImg/Qatar.webp";
-import SriLanka from "../../../../../public/HomeImg/SriLanka.webp";
-import zanzibar from "../../../../../public/HomeImg/zanzibar.webp";
+import karala from "../../../../../src/assets/HomeImg/karala.webp";
+import Egypt from "../../../../../src/assets/HomeImg/Egypt.webp";
+import Morocco from "../../../../../src/assets/HomeImg/Morocco.webp";
+import Oman from "../../../../../src/assets/HomeImg/Oman.webp";
+import Qatar from "../../../../../src/assets/HomeImg/Qatar.webp";
+import SriLanka from "../../../../../src/assets/HomeImg/SriLanka.webp";
+import zanzibar from "../../../../../src/assets/HomeImg/zanzibar.webp";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 

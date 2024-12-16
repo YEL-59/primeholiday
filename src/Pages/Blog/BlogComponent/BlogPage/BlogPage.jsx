@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
-import img1 from "/BlogImg/DamiBlogimg1.webp";
-import img2 from "/BlogImg/DamiBlogimg2.webp";
+import img1 from "../../../../assets/BlogImg/DamiBlogimg1.webp";
+import img2 from "../../../../assets/BlogImg/DamiBlogimg2.webp";
 import BlogSection from "../BlogSection/BlogSection";
 
 const BlogPage = () => {
