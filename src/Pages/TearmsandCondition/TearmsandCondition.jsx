@@ -8,18 +8,18 @@ import Termscondition from '../../Components/termscondition/termscondition';
 const TearmsandCondition = () => {
     const termsData = [
         {
-          title: "Introduction",
-          subtitle: `Welcome to Prime Holiday Destinations ("we", "our", "us"). By using our website and purchasing our holiday packages, you agree to be bound by these Terms and Conditions. Please read them carefully before proceeding with any booking. If you do not agree with any part of these terms, please do not use our services.`,
+            title: "Introduction",
+            subtitle: `Welcome to Prime Holiday Destinations ("we", "our", "us"). By using our website and purchasing our holiday packages, you agree to be bound by these Terms and Conditions. Please read them carefully before proceeding with any booking. If you do not agree with any part of these terms, please do not use our services.`,
         },
         {
             title: " Definitions",
             subtitle: `"Client", "you", or "your" refers to the person using our services.
 "Holiday package" refers to the travel-related services provided by Prime Holiday Destinations, including but not limited to transportation, accommodation, and excursions.
 `,
-          },
+        },
         {
-          title: "Booking and Payment",
-          subtitle: `All bookings are subject to availability and are not confirmed until full payment has been received. Payments can be made via credit card, bank transfer, or other methods specified on our website.`,
+            title: "Booking and Payment",
+            subtitle: `All bookings are subject to availability and are not confirmed until full payment has been received. Payments can be made via credit card, bank transfer, or other methods specified on our website.`,
         },
 
         {
@@ -82,55 +82,55 @@ Please check our Privacy Policy for more information.
             subtitle: `These Terms & Conditions are governed by and construed in accordance with the laws of [Your Country], and any disputes will be subject to the exclusive jurisdiction of the courts in the United Kingdom.
 
 `,
-          },
+        },
         {
             title: "Contact Information",
             subtitle: `For any queries related to these Terms & Conditions, please contact us at:
 Email: contact@primeholidaydestinations.com
 `,
-          },
-      ];
+        },
+    ];
     const breadcrumbItems = [
         { label: 'Home', href: '/' },
 
-        { label: 'Terms & Conditions',href: '/terms-and-conditions'  },
-      ];
-  return (
-      <>
+        { label: 'Terms & Conditions', href: '/terms-and-conditions' },
+    ];
+    return (
+        <>
 
-          <div>
-         
-
-      <SectionHeader  
-      backgroundImage={bgImage}
-      title={' Terms & Condition'}
-      height={'60vh'}
-      />
-          </div>
-          <div>
-              <Breadcrumb items={breadcrumbItems}/>
-          </div>
+            <div>
 
 
-
-          <div>
-          <div className="bg-ivory-white p-6">
-      <div className="container mx-auto">
-        <h1 className="text-2xl font-bold text-gray-900 mb-4">Terms & Conditions</h1>
-        
-            <Termscondition
-             sections={termsData}
-            />
-         
-      </div>
-    </div>
-          </div>
+                <SectionHeader
+                    backgroundImage={bgImage}
+                    title={' Terms & Condition'}
+                    height={'60vh'}
+                />
+            </div>
+            <div>
+                <Breadcrumb items={breadcrumbItems} />
+            </div>
 
 
-    
 
-      </>
-  )
+            <div>
+                <div className="bg-ivory-white p-6">
+                    <div className="container mx-auto">
+                        <h1 className="text-2xl font-bold text-gray-900 mb-4">Terms & Conditions</h1>
+
+                        <Termscondition
+                            sections={termsData}
+                        />
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </>
+    )
 }
 
 export default TearmsandCondition

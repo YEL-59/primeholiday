@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
       <Home_Main_Section />
-       <Home_Prime_Section />
+      <Home_Prime_Section />
       <Home_Packeg_Section />
 
       <div className="bg-ivory-white bg-cover md:p-2">
@@ -21,7 +21,7 @@ const Home = () => {
 
       <div className="bg-ivory-white bg-cover p-2">
         <Home_Testiminial_Section />
-      </div> 
+      </div>
     </>
   );
 };

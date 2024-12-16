@@ -4,7 +4,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { RouterProvider } from "react-router-dom";
 import app from "./App";
-const router=app;
+const router = app;
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(

@@ -9,23 +9,23 @@ import BlogPage from './BlogComponent/BlogPage/BlogPage';
 const Blog = () => {
     const breadcrumbItems = [
         { label: 'Home', href: '/' },
-       
-        { label: 'Blog ',href: '/blog' }, 
-      ];
-  return (
-      <>
-          <Blog_Home_Section />
-          <Breadcrumb items={breadcrumbItems} /> 
-         
 
-         <BlogPage/>
+        { label: 'Blog ', href: '/blog' },
+    ];
+    return (
+        <>
+            <Blog_Home_Section />
+            <Breadcrumb items={breadcrumbItems} />
 
 
-         
-        
-      
-      </>
-  )
+            <BlogPage />
+
+
+
+
+
+        </>
+    )
 }
 
 export default Blog

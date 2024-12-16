@@ -12,31 +12,31 @@ const BlogPage = () => {
     const fetchData = async () => {
       const data = [
         {
-            heading: "Travel Tips",
-            blogData: [
-              {
-                id: 1,
-                image: img2,
-                title: "Thailand",
-                date: "1 Jan 2025",
-                description: "Experience the beautiful beaches of Thailand.",
-              },
-              {
-                id: 2,
-                image: img1,
-                title: "Japan",
-                date: "25 Dec 2024",
-                description: "Discover the rich culture of Japan.",
-              },
-              {
-                id: 3,
-                image: img2,
-                title: "Maldives",
-                date: "10 Feb 2025",
-                description: "Relax and unwind at the Maldives islands.",
-              },
-            ],
-          },
+          heading: "Travel Tips",
+          blogData: [
+            {
+              id: 1,
+              image: img2,
+              title: "Thailand",
+              date: "1 Jan 2025",
+              description: "Experience the beautiful beaches of Thailand.",
+            },
+            {
+              id: 2,
+              image: img1,
+              title: "Japan",
+              date: "25 Dec 2024",
+              description: "Discover the rich culture of Japan.",
+            },
+            {
+              id: 3,
+              image: img2,
+              title: "Maldives",
+              date: "10 Feb 2025",
+              description: "Relax and unwind at the Maldives islands.",
+            },
+          ],
+        },
         {
           heading: "Destination Guid",
           blogData: [
@@ -89,7 +89,7 @@ const BlogPage = () => {
             },
           ],
         },
-       
+
       ];
       setSections(data);
     };

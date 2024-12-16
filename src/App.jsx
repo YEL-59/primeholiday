@@ -31,23 +31,23 @@ const App = createBrowserRouter([
         path: "destination/:destinationName",
         element: <DestinationDetails />,
       },
-    
-    
+
+
       {
         path: "blog",
         element: <Blog />,
       },
       {
         path: "terms-and-conditions",
-        element: <TearmsandCondition/>,
+        element: <TearmsandCondition />,
       },
       {
         path: "privacy",
-        element: <Privacy/>,
+        element: <Privacy />,
       },
       {
         path: "cancellation",
-        element: <Cancellation/>,
+        element: <Cancellation />,
       },
     ],
   },

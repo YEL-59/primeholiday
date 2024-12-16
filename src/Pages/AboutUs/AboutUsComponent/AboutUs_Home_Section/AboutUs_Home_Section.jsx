@@ -5,7 +5,7 @@ const AboutUs_Home_Section = () => {
   return (
     <>
       <SectionHeader backgroundImage={bgImage}
-      title="About Us" />
+        title="About Us" />
     </>
   );
 };

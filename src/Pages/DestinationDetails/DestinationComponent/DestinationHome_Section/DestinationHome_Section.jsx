@@ -4,11 +4,11 @@ import bgImage from '../../../../../public/DestinationImg/Omanbg.png';
 const DestinationHome_Section = () => {
   const { destinationName } = useParams();
   const location = useLocation();
-  const { imgSrc,description } = location.state || {};
+  const { imgSrc, description } = location.state || {};
 
   return (
     <>
-       <header
+      <header
         className="relative flex items-center justify-center h-screen bg-cover bg-center"
         style={{
           backgroundImage: `url(${imgSrc || bgImage})`,
@@ -22,7 +22,7 @@ const DestinationHome_Section = () => {
               {destinationName}
             </h1>
             <p className="text-xl  md:text-xl xl:text-6xl text-ivory-white mt-14 ">
-            {description || "Beauty Has an Address"}
+              {description || "Beauty Has an Address"}
             </p>
           </div>
 

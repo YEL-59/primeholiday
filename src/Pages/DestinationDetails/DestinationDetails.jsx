@@ -8,32 +8,32 @@ import AboutUscard from "../AboutUs/AboutUsComponent/AboutUsCard/AboutUscard";
 
 
 const DestinationDetails = () => {
-    const { destinationName } = useParams();
-    const breadcrumbItems = [
-        { label: 'Home', href: '/' },
-        { label: 'Destination', href: '/destination' },
-        { label: destinationName, href: `/destination/${destinationName}` }, 
-      ];
+  const { destinationName } = useParams();
+  const breadcrumbItems = [
+    { label: 'Home', href: '/' },
+    { label: 'Destination', href: '/destination' },
+    { label: destinationName, href: `/destination/${destinationName}` },
+  ];
   return (
-      <>
-          <div className="bg-ivory-white">
-            <DestinationHome_Section/>
+    <>
+      <div className="bg-ivory-white">
+        <DestinationHome_Section />
 
 
-              <Breadcrumb items={breadcrumbItems} />
-              <DestinationCard_Section/>
-              <Immersion_Section/>
-              <DestinationSteper_Section/>
-            <AboutUscard/>
-
-
-          
-             
-          </div>
+        <Breadcrumb items={breadcrumbItems} />
+        <DestinationCard_Section />
+        <Immersion_Section />
+        <DestinationSteper_Section />
+        <AboutUscard />
 
 
 
-      </>
+
+      </div>
+
+
+
+    </>
   )
 }
 

@@ -13,24 +13,24 @@ const DestinationCard_Section = () => {
       packeg: '7 days from $1475',
     },
     {
-        img:img1,
-        countryname: 'Oman',
-        packeg: '7 days from $1475',
-      },
-      {
-        img: img2,
-        countryname: 'Oman',
-        packeg: '7 days from $1475',
-      },
+      img: img1,
+      countryname: 'Oman',
+      packeg: '7 days from $1475',
+    },
+    {
+      img: img2,
+      countryname: 'Oman',
+      packeg: '7 days from $1475',
+    },
   ];
   return (
     <>
       <div>
         <div>
 
-       <div className='mt-5 mb-5'>
-       <MainTitle head_title={"All-Inclusive ground packages"} />
-       </div>
+          <div className='mt-5 mb-5'>
+            <MainTitle head_title={"All-Inclusive ground packages"} />
+          </div>
 
           <div>
             <div className="container mx-auto grid grid-cols-3 gap-5 mb-10 mt-10">

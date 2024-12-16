@@ -41,7 +41,7 @@ const AboutUsDescriptionSection = () => {
             <ul className="space-y-4 list-disc list-inside text-gray-700 text-xl">
               <li className="flex items-start space-x-3 before:content-['•'] before:mr-2 before:text-gray-700">
                 <span className="text-black  text-justify font-inter text-xl font-normal leading-[164%] tracking-[-0.48px]">
-                 <strong> Expertly Curated Destinations:</strong> Our travel specialists
+                  <strong> Expertly Curated Destinations:</strong> Our travel specialists
                   carefully select each destination for its unique attractions,
                   cultural richness, and natural beauty.
                 </span>
@@ -55,14 +55,14 @@ const AboutUsDescriptionSection = () => {
               </li>
               <li className="flex items-start space-x-3 before:content-['•'] before:mr-2 before:text-gray-700">
                 <span className="text-black  text-justify font-inter text-xl font-normal leading-[164%] tracking-[-0.48px]">
-                 <strong> Personalized Service:</strong> We tailor our packages to meet your
+                  <strong> Personalized Service:</strong> We tailor our packages to meet your
                   individual preferences and needs, ensuring a personalized and
                   memorable journey.
                 </span>
               </li>
               <li className="flex items-start space-x-3 before:content-['•'] before:mr-2 before:text-gray-700">
                 <span className="text-black  text-justify font-inter text-xl font-normal leading-[164%] tracking-[-0.48px]">
-                 <strong> Sustainable Travel:</strong> We are committed to responsible tourism,
+                  <strong> Sustainable Travel:</strong> We are committed to responsible tourism,
                   supporting local communities and minimizing our environmental
                   impact.
                 </span>

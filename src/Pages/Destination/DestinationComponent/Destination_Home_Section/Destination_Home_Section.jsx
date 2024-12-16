@@ -7,8 +7,8 @@ const Destination_Home_Section = () => {
   return (
     <>
       <SectionHeader
-      backgroundImage={bgImage}
-      title={'Your All-Inclusive Journey starts Here'}
+        backgroundImage={bgImage}
+        title={'Your All-Inclusive Journey starts Here'}
       />
     </>
   );

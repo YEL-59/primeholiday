@@ -8,24 +8,24 @@ import AboutUscard from './AboutUsComponent/AboutUsCard/AboutUscard';
 const AboutUs = () => {
     const breadcrumbItems = [
         { label: 'Home', href: '/' },
-       
-        { label: 'About Us ',href: '/aboutus' }, 
+
+        { label: 'About Us ', href: '/aboutus' },
     ];
-   
-  return (
-      <>
-      
-          <div>
-              
-              <AboutUs_Home_Section />
-              <Breadcrumb items={breadcrumbItems} />
-              <AboutUsDescriptionSection />
-              <AboutUscard />
-              
-            
-          </div>
-          </>
-  )
+
+    return (
+        <>
+
+            <div>
+
+                <AboutUs_Home_Section />
+                <Breadcrumb items={breadcrumbItems} />
+                <AboutUsDescriptionSection />
+                <AboutUscard />
+
+
+            </div>
+        </>
+    )
 }
 
 export default AboutUs

@@ -65,9 +65,8 @@ const DestinationSteper_Section = () => {
         {steps.map((step, index) => (
           <button
             key={index}
-            className={`px-5 py-2 text-black border-green-600 border hover:text-white hover:bg-green-800 rounded-lg mb-2 md:mb-0 ${
-              activeStep === index ? 'bg-green-800 text-white' : ''
-            }`}
+            className={`px-5 py-2 text-black border-green-600 border hover:text-white hover:bg-green-800 rounded-lg mb-2 md:mb-0 ${activeStep === index ? 'bg-green-800 text-white' : ''
+              }`}
             onClick={() => handleStepChange(index)}
           >
             {step.title}

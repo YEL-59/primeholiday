@@ -136,7 +136,7 @@ const PrimeDestination_Section = () => {
             </div>
           );
         }
-        return null; 
+        return null;
       })}
 
       {/* Remaining Cards */}
@@ -165,7 +165,7 @@ const PrimeDestination_Section = () => {
             </div>
           );
         }
-        return null; 
+        return null;
       })}
     </div>
   );
