@@ -84,7 +84,7 @@
 /* Desktop Screens (1920px to 2560px) */
 @media (min-width: 1920px) and (max-width: 2559px) {
   .swiper {
-    height: 56vh;
+    height: 60vh;
     margin-left: 19%;
   }
 }
