@@ -40,7 +40,7 @@ const PrimeDestination_Section = () => {
           id: "card-4",
           imgSrc: img4,
           title: "Oman",
-          description: "Beauty has an address",
+          description: "Beauty Has a Address",
           url: "Oman",
         },
         {

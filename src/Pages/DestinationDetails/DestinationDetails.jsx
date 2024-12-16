@@ -11,7 +11,7 @@ const DestinationDetails = () => {
   const { destinationName } = useParams();
   const breadcrumbItems = [
     { label: 'Home', href: '/' },
-    { label: 'Destination', href: '/destination' },
+    { label: 'Destinations', href: '/destination' },
     { label: destinationName, href: `/destination/${destinationName}` },
   ];
   return (
