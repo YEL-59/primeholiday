@@ -36,15 +36,20 @@ const Home_Main_Section = () => {
             </h1>
 
             {/* Subtitle */}
-            <p className="text-ivory-white text-center font-montserrat text-[15px] sm:text-[18px] md:text-[25px] lg:text-[30px] xl:text-[38px] 2xl:text-[44px] font-bold leading-[30px] md:leading-[50px] 2xl:leading-[60px] tracking-[-1.28px] max-w-[28rem] lg:max-w-xl xl:max-w-[52rem] mx-auto mt-5 mb-5">
-              {/* Icon */}
-              <span className="block mx-auto">
-                <AppostiIcon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 xl:w-10 xl:h-12" />
+            <p className="relative custom-p text-ivory-white text-center font-montserrat text-[15px] sm:text-[18px] md:text-[25px] lg:text-[30px] xl:text-[38px] 2xl:text-[44px] font-bold leading-[30px] md:leading-[50px] 2xl:leading-[60px] tracking-[-1.28px] max-w-[28rem] lg:max-w-xl xl:max-w-[52rem] mx-auto  mb-5">
+              
+              <span className="block mx-auto ">
+                <AppostiIcon  />
               </span>
-              {/* Text */}
+
+             
               <span className="block">The Essence of a Holiday is to Enrich</span>
               <span className="block">Our Lives and Create Lasting Memories.</span>
             </p>
+
+
+
+
           </div>
         </div>
 
