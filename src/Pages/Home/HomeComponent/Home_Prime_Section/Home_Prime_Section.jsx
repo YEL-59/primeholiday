@@ -1,7 +1,7 @@
 import { useRef, useState, useEffect } from "react";
 import karala from "../../../../../src/assets/HomeImg/karala.webp";
 import Egypt from "../../../../../src/assets/HomeImg/Egypt.webp";
-import Morocco from "../../../../../src/assets/HomeImg/Morocco.webp";
+import Morocco from "../../../../../src/assets/HomeImg/morocco.webp";
 import Oman from "../../../../../src/assets/HomeImg/Oman.webp";
 import Qatar from "../../../../../src/assets/HomeImg/Qatar.webp";
 import SriLanka from "../../../../../src/assets/HomeImg/SriLanka.webp";
