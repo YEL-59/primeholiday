@@ -1,12 +1,12 @@
-import img from "../../../../../src/assets/HomeImg/homeimg1.webp";
+import img from "../../../../../src/assets/DestinationImg/immerson.png";
 
 const Immersion_Section = () => {
   return (
     <>
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+        <div className="grid grid-cols-12 gap-5">
           {/* Left Column */}
-          <div className="lg:col-span-1">
+          <div className="col-span-1 lg:col-span-8">
             <div className="">
               <div>
                 <div className="bg-green">
@@ -54,7 +54,7 @@ const Immersion_Section = () => {
           </div>
 
           {/* Right Column with Image */}
-          <div className="lg:col-span-1">
+          <div className="col-span-1 lg:col-span-4">
             <div className="">
               <img
                 src={img}
