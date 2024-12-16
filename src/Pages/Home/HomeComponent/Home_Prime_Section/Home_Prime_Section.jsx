@@ -147,7 +147,7 @@ const Home_Prime_Section = () => {
                 <div
                   className={`flex flex-col justify-center items-center text-center ${activeIndex === index
                     ? "h-[32rem]  md:h-[32rem] lg:h-[28rem] xl:h-[30rem] 2xl-[32rem]"
-                    : "h-[16rem]  md:h-[32rem] lg:h-[28rem]  xl:h-[28rem] 2xl-[32rem]"
+                    : "h-[16rem]  md:h-[32rem] lg:h-[28rem]  xl:h-[30rem] 2xl-[32rem]"
                     }`}
                 >
                   {activeIndex === index ? (
