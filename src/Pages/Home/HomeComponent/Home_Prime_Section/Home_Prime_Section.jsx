@@ -125,48 +125,53 @@ const Home_Prime_Section = () => {
 
         {/* Static cards for large screens */}
         <div className="hidden lg:block">
-          <div
-            ref={sliderRef}
-            className="flex  justify-center items-center overflow-hidden"
-          >
-            {images.map((image, index) => (
-              <div
-                key={image.id}
-                className={`slider-card cursor-pointer transition-all duration-300 transform ${activeIndex === index
-                    ? "hovered scale-110 shadow-xl"
-                    : "scale-90 opacity-95"
-                  }`}
-                style={{
-                  backgroundImage: `url(${image.src})`,
-                  width: activeIndex === index ? "50rem" : "7.5rem",
-                  height: "32rem",
-                  margin: activeIndex === index ? "0 2.9rem" : "0 .2rem",
-                 
-                }}
-                onMouseEnter={() => handleMouseEnter(index)}
-                onMouseLeave={handleMouseLeave}
-              >
-                <div className="flex flex-col justify-center items-center h-full text-center">
-                  {activeIndex === index ? (
-                    <div className="overlay active-overlay">
-                      <h2 className="text-4xl font-bold text-ivory-white tracking-wider">
-                        {image.name}
-                      </h2>
-                      <p className="text-md font-normal text-ivory-white mt-2">
-                        {image.role}
-                      </p>
-                    </div>
-                  ) : (
-                    <div className="vertical-info">
-                      <h1 className="title text-ivory-white tracking-widest">
-                        {image.name}
-                      </h1>
-                    </div>
-                  )}
-                </div>
-              </div>
-            ))}
+        <div
+  ref={sliderRef}
+  className="flex justify-center items-center overflow-hidden"
+>
+  {images.map((image, index) => (
+    <div
+      key={image.id}
+      className={`slider-card cursor-pointer transition-all duration-300 transform ${activeIndex === index
+          ? "hovered scale-110  mx-[2rem] sm:mx-[2.5rem] md:mx-[3rem] lg:mx-[2rem] 2xl:mx-[3rem]"
+          : "scale-90 opacity-95 mx-[0.2rem] "
+        }`}
+      style={{
+        backgroundImage: `url(${image.src})`,
+        width: activeIndex === index ? "50rem" : "7.5rem",
+       
+      }}
+      onMouseEnter={() => handleMouseEnter(index)}
+      onMouseLeave={handleMouseLeave}
+    >
+      <div
+        className={`flex flex-col justify-center items-center text-center ${
+          activeIndex === index
+            ? "h-[32rem]  md:h-[32rem] lg:h-[28rem] xl:h-[30rem] 2xl-[32rem]"
+            : "h-[16rem]  md:h-[32rem] lg:h-[28rem]  xl:h-[28rem] 2xl-[32rem]"
+        }`}
+      >
+        {activeIndex === index ? (
+          <div className="overlay active-overlay">
+            <h2 className="xl:text-xl 2xl:text-3xl font-bold text-ivory-white tracking-wider">
+              {image.name}
+            </h2>
+            <p className="text-md font-normal text-ivory-white mt-0 2xl:mt-2">
+              {image.role}
+            </p>
           </div>
+        ) : (
+          <div className="vertical-info">
+            <h1 className="title text-ivory-white tracking-widest">
+              {image.name}
+            </h1>
+          </div>
+        )}
+      </div>
+    </div>
+  ))}
+</div>
+
         </div>
       </div>
     </div>
