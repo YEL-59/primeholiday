@@ -94,7 +94,7 @@ const Footer = () => {
           </div>
 
           <div className="mt-5">
-            <div className="flex flex-row sm:flex-col gap-2">
+            <div className="flex flex-row sm:flex-col items-center md:items-start gap-2">
               <div className="text-3xl text-primary ">
                 <Whatsappe />
               </div>
