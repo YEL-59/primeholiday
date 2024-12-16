@@ -14,7 +14,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 
 // Import images
 import img1 from "../../../public/HomeImg/Keralabig.webp";
-import img2 from "../../../public/HomeImg/moroccho.png";
+import img2 from "../../../public/HomeImg/morocco.webp";
 import img3 from "../../../public/HomeImg/qatarbig.jpg";
 import img4 from "../../../public/HomeImg/zangerBig.webp";
 import img5 from "../../../public/HomeImg/omanbig.jpg"
@@ -53,7 +53,7 @@ export default function CardSlider() {
         <div className="card">
           <img src={card.image} className="h-[200px] sm:h-[250px] md:h-[300px] 2xl:h-[498px]" alt={card.country} />
           <div className="card-text z-10 text-ivory-white text-center w-full p-2 md:p-4 shadow-md">
-            <h2 className="text-sm md:text-2xl lg:text-4xl font-bold text-ivory-white 2xl:leading-10">
+            <h2 className="text-sm md:text-2xl xl:text-2xl 2xl:text-4xl font-bold text-ivory-white 2xl:leading-10 uppercase">
               {card.country}
             </h2>
             <p className="text-sm md:text-lg lg:text-[xl] font-normal text-ivory-white 2xl:leading-10 uppercase">
