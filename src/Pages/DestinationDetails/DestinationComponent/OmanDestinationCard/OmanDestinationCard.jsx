@@ -32,12 +32,13 @@ const DestinationCard_Section = () => {
       <div >
         <div>
 
-          <div className='mt-5 mb-5 flex justify-center '>
-            <SecoundaryTitle head_title={"All-Inclusive ground packages"} />
+          <div className='flex justify-center py-10'>
+            {/* <SecoundaryTitle head_title={"All-Inclusive ground packages"} /> */}
+            <h1 className='text-primary font-montserrat text-4xl text-center mb-16 font-semibold leading-[124%] tracking-[-0.64px]'>All-Inclusive ground packages</h1>
           </div>
 
           <div>
-            <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 mb-10">
+            <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6  mb-10">
               {data.map((item, index) => (
                 <ReusableCard
                   key={index}

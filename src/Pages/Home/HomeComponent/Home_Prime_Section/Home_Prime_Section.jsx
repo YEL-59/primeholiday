@@ -161,7 +161,7 @@ const Home_Prime_Section = () => {
                     </div>
                   ) : (
                     <div className="vertical-info">
-                      <h1 className="title text-ivory-white tracking-widest">
+                      <h1 className="title text-white tracking-widest z-10">
                         {image.name}
                       </h1>
                     </div>
