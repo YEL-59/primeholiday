@@ -189,8 +189,8 @@ const Footer = () => {
       <div className="bg-green">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between py-5">
           <div className="text-ivory-white text-center md:text-start">
-            <p className="text-xs uppercase font-bold font-helvetica leading-3 tracking-[2px]">Stay up to Date</p>
-            <h1 className="text-lg font-bold truncate">Subscribe to Our Newsletter</h1>
+            <p className="text-xs uppercase font-bold font-helvetica leading-5 tracking-[2px]">Stay up to Date</p>
+            <h1 className="text-lg font-bold truncate font-inter">Subscribe to Our Newsletter</h1>
           </div>
           <div className="flex flex-col md:flex-row justify-end gap-2 w-full">
             <input
