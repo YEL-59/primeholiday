@@ -148,7 +148,7 @@ const Footer = () => {
                 </Link>
               </div>
 
-              <div className="w-full text-ivory-white font-inter text-[13.5px] md:text-[10px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] font-normal leading-[29.52px] flex sm:flex-row gap-2 flex-col md:items-center justify-between ">
+              <div className="w-full ms-2 text-ivory-white font-inter text-[13.5px] md:text-[10px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] font-normal leading-[29.52px] flex sm:flex-row gap-2 flex-col md:items-center justify-between ">
                 <p>&copy; 2024 Rizmail Travel & Tours Limited</p>
               </div>
 

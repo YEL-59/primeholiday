@@ -5,6 +5,7 @@ import { IoClose } from "react-icons/io5"; // Close icon from react-icons
 import Modal from "../Modal/Modal";
 import { Link, useLocation } from "react-router-dom";
 import Threebaricons from "../../assets/Icons/Threebaricons";
+import { GoHome } from "react-icons/go";
 
 const Navbar = () => {
   // State to manage sidebar visibility
@@ -83,14 +84,15 @@ const Navbar = () => {
         <div className="flex flex-col items-center gap-2 mt-4">
           <Link
             to="/"
-            className={`py-2 px-4 w-full text-center font-medium text-lg ${isActive("/")
+            className={`py-2 px-4 w-full text-center font-medium text-lg flex justify-center items-center ${isActive("/")
               ? "text-ivory-white font-bold"
               : "text-green"
               } hover:text-ivory-white transition-colors duration-300`}
             onClick={closeSidebar}
           >
-            Home
+            <GoHome className={`text-2xl ${isActive("/") ? "text-ivory-white font-bold" : "text-green font-bold"} hover:text-ivory-white transition-colors duration-300`} />
           </Link>
+
 
           <Link
             to="/destination"

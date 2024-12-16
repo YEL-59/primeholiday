@@ -6,7 +6,7 @@ const Destination = () => {
   const breadcrumbItems = [
     { label: "Home", href: "/" },
 
-    { label: "Destination", href: "/destination" },
+    { label: "Destinations", href: "/destination" },
   ];
   return (
     <>

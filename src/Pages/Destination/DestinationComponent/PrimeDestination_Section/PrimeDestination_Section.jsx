@@ -72,7 +72,7 @@ const PrimeDestination_Section = () => {
   return (
     <div>
       <div className="container mx-auto">
-        <h1 className="text-2xl md:text-5xl font-semibold leading-10 text-primary text-center p-5 ">
+        <h1 className="text-2xl md:text-5xl font-montserrat font-semibold leading-10 text-primary text-center py-20  uppercase tracking-wide">
           Prime Destinations
         </h1>
       </div>
@@ -129,7 +129,7 @@ const PrimeDestination_Section = () => {
                     <h2 className="text-xl xl:text-4xl uppercase font-medium">
                       {item.title}
                     </h2>
-                    <p className="text-lg">{item.description}</p>
+                    <p className="text-lg uppercase">{item.description}</p>
                   </div>
                 </div>
               </div>

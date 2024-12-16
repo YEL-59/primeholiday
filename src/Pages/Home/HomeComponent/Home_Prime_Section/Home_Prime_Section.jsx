@@ -25,7 +25,7 @@ const Home_Prime_Section = () => {
     { id: 3, src: zanzibar, name: "zanzibar", role: "Spice Island" },
     { id: 4, src: Oman, name: "Oman", role: "Beauty has an address" },
     { id: 5, src: Qatar, name: "Qatar", role: "Experience the World Beyond" },
-    { id: 6, src: Egypt, name: "Egypt", role: "Beauty of Land" },
+    { id: 6, src: Egypt, name: "Egypt", role: "The Gift of the Nile" },
     { id: 7, src: Morocco, name: "Morocco", role: "Land of Light" },
   ];
 

@@ -20,7 +20,7 @@ const BlogCard = ({ image, title, date, description, isExpanded, onToggle }) => 
       
 
         {/* Description */}
-        <div className="mt-2 text-gray-600 text-sm">
+        <div className="mt-2 text-gray-600 text-md">
           {isExpanded ? description : `${truncatedDescription}...`}
           <button
             onClick={onToggle}
