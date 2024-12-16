@@ -12,6 +12,7 @@ export default {
       },
       fontFamily: {
         salvager: ["Salvager", "sans-serif"],
+        helvetica:["Helvetica", "sans-serif"],
         inter: ["Inter", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
       },

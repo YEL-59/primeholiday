@@ -34,7 +34,7 @@ const Footer = () => {
   return (
     <>
       <div
-        className="relative bg-cover bg-center text-ivory-white py-10  "
+        className="relative bg-cover bg-center text-ivory-white py-8  "
         style={{
           backgroundImage: `linear-gradient(90deg, rgba(19, 80, 41, 0.60) 12.5%, rgba(19, 80, 41, 0.39) 58%, rgba(19, 80, 41, 0.60) 95.95%), url(${footerbg})`,
         }}
@@ -60,7 +60,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div onClick={toggleModal} className="text-[13.5px] md:text-[10px] lg:text-[12px] xl:text-[18px] px-5 py-1 rounded text-text-primary border font-semibold flex justify-center items-center cursor-pointer hover:bg-[#f49d2a]">
+            <div onClick={toggleModal} className=" uppercase text-[13.5px] md:text-[10px] lg:text-[12px] xl:text-[18px] px-5 py-1 rounded text-text-primary border font-semibold flex justify-center items-center cursor-pointer hover:bg-[#f49d2a] focus:none hover:outline-none hover:border-0">
               Enquire now
             </div>
           </div>
@@ -166,7 +166,7 @@ const Footer = () => {
                 </p>
               </div>
               <div className="">
-                <p className="text-ivory-white font-inter text-start 2xl:text-end text-[13.5px] md:text-[10px] lg:text-[12px] xl:text-[15px] font-normal leading-[29.52px]">
+                <p className="text-ivory-white font-inter text-start 2xl:text-end text-[13.5px] md:text-[10px] lg:text-[12px] xl:text-[15px] font-normal ">
                   Colour palette inspired by @thehousewiththepinkbed
                 </p>
               </div>
@@ -176,7 +176,7 @@ const Footer = () => {
         </div>
 
 
-        <div className="flex justify-end mr-14 -mt-10 hidden md:flex">
+        <div className="flex justify-end mr-14 -mt-[55px] hidden md:flex">
           <div
             className="text-4xl  border-[2px] h-[48px] rounded-xl py-3 px-3 border-primary flex justify-center items-center"
             onClick={handleScrollToTop}
@@ -189,17 +189,17 @@ const Footer = () => {
       <div className="bg-green">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between py-5">
           <div className="text-ivory-white text-center md:text-start">
-            <p className="text-sm">Stay up to date</p>
-            <h1 className="text-lg font-bold truncate">Subscribe to our newsletter</h1>
+            <p className="text-xs uppercase font-bold font-helvetica leading-3 tracking-[2px]">Stay up to Date</p>
+            <h1 className="text-lg font-bold truncate">Subscribe to Our Newsletter</h1>
           </div>
           <div className="flex flex-col md:flex-row justify-end gap-2 w-full">
             <input
               type="text"
-              className="border rounded py-1 px-3 bg-transparent h-8 text-ivory-white focus:outline-none"
+              className="border rounded py-2 px-3  bg-transparent  text-ivory-white placeholder-ivory-white placeholder:font-normal focus:outline-none"
               placeholder="Enter Your Name"
             />
-            <button className="border rounded px-5 py-1 text-ivory-white font-medium mt-2 sm:mt-0 sm:ml-5 h-8">
-              Subscribe
+            <button className="border rounded px-5 py-2 text-ivory-white font-medium mt-2 sm:mt-0 sm:ml-5  uppercase">
+            Subscribe
             </button>
           </div>
         </div>

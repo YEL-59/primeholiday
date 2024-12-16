@@ -47,7 +47,7 @@ const Navbar = () => {
               onClick={toggleSidebar}
             // onMouseEnter={openSidebar}
             >
-            <Threebaricons/>
+              <Threebaricons />
             </div>
           </div>
 
@@ -83,10 +83,10 @@ const Navbar = () => {
         <div className="flex flex-col items-center gap-2 mt-4">
           <Link
             to="/"
-            className={`relative py-2 px-4 w-full text-center font-medium text-lg ${isActive("/")
-                ? "text-ivory-white font-bold after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-ivory-white after:scale-100"
-                : "text-green after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-ivory-white after:scale-0"
-              } hover:after:scale-100 hover:text-ivory-white after:transition-transform after:duration-300`}
+            className={`py-2 px-4 w-full text-center font-medium text-lg ${isActive("/")
+              ? "text-ivory-white font-bold"
+              : "text-green"
+              } hover:text-ivory-white transition-colors duration-300`}
             onClick={closeSidebar}
           >
             Home
@@ -94,23 +94,23 @@ const Navbar = () => {
 
           <Link
             to="/destination"
-            className={`relative py-2 px-4 w-full text-center font-medium text-lg ${isActive("/destination")
-                ? "text-ivory-white font-bold after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-ivory-white after:scale-100"
-                : "text-green after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-ivory-white after:scale-0"
-              } hover:after:scale-100 hover:text-ivory-white after:transition-transform after:duration-300`}
+            className={`py-2 px-4 w-full text-center font-medium text-lg ${isActive("/destination")
+              ? "text-ivory-white font-bold"
+              : "text-green"
+              } hover:text-ivory-white transition-colors duration-300`}
             onClick={closeSidebar}
           >
             Destinations
           </Link>
           <Link
             to="/blog"
-            className={`relative py-2 px-4 w-full text-center font-medium text-lg ${isActive("/blog")
-                ? "text-ivory-white font-bold after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-ivory-white after:scale-100"
-                : "text-green after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-ivory-white after:scale-0"
-              } hover:after:scale-100 hover:text-ivory-white after:transition-transform after:duration-300`}
+            className={`py-2 px-4 w-full text-center font-medium text-lg ${isActive("/blog")
+              ? "text-ivory-white font-bold"
+              : "text-green"
+              } hover:text-ivory-white transition-colors duration-300`}
             onClick={closeSidebar}
           >
-            Blogs
+            Blog
           </Link>
         </div>
       </div>
