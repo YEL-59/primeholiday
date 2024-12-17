@@ -17,21 +17,30 @@ import { Pagination, Autoplay } from "swiper/modules";
 import "./style.css";
 
 import SecoundaryTitle from "../../../../Components/SecoundaryTitle/SecoundaryTitle";
+import { useNavigate } from "react-router-dom";
 
 const Home_Prime_Section = () => {
   const images = [
-    { id: 1, src: karala, name: "kerala", role: "God's Own Country" },
-    { id: 2, src: SriLanka, name: "SriLanka", role: "You'll Come Back for More" },
-    { id: 3, src: zanzibar, name: "zanzibar", role: "Spice Island" },
-    { id: 4, src: Oman, name: "Oman", role: "Beauty has an address" },
-    { id: 5, src: Qatar, name: "Qatar", role: "Experience the World Beyond" },
-    { id: 6, src: Egypt, name: "Egypt", role: "The Gift of the Nile" },
-    { id: 7, src: Morocco, name: "Morocco", role: "Land of Light" },
+    { id: 1, src: karala, name: "kerala", description: "God's Own Country" },
+    { id: 2, src: SriLanka, name: "SriLanka", description: "You'll Come Back for More" },
+    { id: 3, src: zanzibar, name: "zanzibar", description: "Spice Island" },
+    { id: 4, src: Oman, name: "Oman", description: "Beauty Has an Address" },
+    { id: 5, src: Qatar, name: "Qatar", description: "Experience the World Beyond" },
+    { id: 6, src: Egypt, name: "Egypt", description: "The Gift of the Nile" },
+    { id: 7, src: Morocco, name: "Morocco", description: "Land of Light" },
   ];
 
   const [activeIndex, setActiveIndex] = useState(Math.floor(images.length / 2));
   const sliderRef = useRef(null);
   const hoverTimeoutRef = useRef(null);
+
+  const navigate = useNavigate();
+
+  const handleCardClick = (countryName, imgSrc, description) => {
+    navigate(`/destination/${countryName}`, {
+      state: { imgSrc, description }, 
+    });
+  };
 
   useEffect(() => {
     const slider = sliderRef.current;
@@ -113,7 +122,7 @@ const Home_Prime_Section = () => {
                       <h2 className="text-md lg:text-4xl font-bold tracking-wider">
                         {image.name}
                       </h2>
-                      <p className="text-xs lg:text-md font-normal mt-2">{image.role}</p>
+                      <p className="text-xs lg:text-md font-normal mt-2">{image.description}</p>
                     </div>
                   </div>
                 </div>
@@ -143,6 +152,7 @@ const Home_Prime_Section = () => {
                 }}
                 onMouseEnter={() => handleMouseEnter(index)}
                 onMouseLeave={handleMouseLeave}
+                onClick={() => handleCardClick(image.name, image.src, image.description)} 
               >
                 <div
                   className={`flex flex-col justify-center items-center text-center ${activeIndex === index
@@ -156,7 +166,7 @@ const Home_Prime_Section = () => {
                         {image.name}
                       </h2>
                       <p className="text-md font-normal text-ivory-white mt-0 2xl:mt-2">
-                        {image.role}
+                        {image.description}
                       </p>
                     </div>
                   ) : (

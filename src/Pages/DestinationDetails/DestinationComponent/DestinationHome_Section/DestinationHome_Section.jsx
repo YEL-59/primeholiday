@@ -21,7 +21,7 @@ const DestinationHome_Section = () => {
             <h1 className="text-5xl  md:text-5xl lg:text-[96px] font-salvager text-primary ">
               {destinationName}
             </h1>
-            <p className="text-xl  md:text-xl xl:text-6xl text-ivory-white mt-14 ">
+            <p className="text-xl  md:text-xl xl:text-6xl font-montserrat font-semibold text-ivory-white mt-14 ">
               {description || "Beauty Has an Address"}
             </p>
           </div>
