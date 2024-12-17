@@ -14,7 +14,7 @@ const HotelsStep = () => {
 
             <div className="relative overflow-x-auto mt-5">
                 <table className="w-full text-sm text-left rtl:text-right text-black">
-                    <thead className="text-xl font-medium text-green uppercase bg-transparent ">
+                    <thead className="text-xl  font-medium text-green uppercase bg-transparent ">
                         <tr>
                             <th scope="col" className="px-6 py-3">
                                 City
@@ -70,67 +70,67 @@ const HotelsStep = () => {
                         </tr>
                         <tr className="odd:bg-[#FFE3BD] even:bg-[#FFF]">
                             <th scope="row" className="px-6 py-4 font-medium text-black whitespace-nowrap ">
-                                Sur
+                                Wahiba
                             </th>
                             <td className="px-6 py-4">
-                                Turtle Beach Resort
+                                Sama Al Wasil Camp
+                            </td>
+                            <td className="px-6 py-4">
+                                Chalet
+                            </td>
+                            <td className="px-6 py-4">
+                                Desert Rose Camp
+                            </td>
+                            <td className="px-6 py-4">
+                                Deluxe Tent
+                            </td>
+                        </tr> <tr className="odd:bg-[#FFE3BD] even:bg-[#FFF]">
+                            <th scope="row" className="px-6 py-4 font-medium text-black whitespace-nowrap ">
+                                Nizwa
+                            </th>
+                            <td className="px-6 py-4">
+                                Antique Inn or Similar
                             </td>
                             <td className="px-6 py-4">
                                 Standard
                             </td>
                             <td className="px-6 py-4">
-                                Ras Al Jinz Resort Standard
+                                Antique Inn or similar
                             </td>
                             <td className="px-6 py-4">
                                 Standard
                             </td>
                         </tr> <tr className="odd:bg-[#FFE3BD] even:bg-[#FFF]">
                             <th scope="row" className="px-6 py-4 font-medium text-black whitespace-nowrap ">
-                                Sur
+                                Misfah
                             </th>
                             <td className="px-6 py-4">
-                                Turtle Beach Resort
+                                Misfah Hospitality Inn
                             </td>
                             <td className="px-6 py-4">
                                 Standard
                             </td>
                             <td className="px-6 py-4">
-                                Ras Al Jinz Resort Standard
+                                Misfah Hospitality Inn
                             </td>
                             <td className="px-6 py-4">
                                 Standard
                             </td>
                         </tr> <tr className="odd:bg-[#FFE3BD] even:bg-[#FFF]">
                             <th scope="row" className="px-6 py-4 font-medium text-black whitespace-nowrap ">
-                                Sur
+                            Wakan Village
                             </th>
                             <td className="px-6 py-4">
-                                Turtle Beach Resort
+                            Wakan Guest House
                             </td>
                             <td className="px-6 py-4">
-                                Standard
+                            Standard
                             </td>
                             <td className="px-6 py-4">
-                                Ras Al Jinz Resort Standard
+                            Waken Guest House
                             </td>
                             <td className="px-6 py-4">
-                                Standard
-                            </td>
-                        </tr> <tr className="odd:bg-[#FFE3BD] even:bg-[#FFF]">
-                            <th scope="row" className="px-6 py-4 font-medium text-black whitespace-nowrap ">
-                                Sur
-                            </th>
-                            <td className="px-6 py-4">
-                                Turtle Beach Resort
-                            </td>
-                            <td className="px-6 py-4">
-                                Standard
-                            </td>
-                            <td className="px-6 py-4">
-                                Ras Al Jinz Resort Standard
-                            </td>
-                            <td className="px-6 py-4">
-                                Standard
+                            Standard
                             </td>
                         </tr>
 
