@@ -66,6 +66,7 @@ const PrimeDestination_Section = () => {
       title: "Kerala",
       description: "God's Own Country",
       region: "Asia",
+      url:"Kerala"
     },
   ];
 
