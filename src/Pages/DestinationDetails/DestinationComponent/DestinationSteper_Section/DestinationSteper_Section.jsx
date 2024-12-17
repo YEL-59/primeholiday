@@ -85,12 +85,10 @@ const DestinationSteper_Section = () => {
       {/* Stepper content */}
       {steps.length > 0 && (
         <>
-          <div className="container mx-auto mt-5 bg-green-800 rounded text-white p-5">
-            <div className="text-lg font-semibold">{steps[activeStep].title}</div>
-          </div>
+          
 
           {/* Active content based on the step */}
-          <div className="container mx-auto mt-5 text-gray-800">
+          <div className="container mx-auto mt-10 text-gray-800">
             {renderStepContent()}
           </div>
         </>
