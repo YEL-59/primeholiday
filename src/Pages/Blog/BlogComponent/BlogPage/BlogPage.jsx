@@ -38,7 +38,7 @@ const BlogPage = () => {
           ],
         },
         {
-          heading: "Destination Guid",
+          heading: "Destination Guides",
           blogData: [
             {
               id: 1,
@@ -104,7 +104,7 @@ const BlogPage = () => {
       ))}
 
       <div className="bg-green p-4 mt-5 text-ivory-white font-bold text-center text-xl">
-        <h1>Load More</h1>
+        <h1>Load more</h1>
       </div>
     </div>
   );

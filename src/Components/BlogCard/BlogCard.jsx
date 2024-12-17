@@ -5,7 +5,7 @@ const BlogCard = ({ image, title, date, description, isExpanded, onToggle }) => 
   const truncatedDescription = description.slice(0, 150); // Truncate description to 150 chars
 
   return (
-    <div className="bg-text-primary border rounded overflow-hidden shadow   ">
+    <div className="bg-text-primary border rounded overflow-hidden    ">
       {/* Image Section */}
       <img className="      xl:h-[340px] xl:w-[525px]  w-full h-auto object-cover aspect-[16/9] md:aspect-[4/3] xl:aspect-[3/3]" src={image} alt={title} />
 

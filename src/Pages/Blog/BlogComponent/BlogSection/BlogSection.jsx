@@ -16,11 +16,11 @@ const BlogSection = ({ sectionData }) => {
     <>
       <div className="bg-text-primary">
         <div className="container mx-auto xl:p-14 py-10">
-          <h1 className="font-montserrat text-[20px] xl:text-[40px] font-semibold leading-[124%] uppercase text-primary text-center  mb-8 relative">
+          <h1 className="font-montserrat text-[20px] xl:text-[40px] font-semibold leading-[124%] uppercase text-primary text-center  mb-5 relative">
             {sectionData.heading}
             <span className="absolute left-1/2 transform -translate-x-1/2 bottom-[-14px] w-[10%] border-b-[3px] border-[#DFE1E6]"></span>
           </h1>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-7">
             {sectionData.blogData.map((blog) => (
               <BlogCard
                 key={blog.id}
