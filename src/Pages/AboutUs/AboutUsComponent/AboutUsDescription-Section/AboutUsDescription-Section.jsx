@@ -7,10 +7,10 @@ const AboutUsDescriptionSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* Left Column: About Us */}
           <div className="space-y-6 ">
-            <h1 className="text-primary font-montserrat text-4xl font-semibold leading-[124%] tracking-[-0.64px]">
+            <h1 className="text-primary font-montserrat text-3xl font-semibold leading-[124%] tracking-[-0.64px]">
               About Prime Holiday Destinations
             </h1>
-            <p className=" text-justify font-inter text-xl font-normal leading-[164%] tracking-[-0.48px] text-black max-w-2xl" >
+            <p className=" text-justify font-inter text-xl font-normal leading-[164%] tracking-[-0.48px] text-black max-w-xl" >
               Welcome to Prime Holiday Destinations, your gateway to
               unforgettable travel experiences! We are an outbound tour operator
               dedicated to providing all-inclusive packages to some of the most
@@ -19,14 +19,18 @@ const AboutUsDescriptionSection = () => {
               immersion, our expertly crafted itineraries promise to deliver the
               perfect vacation experience.
             </p>
-            <p className="text-justify font-inter text-xl font-normal leading-[164%] tracking-[-0.48px] text-black max-w-2xl">
+            <p className="text-justify font-inter text-xl font-normal leading-[164%] tracking-[-0.48px] text-black max-w-xl">
               Our packages include round-trip airport transfers, hotel
               accommodations, curated meal plans, and guided sightseeing tours.
               We also offer optional assistance in arranging flights upon
               request. Each package is thoughtfully designed to align with our
               dedication to quality, value, and convenience.
             </p>
-            <p className=" text-black  text-justify font-inter text-xl font-normal leading-[164%] tracking-[-0.48px]  max-w-2xl">
+            <p className="text-justify font-inter text-xl font-normal leading-[164%] tracking-[-0.48px] text-black max-w-xl">
+              At PHD, our commitment to excellence begins with our partners. We carefully select local agents in each destination, choosing only those who meet our strict standards for reliability, professionalism, and expertise. This approach guarantees that our travellers receive the highest level of service, allowing them to enjoy a smooth and truly memorable holiday experience.
+
+            </p>
+            <p className=" text-black  text-justify font-inter text-xl font-normal leading-[164%] tracking-[-0.48px]  max-w-xl">
               Our dedication to customer satisfaction extends to every stage of
               planning. We ensure that every element promised in the itinerary
               is delivered, giving travellers peace of mind and confidence in
