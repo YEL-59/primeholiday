@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
-
+import IncludesExcludesStep from "./IncludesExcludesStep";
+import HotelsStep from "./HotelsStep";
+import PriceValidityStep from "./PriceValidityStep";
+import ItineraryStep from "./ItineraryStep";
 
 const DestinationSteper_Section = () => {
   const [steps, setSteps] = useState([]); // State to hold steps data
@@ -12,19 +15,11 @@ const DestinationSteper_Section = () => {
           "Return airport transfers.",
           "8 Nights hotel accommodation in selected hotel category.",
           "Meals are provided as outlined in the itinerary.",
-          "Return airport transfers.",
-          "8 Nights hotel accommodation in selected hotel category.",
-          "Meals are provided as outlined in the itinerary.",
-          "Return airport transfers.",
-          "8 Nights hotel accommodation in selected hotel category.",
-          "Meals are provided as outlined in the itinerary.",
         ],
         "excludes": [
           "Personal expenses.",
           "Visa fees (if applicable).",
           "Additional meals not outlined in the itinerary.",
-          "Personal expenses.",
-          "Visa fees (if applicable).",
         ]
       }
     },
@@ -40,11 +35,11 @@ const DestinationSteper_Section = () => {
       "title": "Itinerary",
       "content": "A detailed itinerary outlining the schedule for the trip."
     }
-  ]
+  ];
 
   // Load data from local JSON on component mount
   useEffect(() => {
-    setSteps(stepsData); // Directly use the imported JSON
+    setSteps(stepsData); 
   }, []);
 
   // Handle step change
@@ -52,16 +47,31 @@ const DestinationSteper_Section = () => {
     setActiveStep(index);
   };
 
+  // Render the appropriate component based on active step
+  const renderStepContent = () => {
+    switch (activeStep) {
+      case 0:
+        return <IncludesExcludesStep includes={steps[activeStep].content.includes} excludes={steps[activeStep].content.excludes} />;
+      case 1:
+        return <HotelsStep />;
+      case 2:
+        return <PriceValidityStep />;
+      case 3:
+        return <ItineraryStep />;
+      default:
+        return null;
+    }
+  };
+
   return (
     <div className="container mx-auto border-green border h-auto p-5 mt-10">
       {/* Stepper buttons */}
-
       <div className="flex flex-wrap gap-5 w-full">
         {steps.map((step, index) => (
           <button
             key={index}
-            className={`flex-1 px-5 py-4 text-lg font-bold border-2 text-center rounded-md 
-        ${activeStep === index
+            className={`flex-1 px-5 py-4 text-lg font-bold border-2 text-center rounded-md uppercase 
+              ${activeStep === index
                 ? "bg-green text-white border-green"
                 : "bg-ivory-white text-green border-green hover:bg-green hover:text-white"
               }`}
@@ -72,7 +82,6 @@ const DestinationSteper_Section = () => {
         ))}
       </div>
 
-
       {/* Stepper content */}
       {steps.length > 0 && (
         <>
@@ -82,50 +91,7 @@ const DestinationSteper_Section = () => {
 
           {/* Active content based on the step */}
           <div className="container mx-auto mt-5 text-gray-800">
-            {typeof steps[activeStep].content === "object" ? (
-              <div className="flex flex-col md:flex-row gap-5">
-                <div className="border-r-4 md:ml-10 md:w-1/2 p-4">
-                  <ul className="list-disc pl-5">
-                    {steps[activeStep].content.includes.map((item, i) => (
-                      <li
-                        key={i}
-                        className="font-normal text-lg flex justify-start items-center "
-                        style={{
-                          listStyle: "none",
-                        }}
-                      >
-                        <span
-                          className="inline-block w-2 h-2 bg-primary rounded-full mr-2"
-                          style={{ flexShrink: 0 }}
-                        ></span>
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="p-4 md:w-1/2">
-                  <ul className="list-disc pl-5">
-                    {steps[activeStep].content.excludes.map((item, i) => (
-                      <li
-                        key={i}
-                        className="font-normal text-lg flex justify-start items-center "
-                        style={{
-                          listStyle: "none",
-                        }}
-                      >
-                        <span
-                          className="inline-block w-2 h-2 bg-primary rounded-full mr-2"
-                          style={{ flexShrink: 0 }}
-                        ></span>
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            ) : (
-              <p>{steps[activeStep].content}</p>
-            )}
+            {renderStepContent()}
           </div>
         </>
       )}

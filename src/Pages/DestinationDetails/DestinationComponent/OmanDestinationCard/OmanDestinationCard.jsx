@@ -34,7 +34,7 @@ const DestinationCard_Section = () => {
 
           <div className='flex justify-center py-10'>
             {/* <SecoundaryTitle head_title={"All-Inclusive ground packages"} /> */}
-            <h1 className='text-primary font-montserrat text-4xl text-center mb-16 font-semibold leading-[124%] tracking-[-0.64px]'>All-Inclusive ground packages</h1>   
+            <h1 className='text-primary font-montserrat text-4xl text-center mb-16 font-semibold leading-[124%] tracking-[-0.64px] uppercase'>All-Inclusive ground packages</h1>   
           </div>
 
           <div>

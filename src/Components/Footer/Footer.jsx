@@ -34,7 +34,7 @@ const Footer = () => {
   return (
     <>
       <div
-        className="relative bg-cover bg-center text-ivory-white py-8  "
+        className="relative bg-cover bg-center text-ivory-white py-7  "
         style={{
           backgroundImage: `linear-gradient(90deg, rgba(19, 80, 41, 0.60) 12.5%, rgba(19, 80, 41, 0.39) 58%, rgba(19, 80, 41, 0.60) 95.95%), url(${footerbg})`,
         }}
