@@ -119,7 +119,10 @@ const PrimeDestination_Section = () => {
                 {item.region}
               </h1>
               <div className="relative">
-                <img
+               <Link  to={`/destination/${item.url}`}  state={{
+                      imgSrc: item.imgSrc,
+                      description: item.description,
+                    }}> <img
                   src={item.imgSrc}
                   className="h-[555px] w-full object-cover aspect-[16/9] md:aspect-[4/3] lg:aspect-[3/3]"
                   alt={item.title}
@@ -131,7 +134,7 @@ const PrimeDestination_Section = () => {
                     </h2>
                     <p className="text-lg uppercase">{item.description}</p>
                   </div>
-                </div>
+                </div></Link>
               </div>
             </div>
           );
