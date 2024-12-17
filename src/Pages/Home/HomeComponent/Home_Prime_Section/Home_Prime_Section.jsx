@@ -12,7 +12,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Pagination, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay, Navigation } from "swiper/modules";
+
 
 import "./style.css";
 
@@ -83,9 +84,9 @@ const Home_Prime_Section = () => {
   };
 
   return (
-    <div className="relative bg-ivory-white bg-cover bg-center py-16 flex items-center justify-center">
+    <div className="relative bg-ivory-white bg-cover bg-center py-10 md:py-16 flex items-center justify-center">
       <div className="container mx-auto px-4">
-        <div className="flex justify-center mb-20">
+        <div className="flex justify-center md:mb-20">
           <SecoundaryTitle head_title={"Prime Destinations"} />
         </div>
 
@@ -93,7 +94,7 @@ const Home_Prime_Section = () => {
         <div className="block lg:hidden">
           <Swiper
             spaceBetween={10}
-            slidesPerView={2}
+            slidesPerView={1}
             navigation
             pagination={{ clickable: true }}
             loop={true}
@@ -101,7 +102,7 @@ const Home_Prime_Section = () => {
               delay: 2000,
               disableOnInteraction: false,
             }}
-            modules={[Pagination, Autoplay]}
+            modules={[Pagination, Autoplay,Navigation]}
             className="swiperContainer"
           >
             {images.map((image) => (
@@ -111,7 +112,7 @@ const Home_Prime_Section = () => {
                   style={{
                     backgroundImage: `url(${image.src})`,
                     width: "100%",
-                    height: "25rem",
+                    height: "15rem",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}

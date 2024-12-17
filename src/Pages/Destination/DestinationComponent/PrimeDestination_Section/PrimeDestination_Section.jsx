@@ -73,7 +73,7 @@ const PrimeDestination_Section = () => {
   return (
     <div>
       <div className="container mx-auto">
-        <h1 className="text-2xl md:text-5xl font-montserrat font-semibold leading-10 text-primary text-center py-20  uppercase tracking-wide">
+        <h1 className="text-2xl md:text-5xl font-montserrat font-semibold leading-10 text-primary text-center py-7 md:py-20  uppercase tracking-wide">
           Prime Destinations
         </h1>
       </div>
@@ -82,7 +82,7 @@ const PrimeDestination_Section = () => {
       {destinations.map((item) => {
         if (item.type === "region") {
           return (
-            <div key={item.id} className="container mx-auto space-y-8">
+            <div key={item.id} className="container mx-auto md:space-y-8">
               <h1 className="mb-3 mt-5 text-3xl font-montserrat font-semibold text-primary">
                 {item.region}
               </h1>
@@ -125,7 +125,7 @@ const PrimeDestination_Section = () => {
                       description: item.description,
                     }}> <img
                   src={item.imgSrc}
-                  className="h-[555px] w-full object-cover aspect-[16/9] md:aspect-[4/3] lg:aspect-[3/3]"
+                  className="h-[555px] w-full object-cover aspect-[1/3] md:aspect-[4/3] lg:aspect-[3/3]"
                   alt={item.title}
                 />
                 <div className="absolute -mt-[130px] p-4 w-full flex flex-col justify-end text-ivory-white rounded bg-[rgba(0,0,0,0.35)] bg-opacity-0 z-10">

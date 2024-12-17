@@ -31,21 +31,28 @@ const Home_Main_Section = () => {
         <div className="container mx-auto relative z-30 p-5 text-white bg-opacity-50 rounded-xl mt-10">
           <div>
             {/* Title */}
-            <h1 className="text-primary text-center font-salvager text-[20px] sm:text-[26px] md:text-[50px] lg:text-[70px] xl:text-[70px] 2xl:text-[96px] font-bold md:font-normal leading-[1.24] tracking-wide md:tracking-[-1.92px]">
+            <h1 className="text-primary text-center font-salvager text-[24px] sm:text-[26px] md:text-[50px] lg:text-[70px] xl:text-[70px] 2xl:text-[96px] font-bold md:font-normal leading-[1.24] tracking-wide md:tracking-[-1.92px]">
               Your All-Inclusive Journey Starts Here
             </h1>
 
             {/* Subtitle */}
-            <p className="relative custom-p text-ivory-white text-center font-montserrat text-[15px] sm:text-[18px] md:text-[25px] lg:text-[30px] xl:text-[38px] 2xl:text-[44px] font-bold leading-[30px] md:leading-[50px] 2xl:leading-[60px] tracking-[-1.28px] max-w-[28rem] lg:max-w-xl xl:max-w-[45rem] 2xl:max-w-[52rem] mx-auto  mb-5">
-
-              <span className="block  ">
-                <AppostiIcon />
+            <p className="relative custom-p text-ivory-white text-center font-montserrat font-bold leading-[1.2] tracking-[-1px] mx-auto mb-5 px-4 sm:px-0"
+              style={{ maxWidth: "52rem" }}
+            >
+              {/* SVG Icon */}
+              <span className="flex justify-start items-center mb-2 ">
+                <AppostiIcon className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10" />
               </span>
 
-
-              <span className="block -mt-2">The Essence of a Holiday is to Enrich</span>
-              <span className="block">Our Lives and Create Lasting Memories.</span>
+              {/* Subtitle Text */}
+              <span className="block text-[clamp(16px,4vw,18px)] sm:text-[20px] md:text-[25px] lg:text-[30px] xl:text-[38px] 2xl:text-[44px]">
+                The Essence of a Holiday is to Enrich
+              </span>
+              <span className="block text-[clamp(16px,4vw,18px)] sm:text-[20px] md:text-[25px] lg:text-[30px] xl:text-[38px] 2xl:text-[44px]">
+                Our Lives and Create Lasting Memories.
+              </span>
             </p>
+
 
 
 

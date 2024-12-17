@@ -155,7 +155,7 @@ const Footer = () => {
 
             </div>
 
-            <div>
+            <div className="ms-2 md:ms-0">
               <div>
                 <h1 className="text-ivory-white font-inter text-[13.5px] md:text-[10px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] font-normal leading-[29.52px]">
                   Prime Holiday Destinations a Brand by Rizmali Travel & Tours
