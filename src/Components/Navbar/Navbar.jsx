@@ -61,10 +61,12 @@ const Navbar = () => {
           <div>
             <button
               onClick={toggleModal}
-              className="px-4 py-2 text-sm md:text-lg bg-transparent border font-semibold text-ivory-white hover:bg-primary rounded uppercase focus:none hover:outline-none hover:border-0"
+              className="px-4 py-2 text-sm md:text-lg bg-transparent border font-semibold text-ivory-white hover:bg-primary hover:text-white rounded uppercase focus:outline-none transition-colors duration-300 ease-in-out hover:border-0"
             >
               Enquire now
             </button>
+
+
           </div>
         </nav>
       </div>

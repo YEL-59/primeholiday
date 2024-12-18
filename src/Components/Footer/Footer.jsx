@@ -60,7 +60,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div onClick={toggleModal} className=" uppercase text-[13.5px] md:text-[10px] lg:text-[12px] xl:text-[18px] px-5 py-1 rounded text-text-primary border font-semibold flex justify-center items-center cursor-pointer hover:bg-[#f49d2a] focus:none hover:outline-none hover:border-0">
+            <div onClick={toggleModal} className="px-4 py-2 text-sm md:text-lg bg-transparent border font-semibold text-ivory-white hover:bg-primary hover:text-white rounded uppercase focus:outline-none transition-colors duration-300 ease-in-out hover:border-0">
               Enquire now
             </div>
           </div>
