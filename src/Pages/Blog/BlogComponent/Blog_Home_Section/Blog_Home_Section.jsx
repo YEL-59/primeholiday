@@ -9,7 +9,7 @@ const Blog_Home_Section = () => {
           backgroundImage={bgImage}
           title={"Explore Our Blogs"}
           sub_title={"Expert Holiday Tips and Guides"}
-          height="70vh"
+          
         />
       </div>
     </>

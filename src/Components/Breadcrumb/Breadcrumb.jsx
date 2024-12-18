@@ -15,7 +15,7 @@ const Breadcrumb = ({ items }) => {
               <li key={index} className="flex items-center">
               
                 <span
-                  className={`text-sm md:text-md ${
+                  className={`text-sm md:text-md lg:text-xl ${
                     item.href && location.pathname === item.href
                       ? 'text-primary ' 
                       : 'text-text-primary'
