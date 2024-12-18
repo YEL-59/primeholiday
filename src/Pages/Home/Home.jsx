@@ -13,13 +13,13 @@ const Home = () => {
       <Home_Prime_Section />
       <Home_Packeg_Section />
 
-      <div className="bg-ivory-white bg-cover md:p-2">
+      <div className="bg-ivory-white bg-cover ">
         <Home_Inclusive_Section />
       </div>
 
       <Home_Video_Section />
 
-      <div className="bg-ivory-white bg-cover p-2">
+      <div className="bg-ivory-white bg-cover ">
         <Home_Testiminial_Section />
       </div>
     </>

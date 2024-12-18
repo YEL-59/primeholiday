@@ -8,7 +8,7 @@ const Home_Packeg_Section = () => {
   return (
     <div>
       <div
-        className="relative bg-cover bg-center py-10 "
+        className="relative bg-cover bg-center py-5 md:py-10 "
         style={{
           backgroundImage: `linear-gradient(239deg, #FFFFF0 37.35%, rgba(255, 255, 240, 0.00) 82.3%), url(${img})`,
         }}

@@ -22,13 +22,13 @@ const Home_Video_Section = () => {
 
   return (
     <div
-      className="relative bg-cover bg-center h-screen flex items-center justify-center"
+      className="relative bg-cover bg-center h-[35vh] sm:h-[40vh] md:h-[60vh] lg:h-[75vh] xl:h-[100vh] flex items-center justify-center"
       style={{
         backgroundImage: `url(${videoThumbnail})`,
       }}
     >
       {/* Video Container */}
-      <div className="relative w-[82%] h-[60%] md:h-[78%]  shadow-lg rounded-lg overflow-hidden ">
+      <div className="relative w-[90%] h-[63%] md:w-[82%] md:h-[60%]  shadow-lg overflow-hidden ">
         {/* Video Element */}
         <video
           ref={videoRef}
@@ -69,7 +69,7 @@ const Home_Video_Section = () => {
             className="absolute inset-0 flex items-center justify-center cursor-pointer opacity-0 hover:opacity-50 bg-black bg-opacity-50"
             onClick={handlePause}
           >
-            <button className="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-lg">
+            <button className="w-10 h-10  md:w-20 md:h-20 bg-white rounded-full flex items-center justify-center shadow-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-6 h-6 md:w-10 md:h-10 text-black"

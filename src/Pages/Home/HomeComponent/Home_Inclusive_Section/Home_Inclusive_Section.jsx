@@ -4,11 +4,11 @@ import SecoundaryTitle from "../../../../Components/SecoundaryTitle/SecoundaryTi
 const Home_Inclusive_Section = () => {
   return (
     <div className="container mx-auto px-5 md:px-10">
-      <div className="grid lg:grid-cols-9 items-center gap-10 md:gap-16 py-10 md:py-20">
+      <div className="grid lg:grid-cols-9 items-start gap-10 md:gap-16 py-10 md:py-20">
         {/* Text Section */}
         <div className="lg:col-span-4">
           <SecoundaryTitle head_title={"COMMITMENT TO EXCELLENCE"} />
-          <p className="text-black font-inter text-sm md:text-base xl:text-lg 2xl:text-3xl font-normal leading-[1.64] tracking-[0.85px] mt-5 2xl:max-w-xl">
+          <p className="text-black font-inter text-start  text-sm md:text-base xl:text-lg 2xl:text-3xl font-normal leading-[1.64] tracking-[0.85px] mt-5 2xl:max-w-xl">
             At PHD, we are committed to transforming each holiday into a
             memorable experience, prioritizing our clients' comfort, enjoyment,
             and peace of mind from start to finish. When you travel with Prime
@@ -23,7 +23,7 @@ const Home_Inclusive_Section = () => {
           <img
             src={img}
             alt="Commitment to Excellence"
-            className="w-full h-auto max-h-[500px] md:max-h-[600px] lg:max-h-[700px] object-cover rounded-md shadow-lg"
+            className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl h-auto shadow-lg "
           />
         </div>
       </div>

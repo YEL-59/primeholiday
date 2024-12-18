@@ -7,17 +7,17 @@ const Breadcrumb = ({ items }) => {
   const location = useLocation();
 
   return (
-    <div className="bg-green text-white text-start h-20 flex items-center">
+    <div className="bg-green text-white text-start h-12 md:h-20 flex items-center">
       <div className="container mx-auto px-4">
         <nav className="text-xl font-medium">
           <ol className="list-none p-0 inline-flex justify-center">
             {items.map((item, index) => (
               <li key={index} className="flex items-center">
-                {/* Compare href with current pathname */}
+              
                 <span
-                  className={`${
+                  className={`text-sm md:text-md ${
                     item.href && location.pathname === item.href
-                      ? 'text-primary' // Active page color
+                      ? 'text-primary ' 
                       : 'text-text-primary'
                   }`}
                 >

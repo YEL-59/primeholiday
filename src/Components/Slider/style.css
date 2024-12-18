@@ -19,7 +19,7 @@
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    margin: 10px;
+    margin: 2px;
  
     overflow: hidden;
     position: relative;
@@ -124,7 +124,7 @@
 @media (max-width: 479px) {
   .swiper {
     width: 100vw;
-    height: 40vh;
+    height: 35vh;
     margin-left: 0;
     padding-bottom: 20px; 
   }
