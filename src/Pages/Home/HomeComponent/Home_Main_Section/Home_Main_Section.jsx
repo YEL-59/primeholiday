@@ -38,7 +38,7 @@ const Home_Main_Section = () => {
             {/* Subtitle */}
             <div className="relative  text-ivory-white text-center font-montserrat text-[15px] sm:text-[18px] md:text-[25px] lg:text-[30px] xl:text-[38px] 2xl:text-[44px] font-bold leading-[30px] md:leading-[50px] 2xl:leading-[60px] tracking-[-1.28px] max-w-[28rem] lg:max-w-xl xl:max-w-[45rem] 2xl:max-w-[52rem] mx-auto mt-6 sm:mt-8 md:mt-16 lg:mt-20">
 
-              <p className=" flex gap-2 lg:gap-5 items-start justify-center text-center ">  <AppostiIcon /> The Essence of a Holiday is to Enrich</p>
+              <p className=" flex gap-2 lg:gap-2 items-start justify-center text-center ">  <AppostiIcon /> The Essence of a Holiday is to Enrich</p>
               <p className="text-center">Our Lives and Create Lasting Memories.</p>
 
             </div>
