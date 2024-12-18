@@ -47,28 +47,34 @@ const ItineraryStep = () => {
             {/* Itinerary List */}
             <div className="">
                 {itineraryData.map((item, index) => (
-                   <div className='container mx-auto border border-green p-5 my-10'> <div key={index} className="grid grid-cols-12 gap-5  ">
-                   {/* Text Section */}
-                   <div className="col-span-9">
-                       <div className="flex justify-between font-medium mb-4">
-                           <h1 className="text-lg font-bold text-green">{item.day}</h1>
-                           <h1 className="text-lg font-bold text-green">{item.meal}</h1>
-                       </div>
-                       <p className="text-lg font-medium leading-10">
-                           {item.description}
-                           <span className="text-yellow-500 cursor-pointer"> ... Read more</span>
-                       </p>
-                   </div>
-
-                   {/* Image Section */}
-                   <div className="col-span-3">
-                       <img
-                           src={item.image}
-                           className="h-full w-full object-cover"
-                           alt={`Itinerary ${item.day}`}
-                       />
-                   </div>
-               </div></div>
+                  <div className="container mx-auto border border-green p-5 my-10">
+                  <div
+                    key={index}
+                    className="grid grid-cols-1 md:grid-cols-12 gap-5"
+                  >
+                    {/* Text Section */}
+                    <div className="md:col-span-9">
+                      <div className="flex flex-col md:flex-row justify-between font-medium mb-4">
+                        <h1 className="text-base md:text-lg font-bold text-green">{item.day}</h1>
+                        <h1 className="text-base md:text-lg font-bold text-green">{item.meal}</h1>
+                      </div>
+                      <p className="text-sm md:text-lg font-medium leading-6 md:leading-8">
+                        {item.description}
+                        <span className="text-yellow-500 cursor-pointer"> ... Read more</span>
+                      </p>
+                    </div>
+                
+                    {/* Image Section */}
+                    <div className="md:col-span-3">
+                      <img
+                        src={item.image}
+                        className="h-40 md:h-full w-full object-cover rounded-md"
+                        alt={`Itinerary ${item.day}`}
+                      />
+                    </div>
+                  </div>
+                </div>
+                
                 ))}
             </div>
         </>

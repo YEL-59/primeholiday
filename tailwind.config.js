@@ -16,19 +16,8 @@ export default {
         inter: ["Inter", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
       },
-      maxWidth: {
-        container: "1640px",
-      },
-    },
-    container: {
-      center: true, // Center the container
-      padding: "1rem", // Optional padding
-      screens: {
-        sm: "480px", 
-        md: "768px", 
-        lg: "1024px", 
-        xl: "1440px", 
-        "2xl": "1640px", 
+      container: {
+        maxWidth: "1640px",
       },
     },
   },

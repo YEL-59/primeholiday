@@ -32,13 +32,13 @@ const DestinationCard_Section = () => {
       <div >
         <div>
 
-          <div className='flex justify-center py-10'>
+          <div className='flex justify-center py-5 md:py-10'>
             {/* <SecoundaryTitle head_title={"All-Inclusive ground packages"} /> */}
-            <h1 className='text-primary font-montserrat text-4xl text-center mb-16 font-semibold leading-[124%] tracking-[-0.64px] uppercase'>All-Inclusive ground packages</h1>   
+            <h1 className='text-primary font-montserrat text-[20px] md:text-xl  lg:text-3xl text-center  font-semibold leading-[124%] tracking-[-0.64px] uppercase'>All-Inclusive ground packages</h1>   
           </div>
 
           <div>
-            <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6  mb-10">
+            <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6  mb-10 p-2 md:p-0">
               {data.map((item, index) => (
                 <ReusableCard
                   key={index}

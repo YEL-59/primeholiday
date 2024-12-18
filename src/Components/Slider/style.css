@@ -110,7 +110,7 @@
 @media (min-width: 480px) and (max-width: 799px) {
   .swiper {
     width: 100vw;
-    height: 32vh;
+    height: 45vh;
     margin-left: 0;
     padding-bottom: 30px;
   }
@@ -124,7 +124,7 @@
 @media (max-width: 479px) {
   .swiper {
     width: 100vw;
-    height: 38vh;
+    height: 40vh;
     margin-left: 0;
     padding-bottom: 20px; 
   }

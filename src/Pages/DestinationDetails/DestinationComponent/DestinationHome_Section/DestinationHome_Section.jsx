@@ -9,7 +9,7 @@ const DestinationHome_Section = () => {
   return (
     <>
       <header
-        className="relative flex items-center justify-center h-screen bg-cover bg-center"
+        className="relative flex items-center justify-center  h-[100vh] bg-cover bg-center"
         style={{
           backgroundImage: `url(${imgSrc || bgImage})`,
         }}
@@ -21,14 +21,14 @@ const DestinationHome_Section = () => {
             <h1 className="text-5xl  md:text-5xl lg:text-[96px] font-salvager text-primary ">
               {destinationName}
             </h1>
-            <p className="text-xl  md:text-xl xl:text-6xl font-montserrat font-semibold text-ivory-white mt-14 ">
+            <p className="text-xl  md:text-xl xl:text-6xl font-montserrat font-semibold text-ivory-white mt-5 md:mt-10 lg:mt-14 ">
               {description || "Beauty Has an Address"}
             </p>
           </div>
 
           {/* Bottom Content */}
-          <div className="w-full flex justify-center  p-4">
-            <p className="max-w-lg sm:max-w-2xl md:max-w-6xl leading-6 sm:leading-8 lg:leading-10 p-5 bg-[#00000059] text-ivory-white font-medium text-sm sm:text-lg md:text-xl lg:text-2xl text-center  rounded-md z-10">
+          <div className="w-full flex justify-center  p-4 ">
+            <p className="max-w-lg sm:max-w-2xl md:max-w-6xl leading-6 sm:leading-8 lg:leading-10 p-5 bg-[#00000059] text-ivory-white font-medium text-sm sm:text-lg md:text-xl lg:text-2xl text-center  rounded-md  z-10">
               Discover the enchanting beauty of Oman, a destination where ancient heritage meets stunning natural landscapes. Known for its warm hospitality and rich cultural tapestry, Oman offers travelers a unique blend of experiences.
             </p>
           </div>

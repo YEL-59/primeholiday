@@ -14,7 +14,7 @@ const HotelsStep = () => {
 
             <div className="relative overflow-x-auto mt-5">
                 <table className="w-full text-sm text-left rtl:text-right text-black">
-                    <thead className="text-xl  font-medium text-green uppercase bg-transparent ">
+                    <thead className="text-sm md:text-base truncate lg:text-lg  font-medium text-green uppercase bg-transparent ">
                         <tr>
                             <th scope="col" className="px-6 py-3">
                                 City
@@ -34,7 +34,7 @@ const HotelsStep = () => {
                         </tr>
                     </thead>
                     <tbody className='text-lg'>
-                        <tr className="odd:bg-[#FFE3BD] even:bg-[#FFF] ">
+                        <tr className="odd:bg-[#FFE3BD] even:bg-[#FFF] truncate ">
                             <th scope="row" className="px-6 py-4 font-medium text-black whitespace-nowrap ">
                                 Muscat
                             </th>
@@ -51,7 +51,7 @@ const HotelsStep = () => {
                                 Standard
                             </td>
                         </tr>
-                        <tr className="odd:bg-[#FFE3BD] even:bg-[#FFF]">
+                        <tr className="odd:bg-[#FFE3BD] even:bg-[#FFF] truncate">
                             <th scope="row" className="px-6 py-4 font-medium text-black whitespace-nowrap ">
                                 Sur
                             </th>
@@ -68,7 +68,7 @@ const HotelsStep = () => {
                                 Standard
                             </td>
                         </tr>
-                        <tr className="odd:bg-[#FFE3BD] even:bg-[#FFF]">
+                        <tr className="odd:bg-[#FFE3BD] even:bg-[#FFF] truncate">
                             <th scope="row" className="px-6 py-4 font-medium text-black whitespace-nowrap ">
                                 Wahiba
                             </th>

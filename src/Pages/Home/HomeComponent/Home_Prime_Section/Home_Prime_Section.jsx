@@ -83,9 +83,9 @@ const Home_Prime_Section = () => {
   };
 
   return (
-    <div className="relative bg-ivory-white bg-cover bg-center py-16 flex items-center justify-center">
+    <div className="relative bg-ivory-white bg-cover bg-center py-8 sm:py-10 md:py-16 flex items-center justify-center">
       <div className="container mx-auto px-4">
-        <div className="flex justify-center mb-20">
+        <div className="flex justify-center mb-5 sm:mb-10 md:mb-16 lg:mb-20">
           <SecoundaryTitle head_title={"Prime Destinations"} />
         </div>
 
@@ -94,14 +94,14 @@ const Home_Prime_Section = () => {
           <Swiper
             spaceBetween={10}
             slidesPerView={2}
-            navigation
-            pagination={{ clickable: true }}
+            
+            pagination={false}
             loop={true}
             autoplay={{
               delay: 2000,
               disableOnInteraction: false,
             }}
-            modules={[Pagination, Autoplay]}
+            modules={[ Autoplay]}
             className="swiperContainer"
           >
             {images.map((image) => (
@@ -111,7 +111,7 @@ const Home_Prime_Section = () => {
                   style={{
                     backgroundImage: `url(${image.src})`,
                     width: "100%",
-                    height: "25rem",
+                    height: "20rem",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}

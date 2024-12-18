@@ -4,12 +4,12 @@ import MainHeading from "../MainHeading/MainHeading"; // Assuming this is your h
 const SectionHeader = ({ backgroundImage, title, sub_title, height }) => {
   return (
     <header
-      className={`relative flex items-center justify-center bg-cover bg-center z-0`}
+      className={`relative flex items-center justify-center bg-cover bg-center z-0 h-[55vh] md:h-[70vh] lg:h-[85vh] xl:h-[100vh] `}
       style={{
         background: `linear-gradient(0deg, rgba(1, 1, 1, 0.35) 0%, rgba(1, 1, 1, 0.35) 100%), url(${backgroundImage}) lightgray 0px -638px / 100% 236.453% no-repeat`,
         backgroundSize: "cover",
         backgroundPosition: "center center",
-        height: height || "100vh", 
+       // height: height || "100vh", 
       }}
     >
         {/* <div className="absolute inset-0 bg-black opacity-40 z-0"></div> */}

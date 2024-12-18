@@ -66,21 +66,23 @@ const DestinationSteper_Section = () => {
   return (
     <div className="container mx-auto border-green border h-auto p-5 mt-10">
       {/* Stepper buttons */}
-      <div className="flex flex-wrap gap-5 w-full">
-        {steps.map((step, index) => (
-          <button
-            key={index}
-            className={`flex-1 px-5 py-4 text-lg font-bold border-2 text-center rounded-md uppercase 
-              ${activeStep === index
-                ? "bg-green text-white border-green"
-                : "bg-ivory-white text-green border-green hover:bg-green hover:text-white"
-              }`}
-            onClick={() => handleStepChange(index)}
-          >
-            {step.title}
-          </button>
-        ))}
-      </div>
+      <div className="flex flex-wrap gap-3 w-full">
+  {steps.map((step, index) => (
+    <button
+      key={index}
+      className={`flex-1 min-w-[100px] px-3 py-1 text-xs md:px-5 md:py-3 md:text-base lg:text-lg md:font-bold border-2 text-center rounded-md uppercase 
+        ${
+          activeStep === index
+            ? "bg-green text-white border-green"
+            : "bg-ivory-white text-green border-green hover:bg-green hover:text-white"
+        }`}
+      onClick={() => handleStepChange(index)}
+    >
+      {step.title}
+    </button>
+  ))}
+</div>
+
 
       {/* Stepper content */}
       {steps.length > 0 && (

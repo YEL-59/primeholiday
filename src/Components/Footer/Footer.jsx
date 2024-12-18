@@ -39,7 +39,7 @@ const Footer = () => {
           backgroundImage: `linear-gradient(90deg, rgba(19, 80, 41, 0.60) 12.5%, rgba(19, 80, 41, 0.39) 58%, rgba(19, 80, 41, 0.60) 95.95%), url(${footerbg})`,
         }}
       >
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-2 sm:px-0">
           <h1 className="text-primary text-4xl md:text-5xl font-medium text-center mb-10 z-100 relative ">
             Connect With Us
           </h1>
@@ -94,7 +94,7 @@ const Footer = () => {
           </div>
 
           <div className="mt-5">
-            <div className="flex flex-row sm:flex-col items-center md:items-start gap-2">
+            <div className="flex flex-row sm:flex-col items-center sm:items-start gap-2">
               <div className="text-3xl text-primary ">
                 <Whatsappe />
               </div>
@@ -155,7 +155,7 @@ const Footer = () => {
 
             </div>
 
-            <div>
+            <div className="ms-2 md:ms-0">
               <div>
                 <h1 className="text-ivory-white font-inter text-[13.5px] md:text-[10px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] font-normal leading-[29.52px]">
                   Prime Holiday Destinations a Brand by Rizmali Travel & Tours
@@ -187,7 +187,7 @@ const Footer = () => {
       </div>
 
       <div className="bg-green">
-        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between py-5">
+        <div className="container mx-auto flex flex-col md:flex-row gap-5 items-center justify-between py-5 px-2 ">
           <div className="text-ivory-white text-center md:text-start">
             <p className="text-xs uppercase font-bold font-helvetica leading-5 tracking-[2px]">Stay up to Date</p>
             <h1 className="text-lg font-bold truncate font-inter">Subscribe to Our Newsletter</h1>

@@ -15,15 +15,15 @@ const PriceValidityStep = () => {
         <>
 
             <div className="bg-green py-3 mb-3 flex flex-col space-y-5">
-                <h1 className="text-xl font-medium text-ivory-white text-center">
+                <h1 className="text-sm md:text-base lg:text-lg font-medium text-ivory-white text-center">
                     Package Cost Per Person Sharing Twin/Double Occupancy in USD
                 </h1>
 
                 <div className="flex gap-5 justify-around w-full">
-                    <div className="font-semibold text-lg text-ivory-white uppercase">
+                    <div className="font-semibold text-sm md:text-base lg:text-lg text-ivory-white uppercase">
                         Validity 01 Oct 2024 - 30 Apr 2025
                     </div>
-                    <div className="font-semibold text-lg text-red-500 uppercase">
+                    <div className="font-semibold text-sm md:text-base lg:text-lg text-red-500 uppercase">
                         Not valid between 23 Dec 2024 – 04 Jan 2025
                     </div>
                 </div>
@@ -32,7 +32,7 @@ const PriceValidityStep = () => {
 
             <div className="relative overflow-x-auto mt-5 bg-ivory-white">
                 <table className="w-full text-sm text-left rtl:text-right text-gray-500">
-                    <thead className="text-lg font-medium text-green uppercase bg-transparent ">
+                    <thead className="text-sm md:text-base lg:text-lg truncate font-medium text-green uppercase bg-transparent ">
                         <tr>
                             <th scope="col" className="px-6 py-3">
                                 Hotel Category

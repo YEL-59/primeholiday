@@ -73,7 +73,7 @@ const PrimeDestination_Section = () => {
   return (
     <div>
       <div className="container mx-auto">
-        <h1 className="text-2xl md:text-5xl font-montserrat font-semibold leading-10 text-primary text-center py-20  uppercase tracking-wide">
+        <h1 className="text-2xl md:text-5xl font-montserrat font-semibold leading-10 text-primary text-center py-6 sm:py-10 md:py-16 lg:py-20  uppercase tracking-wide">
           Prime Destinations
         </h1>
       </div>
@@ -82,8 +82,8 @@ const PrimeDestination_Section = () => {
       {destinations.map((item) => {
         if (item.type === "region") {
           return (
-            <div key={item.id} className="container mx-auto space-y-8">
-              <h1 className="mb-3 mt-5 text-3xl font-montserrat font-semibold text-primary">
+            <div key={item.id} className="container mx-auto space-y-8 p-2 sm:p-0">
+              <h1 className="mb-3 mt-5 text-3xl font-montserrat font-semibold text-primary text-center md:text-start">
                 {item.region}
               </h1>
 
@@ -116,19 +116,19 @@ const PrimeDestination_Section = () => {
         if (item.type === "fixedDiv") {
           return (
             <div key={item.id} className="container mx-auto relative mt-10 mb-10">
-              <h1 className="mb-3 mt-5 text-3xl font-montserrat font-semibold text-primary">
+              <h1 className="mb-3 mt-5 text-3xl font-montserrat font-semibold text-primary text-center md:text-start">
                 {item.region}
               </h1>
-              <div className="relative">
+              <div className="relative p-2 md:p-0">
                <Link  to={`/destination/${item.url}`}  state={{
                       imgSrc: item.imgSrc,
                       description: item.description,
                     }}> <img
                   src={item.imgSrc}
-                  className="h-[555px] w-full object-cover aspect-[16/9] md:aspect-[4/3] lg:aspect-[3/3]"
+                  className="md:h-[555px] w-full object-cover aspect-[16/9] md:aspect-[4/3] lg:aspect-[3/3]"
                   alt={item.title}
                 />
-                <div className="absolute -mt-[130px] p-4 w-full flex flex-col justify-end text-ivory-white rounded bg-[rgba(0,0,0,0.35)] bg-opacity-0 z-10">
+                <div className="absolute -mt-[110px] md:-mt-[130px] p-1 md:p-4 w-full flex flex-col justify-end text-ivory-white rounded bg-[rgba(0,0,0,0.35)] bg-opacity-0 z-10">
                   <div className="text-center text-ivory-white  p-4">
                     <h2 className="text-xl xl:text-4xl uppercase font-medium">
                       {item.title}
@@ -147,7 +147,7 @@ const PrimeDestination_Section = () => {
       {destinations.map((item) => {
         if (item.type === "region") {
           return (
-            <div key={item.id} className="container mx-auto space-y-8">
+            <div key={item.id} className="container mx-auto space-y-8 p-2 sm:p-0">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
                 {item.items.slice(3).map((regionItem) => (
                   <Link
