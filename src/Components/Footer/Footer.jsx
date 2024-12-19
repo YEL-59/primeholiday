@@ -65,7 +65,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="mt-5">
+          <div className="mt-5 mb-8 md:mb-0">
             <div className="flex flex-row sm:flex-col items-center sm:items-start gap-2 sm:pb-4 border-ivory-white border-b max-w-[18rem] 2xl:max-w-[21rem]">
               {/* Icon Section */}
               <div className="text-3xl text-primary flex-shrink-0">
