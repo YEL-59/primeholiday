@@ -40,7 +40,7 @@ const Navbar = () => {
     <div>
       {/* Navbar */}
       <div className="absolute top-0 left-0 w-full z-40 bg-transparent text-ivory-white">
-        <nav className="container mx-auto flex items-center justify-between ">
+        <nav className="container mx-auto flex items-center justify-between px-5 py-5 md:px-0 md:py-0">
           {/* Left Section - Bar */}
           <div className="flex items-center">
             <div

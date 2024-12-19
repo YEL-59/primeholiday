@@ -28,7 +28,7 @@ const AboutUscard = () => {
   return (
     <div className="bg-ivory-white">
       <div className="container mx-auto pb-10 p-5 ">
-        <h1 className="text-primary font-montserrat  text-[20px] md:text-xl  lg:text-3xl text-center mb-16 font-semibold leading-[124%] tracking-[-0.64px] uppercase">Destinations you'll love</h1>
+        <h1 className="text-primary font-montserrat  text-[20px] md:text-xl  lg:text-3xl text-center mb-5 md:mb-16 font-semibold leading-[124%] tracking-[-0.64px] uppercase">Destinations you'll love</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
           {data.map((item, index) => (
