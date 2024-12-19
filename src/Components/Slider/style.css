@@ -19,7 +19,7 @@
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    margin: 2px;
+    margin: 10px;
  
     overflow: hidden;
     position: relative;
@@ -131,6 +131,9 @@
 
   .card-text {
     bottom: 5px;
+  }
+  .card{
+    margin: 5px;
   }
 }
 
