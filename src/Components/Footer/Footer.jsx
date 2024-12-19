@@ -66,7 +66,7 @@ const Footer = () => {
           </div>
 
           <div className="mt-5 mb-8 md:mb-0">
-            <div className="flex flex-row sm:flex-col items-center sm:items-start gap-2 sm:pb-4 border-ivory-white border-b max-w-[18rem] 2xl:max-w-[21rem]">
+            <div className="flex flex-row sm:flex-col items-center sm:items-start gap-2  pb-4 border-ivory-white border-b max-w-[18rem] 2xl:max-w-[21rem]">
               {/* Icon Section */}
               <div className="text-3xl text-primary flex-shrink-0">
                 <Location />
@@ -83,7 +83,7 @@ const Footer = () => {
 
 
           <div className="mt-5">
-            <div className="flex flex-row sm:flex-col gap-2 sm:pb-4 border-ivory-white border-b max-w-[18rem] 2xl:max-w-[21rem] ">
+            <div className="flex flex-row sm:flex-col gap-2 pb-4 border-ivory-white border-b max-w-[18rem] 2xl:max-w-[21rem] ">
               <div className="text-3xl text-primary ">
                 <Mail />
               </div>
@@ -112,7 +112,7 @@ const Footer = () => {
 
           <div className="flex flex-wrap md:flex-nowrap justify-between mt-5">
             <div>
-              <div className="flex flex-wrap text-ivory-white font-inter text-[13.5px] md:text-[10px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] font-normal leading-[29.52px]">
+              <div className="flex flex-wrap text-ivory-white font-inter text-[12.5px] md:text-[10px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] font-normal leading-[29.52px]">
                 <Link to={"aboutus"} className="flex items-center px-2">
                   <p className="inline-flex items-center relative pr-4 after:content-[''] after:border-r-2 after:border-gray-300 after:h-4 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">
                     About
@@ -148,7 +148,7 @@ const Footer = () => {
                 </Link>
               </div>
 
-              <div className="w-full ms-2 text-ivory-white font-inter text-[13.5px] md:text-[10px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] font-normal leading-[29.52px] flex sm:flex-row gap-2 flex-col md:items-center justify-between ">
+              <div className="w-full ms-2 text-ivory-white font-inter text-[12.5px] md:text-[10px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] font-normal leading-[29.52px] flex sm:flex-row gap-2 flex-col md:items-center justify-between ">
                 <p>&copy; 2024 Rizmail Travel & Tours Limited</p>
               </div>
 
@@ -157,7 +157,7 @@ const Footer = () => {
 
             <div className="ms-2 md:ms-0">
               <div>
-                <h1 className="text-ivory-white font-inter text-[13.5px] md:text-[10px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] font-normal leading-[29.52px]">
+                <h1 className="text-ivory-white font-inter text-[11px] md:text-[10px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] font-normal leading-[29.52px]">
                   Prime Holiday Destinations a Brand by Rizmali Travel & Tours
                   Limited
                 </h1>
@@ -176,7 +176,7 @@ const Footer = () => {
         </div>
 
 
-        <div className="flex justify-end mr-14 -mt-[55px] hidden md:flex">
+        <div className="flex justify-end mr-4 -mt-[55px] hidden md:flex">
           <div
             className="text-4xl  border-[2px] h-[48px] rounded-xl py-3 px-3 border-primary flex justify-center items-center"
             onClick={handleScrollToTop}
