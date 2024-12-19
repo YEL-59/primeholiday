@@ -108,6 +108,7 @@ const Home_Prime_Section = () => {
               <SwiperSlide key={image.id}>
                 <div
                   className="slider-card cursor-pointer transition-all duration-300 transform scale-95 hover:scale-105 shadow-lg"
+                  onClick={() => handleCardClick(image.name, image.src, image.description)} 
                   style={{
                     backgroundImage: `url(${image.src})`,
                     width: "100%",
@@ -118,11 +119,11 @@ const Home_Prime_Section = () => {
                 >
                   <div className="flex justify-center items-end h-full text-center relative">
                     {/* Overlay positioned at the bottom */}
-                    <div className="absolute bottom-0 p-4 w-full bg-[rgba(0,0,0,0.5)] text-ivory-white rounded-t-lg">
-                      <h2 className="text-md lg:text-4xl font-bold tracking-wider">
+                    <div className="absolute bottom-0 p-4 w-full bg-[rgba(0,0,0,0.5)] text-ivory-white ">
+                      <h2 className="text-sm lg:text-4xl font-bold tracking-wider">
                         {image.name}
                       </h2>
-                      <p className="text-xs lg:text-md font-normal mt-2">{image.description}</p>
+                      <p className="text-[10px] lg:text-md font-normal ">{image.description}</p>
                     </div>
                   </div>
                 </div>
