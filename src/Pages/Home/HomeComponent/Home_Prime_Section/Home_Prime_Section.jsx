@@ -119,7 +119,7 @@ const Home_Prime_Section = () => {
                 >
                   <div className="flex justify-center items-end h-full text-center relative">
                     {/* Overlay positioned at the bottom */}
-                    <div className="absolute bottom-0 p-4 w-full bg-[rgba(0,0,0,0.5)] text-ivory-white ">
+                    <div className="absolute bottom-2 p-4 w-full bg-[rgba(0,0,0,0.5)] text-ivory-white ">
                       <h2 className="text-sm lg:text-4xl font-bold tracking-wider">
                         {image.name}
                       </h2>
